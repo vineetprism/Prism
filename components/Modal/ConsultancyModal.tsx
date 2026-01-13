@@ -179,7 +179,7 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="max-w-[700px] p-8 sm:p-10 rounded-3xl bg-white shadow-2xl border-none">
+            <DialogContent className="max-w-[95vw] sm:max-w-[700px] max-h-[90vh] overflow-y-auto p-4 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl bg-white shadow-2xl border-none mx-2 sm:mx-auto">
                 <DialogHeader className="mb-6 text-left">
                     <DialogTitle className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading mb-2">
                         Send Us A Message
