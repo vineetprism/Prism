@@ -59,7 +59,7 @@ export default function RootLayout({
         </Script>
       </head>
 
-      <body className={`${montserrat.variable} ${openSans.variable} antialiased`}>
+      <body className={`${montserrat.variable} ${openSans.variable} ${openSans.className} antialiased`}>
         <Header />
         {children}
         <Footer />

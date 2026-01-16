@@ -113,7 +113,55 @@ export const WEBSITE_DEV_SOLUTIONS_DATA: Record<string, WebDevService> = {
             { question: "How does this architecture improve security?", answer: "It virtually eliminates the attack surface. There is no database to hack and no login page to brute-force on the public site, making it ideal for high-security sectors." }
         ]
     },
-    'corporate-website-development': { slug: 'corporate-website-development', title: 'Corporate Website Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'corporate-website-development': {
+        slug: 'corporate-website-development',
+        title: 'Corporate Digital Experience Platforms',
+        category: 'WebsiteDevelopment',
+        description: 'Build the central nervous system of your digital enterprise with AI-native, cloud-resilient corporate platforms.',
+        features: [
+            'Legacy Modernization & Re-Platforming',
+            'AI-Native Development',
+            'Cloud-Native Infrastructure',
+            'Experience Design (UX/UI)',
+            'DevSecOps & Compliance',
+            'Performance Engineering'
+        ],
+        hero: {
+            title: 'Build the Central Nervous System of Your Digital Enterprise.',
+            subtitle: 'Move beyond the brochure. We engineer AI-native, cloud-resilient corporate platforms designed to eliminate legacy debt and drive a 9,900% ROI through superior User Experience.',
+            cta: 'Schedule Technical Discovery'
+        },
+        businessImpact: {
+            content: "In 2026, your corporate website is not a marketing asset; it is operational infrastructure. Legacy systems and monolithic codebases create 'Innovation Paralysis,' leaving you vulnerable to $4.88M average breach costs and agile competitors. We don't just write code. We deliver Total Application Modernization."
+        },
+        serviceGrid: [
+            { title: 'Legacy Modernization & Re-Platforming', description: 'Unshackle your enterprise from monolithic debt. We use the "Strangler Fig" pattern to safely migrate legacy logic to scalable microservices without downtime.' },
+            { title: 'AI-Native Development', description: 'Integrate GenAI directly into your UX. From RAG-powered search to autonomous service agents, we build the "Action Web" of tomorrow.' },
+            { title: 'Cloud-Native Infrastructure', description: 'Built for resilience on AWS/Azure. We utilize Kubernetes and Terraform to ensure your platform scales instantly during traffic spikes.' },
+            { title: 'Experience Design (UX/UI)', description: 'Data-driven design that converts. We map customer journeys to engineering value streams, ensuring every pixel drives revenue.' },
+            { title: 'DevSecOps & Compliance', description: 'Security shifts left. Automated SAST/DAST pipelines and AI-driven guardrails ensure GDPR/CCPA compliance by design.' },
+            { title: 'Performance Engineering', description: 'Speed is a feature. We optimize Core Web Vitals to millisecond precision, ensuring 100% SEO visibility and user retention.' }
+        ],
+        benefitsList: [
+            { title: '9,900% ROI', description: 'Average return on DXP investment through reduced costs and increased revenue.' },
+            { title: '65% Cost Reduction', description: 'Infrastructure and operational savings through modern architecture.' },
+            { title: '0.8s Load Time', description: 'Average page performance for optimal user experience and SEO.' },
+            { title: '99.99% Uptime', description: 'Enterprise-grade reliability with cloud-native resilience.' }
+        ],
+        techStack: {
+            frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+            cms: ['Contentful', 'Sanity', 'Strapi', 'Payload CMS'],
+            cloud: ['AWS', 'Azure', 'Kubernetes', 'Terraform'],
+            commerce: ['SAP Integration', 'Salesforce', 'Oracle APIs', 'Custom Solutions']
+        },
+        faq: [
+            { question: "What makes a Digital Experience Platform different from a traditional website?", answer: "A DXP is not just a website—it's the operational infrastructure of your digital enterprise. It integrates AI, analytics, personalization, and omnichannel delivery into a unified platform that drives business outcomes, not just page views." },
+            { question: "How do you ensure zero downtime during legacy migration?", answer: "We employ the 'Strangler Fig' pattern, incrementally replacing legacy components with modern microservices. This allows both systems to run in parallel until the migration is complete, ensuring business continuity." },
+            { question: "What is AI-Native development?", answer: "AI-Native means AI is not bolted on as an afterthought—it's architected into the platform's DNA. This includes RAG-powered intelligent search, autonomous chatbots, predictive personalization, and AI-driven security monitoring." },
+            { question: "How do you measure the 9,900% ROI claim?", answer: "ROI is calculated across multiple vectors: reduced infrastructure costs, increased conversion rates from improved UX, decreased security incident costs, and accelerated time-to-market for new features. We provide detailed benchmarking reports." },
+            { question: "What compliance standards do you support?", answer: "Our DevSecOps pipelines are built to meet GDPR, CCPA, HIPAA, SOC2, and PCI-DSS requirements. Compliance is automated into the CI/CD process, not manually audited post-deployment." }
+        ]
+    },
     'dynamic-website-development': { slug: 'dynamic-website-development', title: 'Dynamic Website Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'php-website-development': { slug: 'php-website-development', title: 'PHP Website Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'cms-website-development': { slug: 'cms-website-development', title: 'CMS Website Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
