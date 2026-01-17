@@ -1,4 +1,4 @@
-export type ServiceCategory = 'WebsiteDevelopment' | 'Enterprises' | 'Expertise';
+export type ServiceCategory = 'WebsiteDevelopment' | 'AppDevelopment' | 'Enterprises' | 'Expertise';
 
 export interface WebDevService {
     title: string;
@@ -115,7 +115,7 @@ export const WEBSITE_DEV_SOLUTIONS_DATA: Record<string, WebDevService> = {
     },
     'corporate-website-development': {
         slug: 'corporate-website-development',
-        title: 'Corporate Digital Experience Platforms',
+        title: 'Corporate Website Development',
         category: 'WebsiteDevelopment',
         description: 'Build the central nervous system of your digital enterprise with AI-native, cloud-resilient corporate platforms.',
         features: [
@@ -168,4 +168,37 @@ export const WEBSITE_DEV_SOLUTIONS_DATA: Record<string, WebDevService> = {
     'website-re-development': { slug: 'website-re-development', title: 'Website Re-development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'travel-website-development': { slug: 'travel-website-development', title: 'Travel Website Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'react-js-website-development': { slug: 'react-js-website-development', title: 'React Js website Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'angular-website-development': { slug: 'angular-website-development', title: 'Angular Website Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'flutter-web-development': { slug: 'flutter-web-development', title: 'Flutter Web Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'wordpress-development': { slug: 'wordpress-development', title: 'Wordpress Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'food-business-web-development': { slug: 'food-business-web-development', title: 'Food Business Web Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'custom-business-portal-development': { slug: 'custom-business-portal-development', title: 'Custom Business Portal Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'ecommerce-web-development': { slug: 'ecommerce-web-development', title: 'Ecommerce Web development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'landing-page-development': { slug: 'landing-page-development', title: 'Landing Page Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'shopify-website-development': { slug: 'shopify-website-development', title: 'Shopify Website Development', category: 'WebsiteDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+
+    // App Development Solutions
+    'android-app-development': { slug: 'android-app-development', title: 'Android App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'ios-app-development': { slug: 'ios-app-development', title: 'iOS App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'mobile-app-design': { slug: 'mobile-app-design', title: 'Mobile App Design', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'swift-app-development': { slug: 'swift-app-development', title: 'Swift App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'flutter-app-development': { slug: 'flutter-app-development', title: 'Flutter App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'react-native-app-development': { slug: 'react-native-app-development', title: 'React Native App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'gaming-app-development': { slug: 'gaming-app-development', title: 'Gaming App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'xamarin-app-development': { slug: 'xamarin-app-development', title: 'Xamarin App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'ios-sdk-app-development': { slug: 'ios-sdk-app-development', title: 'iOS SDK App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'android-sdk-app-development': { slug: 'android-sdk-app-development', title: 'Android SDK App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'ecommerce-app-development': { slug: 'ecommerce-app-development', title: 'Ecommerce App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'education-app-development': { slug: 'education-app-development', title: 'Education App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'corporate-business-app-development': { slug: 'corporate-business-app-development', title: 'Corporate Business App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'food-delivery-app-development': { slug: 'food-delivery-app-development', title: 'Food Delivery App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'job-portal-app-development': { slug: 'job-portal-app-development', title: 'Job Portal App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'astrology-app-development': { slug: 'astrology-app-development', title: 'Astrology App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'restaurant-app-development': { slug: 'restaurant-app-development', title: 'Restaurant App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'taxi-cab-app-development': { slug: 'taxi-cab-app-development', title: 'Taxi/Cab App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'real-estate-app-development': { slug: 'real-estate-app-development', title: 'Real Estate App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'kotlin-app-development': { slug: 'kotlin-app-development', title: 'Kotlin App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'all-business-app-development': { slug: 'all-business-app-development', title: 'All Business App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'custom-app-development': { slug: 'custom-app-development', title: 'Custom App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'website-to-app-development': { slug: 'website-to-app-development', title: 'Website to App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
 };

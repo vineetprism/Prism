@@ -3,10 +3,9 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import { ConsultancyModal } from '../Modal/ConsultancyModal';
-import { WebDevService } from '../../data/websiteDevSolutions';
 import { Search, Code2, ShieldCheck, Rocket } from 'lucide-react';
 
-export default function PHPWebsiteLayout({ service: _service }: { service: WebDevService }) {
+export default function PHPWebsiteLayout() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
@@ -153,17 +152,17 @@ export default function PHPWebsiteLayout({ service: _service }: { service: WebDe
                             {/* Right - Quote Content */}
                             <div className="lg:col-span-3 relative">
                                 {/* Quote Mark */}
-                                <div className="absolute -top-4 -left-4 text-[120px] text-[#E92228]/10 font-serif leading-none select-none hidden lg:block">"</div>
+                                <div className="absolute -top-4 -left-4 text-[120px] text-[#E92228]/10 font-serif leading-none select-none hidden lg:block">&quot;</div>
 
                                 <div className="relative bg-white p-8 lg:p-10 rounded-2xl shadow-xl border-l-4 border-[#E92228]">
                                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 font-heading mb-6">
                                         Code That <span className="text-[#E92228]">Compounds Value</span>
                                     </h2>
                                     <p className="text-gray-600 text-lg leading-relaxed font-body mb-6">
-                                        In the modern digital ecosystem, technology selection defines competitive trajectory. PHP has evolved into a formidable enterprise platform. At Prism Infoways, we don't just 'write code.'
+                                        In the modern digital ecosystem, technology selection defines competitive trajectory. PHP has evolved into a formidable enterprise platform. At Prism Infoways, we don&apos;t just &apos;write code.&apos;
                                     </p>
                                     <p className="text-gray-600 text-lg leading-relaxed font-body">
-                                        We engineer resilient systems using the <span className="font-semibold text-[#E92228]">'Strangler Fig' pattern</span> to modernize legacy monoliths and Asynchronous architectures to crush latency—delivering a Total Cost of Ownership that fuels reinvestment.
+                                        We engineer resilient systems using the <span className="font-semibold text-[#E92228]">&apos;Strangler Fig&apos; pattern</span> to modernize legacy monoliths and Asynchronous architectures to crush latency—delivering a Total Cost of Ownership that fuels reinvestment.
                                     </p>
                                 </div>
                             </div>
@@ -324,7 +323,7 @@ export default function PHPWebsiteLayout({ service: _service }: { service: WebDe
                                 </div>
 
                                 <p className="text-gray-500 italic mb-8 border-l-2 border-[#E92228] pl-4">
-                                    "Build a robust foundation that investors trust and users love."
+                                    &quot;Build a robust foundation that investors trust and users love.&quot;
                                 </p>
 
                                 <button
@@ -363,7 +362,7 @@ export default function PHPWebsiteLayout({ service: _service }: { service: WebDe
                                 </div>
 
                                 <p className="text-gray-500 italic mb-8 border-l-2 border-gray-400 pl-4">
-                                    "De-risk your digital transformation with zero downtime."
+                                    &quot;De-risk your digital transformation with zero downtime.&quot;
                                 </p>
 
                                 <button
@@ -444,6 +443,7 @@ export default function PHPWebsiteLayout({ service: _service }: { service: WebDe
                                             <div key={i} className="flex items-center gap-3 bg-white p-3 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                                                 <div className="w-8 h-8 flex items-center justify-center shrink-0">
                                                     {item.slug ? (
+                                                        /* eslint-disable-next-line @next/next/no-img-element */
                                                         <img
                                                             src={`https://cdn.simpleicons.org/${item.slug}/E92228`}
                                                             alt={item.name}

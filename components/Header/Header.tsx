@@ -16,7 +16,6 @@ const CONTACT_INFO = {
     whatsapp: '+91-8062177080',
 };
 
-// Website Development Solutions (static data)
 const WEBSITE_DEV_SOLUTIONS = [
     { title: 'Static website development', href: '/service_details/static-website-development' },
     { title: 'Corporate website development', href: '/service_details/corporate-website-development' },
@@ -34,6 +33,47 @@ const WEBSITE_DEV_SOLUTIONS = [
     { title: 'Ecommerce Web development', href: '/service_details/ecommerce-web-development' },
     { title: 'Landing Page Development', href: '/service_details/landing-page-development' },
     { title: 'Shopify Website Development', href: '/service_details/shopify-website-development' },
+];
+
+// App Development Solutions (static data)
+const APP_DEV_SOLUTIONS = [
+    { title: 'Android App Development', href: '/service_details/android-app-development' },
+    { title: 'iOS App Development', href: '/service_details/ios-app-development' },
+    { title: 'Mobile App Design', href: '/service_details/mobile-app-design' },
+    { title: 'Swift App Development', href: '/service_details/swift-app-development' },
+    { title: 'Flutter App Development', href: '/service_details/flutter-app-development' },
+    { title: 'React Native App Development', href: '/service_details/react-native-app-development' },
+    { title: 'Gaming App Development', href: '/service_details/gaming-app-development' },
+    { title: 'Xamarin App Development', href: '/service_details/xamarin-app-development' },
+    { title: 'iOS SDK App Development', href: '/service_details/ios-sdk-app-development' },
+    { title: 'Android SDK App Development', href: '/service_details/android-sdk-app-development' },
+    { title: 'Ecommerce App Development', href: '/service_details/ecommerce-app-development' },
+    { title: 'Education App Development', href: '/service_details/education-app-development' },
+    { title: 'Corporate Business App Development', href: '/service_details/corporate-business-app-development' },
+    { title: 'Food Delivery App Development', href: '/service_details/food-delivery-app-development' },
+    { title: 'Job Portal App Development', href: '/service_details/job-portal-app-development' },
+    { title: 'Astrology App Development', href: '/service_details/astrology-app-development' },
+    { title: 'Restaurant App Development', href: '/service_details/restaurant-app-development' },
+    { title: 'Taxi/Cab App Development', href: '/service_details/taxi-cab-app-development' },
+    { title: 'Real Estate App Development', href: '/service_details/real-estate-app-development' },
+    { title: 'Kotlin App Development', href: '/service_details/kotlin-app-development' },
+    { title: 'All Business App Development', href: '/service_details/all-business-app-development' },
+    { title: 'Custom App Development', href: '/service_details/custom-app-development' },
+    { title: 'Website to App Development', href: '/service_details/website-to-app-development' },
+];
+
+// Our Services (static data - general services)
+const OUR_SERVICES = [
+    { title: 'Mobile App Development', href: '/service_details/mobile-app-development' },
+    { title: 'Cloud Computing', href: '/service_details/cloud-computing-solutions' },
+    { title: 'AI & ML', href: '/service_details/artificial-intelligence-machine-learning-solutions' },
+    { title: 'Digital Marketing', href: '/service_details/digital-marketing' },
+    { title: 'E-commerce Solutions', href: '/service_details/ecommerce-solutions' },
+    { title: 'IT Consulting', href: '/service_details/it-consulting' },
+    { title: 'Cybersecurity', href: '/service_details/cybersecurity-solutions' },
+    { title: 'Blockchain Development', href: '/service_details/blockchain-development' },
+    { title: 'UI/UX Design', href: '/service_details/ui-ux-design' },
+    { title: 'Web Development', href: '/service_details/web-development' },
 ];
 
 const BASE_NAV_ITEMS = [
@@ -295,24 +335,49 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
                             <div
                                 className="bg-white rounded-md shadow-lg ring-1 ring-black/5 overflow-hidden"
                                 style={{
-                                    width: '900px',
+                                    width: '1100px',
                                     maxWidth: '90vw',
                                 }}
                             >
                                 <div className="flex flex-col md:flex-row md:items-stretch">
-                                    {/* Website Development Solutions - Left Column */}
-                                    <div className="w-full md:w-1/3 px-6 py-8">
-                                        <h4 className="text-sm font-bold text-red-600 mb-6 uppercase tracking-wide">Website Development Solutions</h4>
-                                        <ul className="space-y-2">
-                                            {WEBSITE_DEV_SOLUTIONS.slice(0, 8).map((s, i) => (
+                                    {/* Website Development Solutions - Left Column (Scrollable) */}
+                                    <div className="w-full md:w-1/3 px-5 py-5 relative group">
+                                        <h4 className="text-sm font-bold text-red-600 mb-5 uppercase tracking-wide">Website Development Solutions</h4>
+                                        <div className="relative">
+                                            <ul className="space-y-1.5 max-h-[450px] overflow-y-auto custom-scrollbar pr-2 relative z-10 pb-4">
+                                                {WEBSITE_DEV_SOLUTIONS.map((s, i) => (
+                                                    <li key={s.title + i}>
+                                                        <Link
+                                                            href={s.href}
+                                                            onClick={handleClose}
+                                                            aria-label={s.title}
+                                                            className="block px-2 py-1 hover:bg-red-50 hover:text-red-600 transition-colors duration-150 rounded cursor-pointer"
+                                                        >
+                                                            <span className="text-sm font-semibold text-foreground">{s.title}</span>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                            {/* Scroll Indicator Gradient */}
+                                            <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white to-transparent pointer-events-none z-20" />
+                                        </div>
+                                    </div>
+
+                                    <div className="hidden md:block w-px bg-gray-200" />
+
+                                    {/* Our Services - Column 2 */}
+                                    <div className="w-full md:w-1/3 px-5 py-5">
+                                        <h4 className="text-sm font-bold text-red-600 mb-5 uppercase tracking-wide">Our Services</h4>
+                                        <ul className="space-y-1.5">
+                                            {OUR_SERVICES.map((s, i) => (
                                                 <li key={s.title + i}>
                                                     <Link
                                                         href={s.href}
                                                         onClick={handleClose}
                                                         aria-label={s.title}
-                                                        className="block px-3 py-2.5 hover:bg-red-50 hover:text-red-600 transition-colors duration-150 rounded cursor-pointer"
+                                                        className="block px-2 py-1 hover:bg-red-50 hover:text-red-600 transition-colors duration-150 rounded cursor-pointer"
                                                     >
-                                                        <span className="text-base font-semibold text-foreground whitespace-nowrap">{s.title}</span>
+                                                        <span className="text-sm font-semibold text-foreground">{s.title}</span>
                                                     </Link>
                                                 </li>
                                             ))}
@@ -321,44 +386,27 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
 
                                     <div className="hidden md:block w-px bg-gray-200" />
 
-                                    {/* Our Services - Middle Column */}
-                                    <div className="w-full md:w-1/3 px-6 py-8">
-                                        <h4 className="text-sm font-bold text-red-600 mb-6 uppercase tracking-wide">Our Services</h4>
-                                        <ul className="space-y-2">
-                                            {navItems[openIdx].items!.slice(0, 5).map((s, i) => (
-                                                <li key={s.title + i}>
-                                                    <Link
-                                                        href={s.href}
-                                                        onClick={handleClose}
-                                                        aria-label={s.title}
-                                                        className="block px-3 py-2.5 hover:bg-red-50 hover:text-red-600 transition-colors duration-150 rounded cursor-pointer"
-                                                    >
-                                                        <span className="text-base font-semibold text-foreground whitespace-nowrap">{s.title}</span>
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-
-                                    <div className="hidden md:block w-px bg-gray-200" />
-
-                                    {/* Our Services - Right Column */}
-                                    <div className="w-full md:w-1/3 px-6 py-8">
-                                        <h4 className="text-sm font-bold text-red-600 mb-6 uppercase tracking-wide">&nbsp;</h4>
-                                        <ul className="space-y-2">
-                                            {navItems[openIdx].items!.slice(5, 10).map((s, i) => (
-                                                <li key={s.title + i}>
-                                                    <Link
-                                                        href={s.href}
-                                                        onClick={handleClose}
-                                                        aria-label={s.title}
-                                                        className="block px-3 py-2.5 hover:bg-red-50 hover:text-red-600 transition-colors duration-150 rounded cursor-pointer"
-                                                    >
-                                                        <span className="text-base font-semibold text-foreground whitespace-nowrap">{s.title}</span>
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                    {/* App Development Solutions - Right Column (Scrollable) */}
+                                    <div className="w-full md:w-1/3 px-5 py-5 relative group">
+                                        <h4 className="text-sm font-bold text-red-600 mb-5 uppercase tracking-wide">App Development Solutions</h4>
+                                        <div className="relative">
+                                            <ul className="space-y-1.5 max-h-[450px] overflow-y-auto custom-scrollbar pr-2 relative z-10 pb-4">
+                                                {APP_DEV_SOLUTIONS.map((s, i) => (
+                                                    <li key={s.title + i}>
+                                                        <Link
+                                                            href={s.href}
+                                                            onClick={handleClose}
+                                                            aria-label={s.title}
+                                                            className="block px-2 py-1 hover:bg-red-50 hover:text-red-600 transition-colors duration-150 rounded cursor-pointer"
+                                                        >
+                                                            <span className="text-sm font-semibold text-foreground">{s.title}</span>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                            {/* Scroll Indicator Gradient */}
+                                            <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white to-transparent pointer-events-none z-20" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -447,11 +495,31 @@ const MobileNav = React.memo(function MobileNav({
 
                                                 {/* Our Services - Sub section */}
                                                 <p className="text-xs font-bold text-red-600 uppercase tracking-wide mt-2 mb-2 px-2">Our Services</p>
-                                                <ul className="space-y-0.5 sm:space-y-1">
+                                                <ul className="space-y-0.5 sm:space-y-1 mb-4">
                                                     {item.items?.map((subItem) => (
                                                         <li key={subItem.title}>
                                                             <Link
                                                                 href={subItem.href || '#'}
+                                                                onClick={handleNavClick}
+                                                                aria-label={subItem.title}
+                                                                className="block text-sm sm:text-base font-semibold px-2 sm:px-3 py-1.5 sm:py-2 rounded transition-colors duration-150 hover:bg-red-600 hover:text-white cursor-pointer"
+                                                            >
+                                                                {subItem.title}
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+
+                                                {/* Separator Line */}
+                                                <div className="h-px bg-gray-200 my-4" />
+
+                                                {/* App Development Solutions - Sub section */}
+                                                <p className="text-xs font-bold text-red-600 uppercase tracking-wide mt-2 mb-2 px-2">App Development Solutions</p>
+                                                <ul className="space-y-0.5 sm:space-y-1">
+                                                    {APP_DEV_SOLUTIONS.map((subItem) => (
+                                                        <li key={subItem.title}>
+                                                            <Link
+                                                                href={subItem.href}
                                                                 onClick={handleNavClick}
                                                                 aria-label={subItem.title}
                                                                 className="block text-sm sm:text-base font-semibold px-2 sm:px-3 py-1.5 sm:py-2 rounded transition-colors duration-150 hover:bg-red-600 hover:text-white cursor-pointer"

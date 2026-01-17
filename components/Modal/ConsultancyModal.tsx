@@ -98,7 +98,8 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
 
     const API_BASE =
         typeof window !== "undefined" ? process.env.NEXT_PUBLIC_API_BASE ?? "" : "";
-    const endpoint = (API_BASE ? API_BASE.replace(/\/$/, "") : "") + "/api/consultancies";
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const _endpoint = (API_BASE ? API_BASE.replace(/\/$/, "") : "") + "/api/consultancies";
 
     const validate = () => {
         const e: Record<string, string> = {};
@@ -130,7 +131,8 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
 
         setSubmitting(true);
 
-        const payload = {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const _payload = {
             name: formData.fullName.trim(),
             email: formData.email.trim(),
             phone: normalizePhone(formData.phoneNumber.trim()),

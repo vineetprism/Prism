@@ -1,6 +1,4 @@
-import React from 'react';
 import { Metadata } from 'next';
-import { WEBSITE_DEV_SOLUTIONS_DATA } from '@/data/websiteDevSolutions';
 import CorporateDXPLayout from '@/components/WebsiteDevServiceDetail/CorporateDXPLayout';
 
 export const metadata: Metadata = {
@@ -19,11 +17,5 @@ export const metadata: Metadata = {
 };
 
 export default function CorporateWebsiteDevPage() {
-    const service = WEBSITE_DEV_SOLUTIONS_DATA['corporate-website-development'];
-
-    if (!service) {
-        return <div className="p-10 text-center">Service Data Not Found</div>;
-    }
-
-    return <CorporateDXPLayout service={service} />;
+    return <CorporateDXPLayout />;
 }

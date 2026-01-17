@@ -318,9 +318,8 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import { ConsultancyModal } from '../Modal/ConsultancyModal';
-import { WebDevService } from '../../data/websiteDevSolutions';
 
-export default function StaticWebsiteDevelopment({ service: _service }: { service: WebDevService }) {
+export default function StaticWebsiteDevelopment() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const services = [
         {
@@ -779,6 +778,7 @@ export default function StaticWebsiteDevelopment({ service: _service }: { servic
                                             return (
                                                 <div key={idx} className="bg-white aspect-square rounded-xl shadow-sm border border-gray-100 flex flex-col items-center justify-center p-4 hover:border-[#E92228] hover:shadow-lg transition-all duration-300 group cursor-default">
                                                     <div className="w-12 h-12 mb-3 transform group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                                                        {/* eslint-disable-next-line @next/next/no-img-element */}
                                                         <img
                                                             src={logoUrl}
                                                             alt={tech}

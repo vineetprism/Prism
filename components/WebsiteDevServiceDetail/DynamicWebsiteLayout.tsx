@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import { ConsultancyModal } from '../Modal/ConsultancyModal';
-import { WebDevService } from '../../data/websiteDevSolutions';
 import {
     Puzzle,
     RefreshCw,
@@ -19,7 +18,7 @@ import {
     Building2
 } from 'lucide-react';
 
-export default function DynamicWebsiteLayout({ service: _service }: { service: WebDevService }) {
+export default function DynamicWebsiteLayout() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
     const [activeAudience, setActiveAudience] = useState<'startup' | 'enterprise'>('startup');
@@ -205,7 +204,7 @@ export default function DynamicWebsiteLayout({ service: _service }: { service: W
                                 <div className="absolute -left-4 top-0 bottom-0 w-1 bg-[#E92228] rounded-full hidden lg:block"></div>
                                 <p className="text-xl sm:text-2xl lg:text-3xl text-gray-800 leading-relaxed font-body lg:pl-8">
                                     In 2025, a website is not a URLâ€”it is your <span className="font-bold text-gray-900">primary operational layer</span>.
-                                    You don't need a design agency; you need a partner who understands that
+                                    You don&apos;t need a design agency; you need a partner who understands that
                                     <span className="font-bold text-gray-900"> Performance = Revenue</span> and
                                     <span className="font-bold text-gray-900"> Downtime = Liability</span>.
                                 </p>
@@ -422,7 +421,7 @@ export default function DynamicWebsiteLayout({ service: _service }: { service: W
                                     </div>
                                     <h3 className="text-3xl font-bold text-gray-900 font-heading mb-4">Scale & Velocity</h3>
                                     <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                                        You need an MVP that isn't throwaway code. We build scalable foundations (MERN/Laravel) that let you launch fast and handle your first million users.
+                                        You need an MVP that isn&apos;t throwaway code. We build scalable foundations (MERN/Laravel) that let you launch fast and handle your first million users.
                                     </p>
                                     <button
                                         onClick={() => setIsModalOpen(true)}
@@ -441,7 +440,7 @@ export default function DynamicWebsiteLayout({ service: _service }: { service: W
                                     </div>
                                     <h3 className="text-3xl font-bold text-gray-900 font-heading mb-4">Security & Governance</h3>
                                     <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                                        You need compliance, disaster recovery, and integration with legacy mainframes. We deliver ISO-grade security and "Digital Reinvention."
+                                        You need compliance, disaster recovery, and integration with legacy mainframes. We deliver ISO-grade security and &quot;Digital Reinvention.&quot;
                                     </p>
                                     <button
                                         onClick={() => setIsModalOpen(true)}

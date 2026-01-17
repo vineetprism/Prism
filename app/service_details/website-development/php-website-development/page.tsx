@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { WEBSITE_DEV_SOLUTIONS_DATA } from '@/data/websiteDevSolutions';
 import PHPWebsiteLayout from '@/components/WebsiteDevServiceDetail/PHPWebsiteLayout';
 
 export const metadata: Metadata = {
@@ -9,6 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function PHPWebsiteDevPage() {
-    const service = WEBSITE_DEV_SOLUTIONS_DATA['php-website-development'];
-    return <PHPWebsiteLayout service={service} />;
+    return <PHPWebsiteLayout />;
 }

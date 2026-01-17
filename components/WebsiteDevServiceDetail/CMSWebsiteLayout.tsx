@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import { ConsultancyModal } from '../Modal/ConsultancyModal';
-import { WebDevService } from '../../data/websiteDevSolutions';
 import {
     Compass,
     Network,
@@ -22,9 +21,6 @@ import {
     ChevronRight,
     Brain,
     FileText,
-    Database,
-    Cpu,
-    Layers,
     Cloud,
     Palette,
     GitBranch,
@@ -58,7 +54,7 @@ const TechIcon = ({ item }: { item: { name: string, slug: string | null } }) => 
     return <Code2 className="w-5 h-5 text-[#E92228]" />;
 };
 
-export default function CMSWebsiteLayout({ service: _service }: { service: WebDevService }) {
+export default function CMSWebsiteLayout() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
@@ -82,7 +78,7 @@ export default function CMSWebsiteLayout({ service: _service }: { service: WebDe
     return (
         <main className="w-full bg-white">
             {/* 1. HERO SECTION - Dark Theme with Glassmorphism Stats */}
-            <section className="relative w-full min-h-[700px] lg:min-h-[750px] overflow-hidden bg-gradient-to-br from-gray-900 via-[#1a1a2e] to-gray-900">
+            <section className="relative w-full min-h-[700px] lg:min-h-[750px] overflow-hidden bg-gradient-to-br from-[#1F1F1F] via-[#2a2a2a] to-[#1F1F1F]">
                 {/* Animated Grid Pattern */}
                 <div className="absolute inset-0 opacity-[0.08]" style={{
                     backgroundImage: 'linear-gradient(#E92228 1px, transparent 1px), linear-gradient(90deg, #E92228 1px, transparent 1px)',
@@ -91,7 +87,7 @@ export default function CMSWebsiteLayout({ service: _service }: { service: WebDe
 
                 {/* Floating Gradient Orbs */}
                 <div className="absolute top-20 right-[20%] w-[500px] h-[500px] bg-[#E92228]/20 rounded-full blur-[120px] animate-pulse"></div>
-                <div className="absolute bottom-20 left-[10%] w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[100px]"></div>
+                <div className="absolute bottom-20 left-[10%] w-[400px] h-[400px] bg-[#E92228]/10 rounded-full blur-[100px]"></div>
 
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full relative z-10">
                     <div className="flex flex-col lg:flex-row gap-8 pt-16 pb-20 lg:pt-24 lg:pb-28 items-center">
@@ -132,14 +128,14 @@ export default function CMSWebsiteLayout({ service: _service }: { service: WebDe
                                         </div>
                                     </div>
                                     <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl px-5 py-3 flex items-center gap-3">
-                                        <Network className="w-5 h-5 text-purple-400" />
+                                        <Network className="w-5 h-5 text-[#D1D1D1]" />
                                         <div>
                                             <div className="text-xl font-bold text-white font-heading">MACH</div>
                                             <div className="text-gray-400 text-xs">Architecture</div>
                                         </div>
                                     </div>
                                     <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl px-5 py-3 flex items-center gap-3">
-                                        <Server className="w-5 h-5 text-emerald-400" />
+                                        <Server className="w-5 h-5 text-[#E92228]" />
                                         <div>
                                             <div className="text-xl font-bold text-white font-heading">99.9%</div>
                                             <div className="text-gray-400 text-xs">Uptime SLA</div>
@@ -508,13 +504,13 @@ export default function CMSWebsiteLayout({ service: _service }: { service: WebDe
             </section>
 
             {/* FINAL CTA */}
-            <section className="py-20 lg:py-28 bg-gray-900 text-white">
+            <section className="py-20 lg:py-28 bg-[#3a3a3a] text-white">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading mb-6">
                         Ready to Transform Your Digital Experience?
                     </h2>
                     <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-body">
-                        Let's architect a CMS solution that scales with your ambitions.
+                        Let&apos;s architect a CMS solution that scales with your ambitions.
                     </p>
                     <button
                         onClick={() => setIsModalOpen(true)}

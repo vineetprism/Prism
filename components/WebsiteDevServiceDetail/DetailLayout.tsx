@@ -1,15 +1,21 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import Sidebar from './Sidebar';
 import { WebDevService } from '@/data/websiteDevSolutions';
+import AndroidAppLayout from './AndroidAppLayout';
 
 interface DetailLayoutProps {
     service: WebDevService;
 }
 
 export default function DetailLayout({ service }: DetailLayoutProps) {
+    // Route to custom Android layout
+    if (service.slug === 'android-app-development') {
+        return <AndroidAppLayout service={service} />;
+    }
+
     return (
         <main className="w-full bg-white">
             {/* Hero Section with Sidebar */}

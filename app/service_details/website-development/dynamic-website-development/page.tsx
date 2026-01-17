@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { WEBSITE_DEV_SOLUTIONS_DATA } from '@/data/websiteDevSolutions';
 import DynamicWebsiteLayout from '@/components/WebsiteDevServiceDetail/DynamicWebsiteLayout';
 
 export const metadata: Metadata = {
@@ -9,6 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function DynamicWebsiteDevPage() {
-    const service = WEBSITE_DEV_SOLUTIONS_DATA['dynamic-website-development'];
-    return <DynamicWebsiteLayout service={service} />;
+    return <DynamicWebsiteLayout />;
 }

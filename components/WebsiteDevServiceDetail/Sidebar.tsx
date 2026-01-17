@@ -168,6 +168,12 @@ const CATEGORIES: {
             activeColorClass: 'bg-[#bd202e]'
         },
         {
+            id: 'AppDevelopment',
+            label: 'APP DEV',
+            colorClass: 'bg-[#bd202e]',
+            activeColorClass: 'bg-[#9b1b26]'
+        },
+        {
             id: 'Enterprises',
             label: 'ENTERPRISES',
             colorClass: 'bg-[#1F1F1F]',
@@ -203,73 +209,9 @@ export default function Sidebar() {
     const activeCategoryData = CATEGORIES.find(c => c.id === activeCategory);
 
     return (
-        <div className="flex w-full min-h-[420px] shadow-2xl rounded-xl overflow-hidden">
-            {/* Services List Panel (Left Side) */}
-            <div className={cn(
-                "flex-1 transition-all duration-300",
-                activeCategoryData?.colorClass || 'bg-[#E92228]'
-            )}>
-                {/* Header */}
-                <div className="px-6 py-5 border-b border-white/20">
-                    <h3 className="text-lg font-bold text-white uppercase tracking-wider font-heading mb-1">
-                        {activeCategory === 'WebsiteDevelopment' ? 'WEBSITE DEVELOPMENT SOLUTIONS' : activeCategory}
-                    </h3>
-                    <p className="text-xs text-white/80 font-body">
-                        Select a service to explore
-                    </p>
-                </div>
-
-                {/* Services Navigation */}
-                <nav className="px-4 py-4 space-y-2">
-                    {services.map((service) => {
-                        const isActive = currentSlug === service.slug;
-                        return (
-                            <Link
-                                key={service.slug}
-                                href={`/service_details/${service.slug}`}
-                                className={cn(
-                                    "block px-4 py-3.5 text-sm font-semibold transition-all duration-200 rounded-lg group relative",
-                                    isActive
-                                        ? "bg-white text-[#E92228] shadow-lg"
-                                        : "text-white hover:bg-white/10 hover:translate-x-1"
-                                )}
-                            >
-                                <div className="flex items-center justify-between">
-                                    <span className={cn(
-                                        "font-body leading-tight",
-                                        isActive ? "font-bold" : "font-medium"
-                                    )}>
-                                        {service.title}
-                                    </span>
-                                    {isActive && (
-                                        <svg
-                                            className="w-5 h-5 text-[#E92228] animate-pulse"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2.5"
-                                                d="M9 5l7 7-7 7"
-                                            />
-                                        </svg>
-                                    )}
-                                </div>
-
-                                {/* Active indicator line */}
-                                {isActive && (
-                                    <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-[#E92228] rounded-r-full" />
-                                )}
-                            </Link>
-                        );
-                    })}
-                </nav>
-            </div>
-
-            {/* Vertical Category Tabs (Right Side) */}
-            <div className="flex flex-col w-14 sm:w-16">
+        <div className="flex flex-col lg:flex-row w-full shadow-2xl rounded-xl overflow-hidden">
+            {/* Mobile Horizontal Category Tabs (Top) - Only visible on mobile/tablet */}
+            <div className="flex lg:hidden w-full">
                 {CATEGORIES.map((category) => {
                     const isActive = activeCategory === category.id;
                     return (
@@ -277,44 +219,143 @@ export default function Sidebar() {
                             key={category.id}
                             onClick={() => setActiveCategory(category.id)}
                             className={cn(
-                                "flex-1 flex items-center justify-center relative transition-all duration-300 focus:outline-none group",
+                                "flex-1 py-3 px-2 text-center transition-all duration-300 focus:outline-none",
                                 category.colorClass,
                                 isActive
-                                    ? "flex-[1.5] shadow-inner"
-                                    : "flex-1 opacity-90 hover:opacity-100 hover:flex-[1.2]"
+                                    ? "ring-2 ring-inset ring-white/30"
+                                    : "opacity-80 hover:opacity-100"
                             )}
                         >
-                            {/* Vertical Text */}
                             <span className={cn(
-                                "transform -rotate-90 whitespace-nowrap text-[11px] sm:text-xs font-bold tracking-[0.25em] uppercase transition-all duration-300",
-                                isActive
-                                    ? "text-white scale-110"
-                                    : "text-white/70 group-hover:text-white/90"
+                                "text-[10px] xs:text-xs font-bold tracking-wider uppercase whitespace-nowrap",
+                                isActive ? "text-white" : "text-white/70"
                             )}>
                                 {category.label}
                             </span>
-
-                            {/* Active Indicator */}
-                            {isActive && (
-                                <>
-                                    {/* Left arrow pointing into content */}
-                                    <div className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 
-                                        border-t-[10px] border-t-transparent
-                                        border-b-[10px] border-b-transparent
-                                        border-l-[10px] border-l-white/30"
-                                    />
-                                    {/* Subtle glow effect */}
-                                    <div className="absolute inset-0 bg-white/5" />
-                                </>
-                            )}
-
-                            {/* Hover effect */}
-                            {!isActive && (
-                                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-300" />
-                            )}
                         </button>
                     );
                 })}
+            </div>
+
+            {/* Main Content Row */}
+            <div className="flex flex-1">
+                {/* Services List Panel */}
+                <div className={cn(
+                    "flex-1 transition-all duration-300",
+                    activeCategoryData?.colorClass || 'bg-[#E92228]'
+                )}>
+                    {/* Header */}
+                    <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-white/20">
+                        <h3 className="text-sm sm:text-lg font-bold text-white uppercase tracking-wider font-heading mb-1">
+                            {activeCategory === 'WebsiteDevelopment' ? 'WEBSITE DEVELOPMENT' :
+                                activeCategory === 'AppDevelopment' ? 'APP DEVELOPMENT' : activeCategory}
+                        </h3>
+                        <p className="text-[10px] sm:text-xs text-white/80 font-body">
+                            Select a service to explore
+                        </p>
+                    </div>
+
+                    {/* Services Navigation - Scrollable Container */}
+                    <nav className="px-3 sm:px-4 py-3 sm:py-4 space-y-1.5 sm:space-y-2 max-h-[350px] sm:max-h-[450px] lg:max-h-[500px] overflow-y-auto custom-scrollbar">
+                        {services.map((service) => {
+                            const isActive = currentSlug === service.slug;
+                            return (
+                                <Link
+                                    key={service.slug}
+                                    href={activeCategory === 'AppDevelopment'
+                                        ? `/service_details/app-development/${service.slug}`
+                                        : activeCategory === 'WebsiteDevelopment'
+                                            ? `/service_details/website-development/${service.slug}`
+                                            : `/service_details/${service.slug}`}
+                                    className={cn(
+                                        "block px-3 sm:px-4 py-2.5 sm:py-3.5 text-xs sm:text-sm font-semibold transition-all duration-200 rounded-lg group relative",
+                                        isActive
+                                            ? `bg-white ${activeCategory === 'AppDevelopment' ? 'text-[#bd202e]' : 'text-[#E92228]'} shadow-lg`
+                                            : "text-white hover:bg-white/10 hover:translate-x-1"
+                                    )}
+                                >
+                                    <div className="flex items-center justify-between">
+                                        <span className={cn(
+                                            "font-body leading-tight",
+                                            isActive ? "font-bold" : "font-medium"
+                                        )}>
+                                            {service.title}
+                                        </span>
+                                        {isActive && (
+                                            <svg
+                                                className={`w-4 h-4 sm:w-5 sm:h-5 ${activeCategory === 'AppDevelopment' ? 'text-[#bd202e]' : 'text-[#E92228]'} animate-pulse`}
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2.5"
+                                                    d="M9 5l7 7-7 7"
+                                                />
+                                            </svg>
+                                        )}
+                                    </div>
+
+                                    {/* Active indicator line */}
+                                    {isActive && (
+                                        <div className={`absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 sm:h-8 ${activeCategory === 'AppDevelopment' ? 'bg-[#bd202e]' : 'bg-[#E92228]'} rounded-r-full`} />
+                                    )}
+                                </Link>
+                            );
+                        })}
+                    </nav>
+                </div>
+
+                {/* Vertical Category Tabs (Right Side) - Hidden on mobile/tablet, visible on lg+ */}
+                <div className="hidden lg:flex flex-col w-14 xl:w-16">
+                    {CATEGORIES.map((category) => {
+                        const isActive = activeCategory === category.id;
+                        return (
+                            <button
+                                key={category.id}
+                                onClick={() => setActiveCategory(category.id)}
+                                className={cn(
+                                    "flex-1 flex items-center justify-center relative transition-all duration-300 focus:outline-none group",
+                                    category.colorClass,
+                                    isActive
+                                        ? "flex-[1.5] shadow-inner"
+                                        : "flex-1 opacity-90 hover:opacity-100 hover:flex-[1.2]"
+                                )}
+                            >
+                                {/* Vertical Text */}
+                                <span className={cn(
+                                    "transform -rotate-90 whitespace-nowrap text-[11px] lg:text-xs font-bold tracking-[0.25em] uppercase transition-all duration-300",
+                                    isActive
+                                        ? "text-white scale-110"
+                                        : "text-white/70 group-hover:text-white/90"
+                                )}>
+                                    {category.label}
+                                </span>
+
+                                {/* Active Indicator */}
+                                {isActive && (
+                                    <>
+                                        {/* Left arrow pointing into content */}
+                                        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 
+                                            border-t-[10px] border-t-transparent
+                                            border-b-[10px] border-b-transparent
+                                            border-l-[10px] border-l-white/30"
+                                        />
+                                        {/* Subtle glow effect */}
+                                        <div className="absolute inset-0 bg-white/5" />
+                                    </>
+                                )}
+
+                                {/* Hover effect */}
+                                {!isActive && (
+                                    <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-300" />
+                                )}
+                            </button>
+                        );
+                    })}
+                </div>
             </div>
         </div>
     );

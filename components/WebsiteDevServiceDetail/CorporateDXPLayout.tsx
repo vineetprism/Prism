@@ -3,9 +3,8 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import { ConsultancyModal } from '../Modal/ConsultancyModal';
-import { WebDevService } from '../../data/websiteDevSolutions';
 
-export default function CorporateDXPLayout({ service: _service }: { service: WebDevService }) {
+export default function CorporateDXPLayout() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
@@ -72,11 +71,11 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
     ];
 
     return (
-        <main className="w-full bg-[#0a0a0a]">
+        <main className="w-full bg-[#1F1F1F]">
             {/* 1. HERO SECTION - Dark Mode with 3D Abstract Visualization */}
             <section className="relative w-full min-h-[600px] lg:min-h-[700px] overflow-hidden">
                 {/* Background - Dark Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] z-0">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1F1F1F] via-[#2a2a2a] to-[#1F1F1F] z-0">
                     {/* 3D Abstract Visualization - Data Streams */}
                     <div className="absolute inset-0 opacity-60 pointer-events-none overflow-hidden">
                         <svg className="w-full h-full" viewBox="0 0 1440 700" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -236,7 +235,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
             </section>
 
             {/* 2. BUSINESS IMPACT BLOCK - Split Design */}
-            <section className="py-16 sm:py-20 lg:py-24 bg-gray-100">
+            <section className="py-16 sm:py-20 lg:py-24 bg-[#F9F1F0]">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="flex flex-col lg:flex-row rounded-2xl overflow-hidden border border-gray-200">
@@ -244,14 +243,14 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
                             {/* Left Side - Red Quote Block */}
                             <div className="lg:w-[45%] bg-[#E92228] p-10 sm:p-12 lg:p-16 flex flex-col justify-center relative">
                                 {/* Decorative Quote Marks */}
-                                <span className="text-white/30 text-[100px] sm:text-[120px] font-serif absolute top-2 left-4 leading-none select-none">"</span>
+                                <span className="text-white/30 text-[100px] sm:text-[120px] font-serif absolute top-2 left-4 leading-none select-none">&quot;</span>
 
                                 <div className="relative z-10 pt-8">
                                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight font-heading">
                                         The Era of<br />Static Websites<br />is <span className="underline decoration-4 underline-offset-4">Over.</span>
                                     </h2>
 
-                                    <span className="text-white/30 text-[60px] sm:text-[80px] font-serif absolute -bottom-4 right-0 leading-none select-none">"</span>
+                                    <span className="text-white/30 text-[60px] sm:text-[80px] font-serif absolute -bottom-4 right-0 leading-none select-none">&quot;</span>
                                 </div>
 
                                 <p className="text-white/80 text-sm sm:text-base mt-10 font-body italic">
@@ -267,7 +266,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
 
                                 <div className="space-y-4 text-gray-600 leading-relaxed font-body">
                                     <p>
-                                        In 2026, your corporate website is not a marketing asset; it is <span className="font-semibold text-gray-900">operational infrastructure</span>. Legacy systems and monolithic codebases create <span className="font-bold text-[#E92228]">"Innovation Paralysis,"</span> leaving you vulnerable to <span className="font-semibold text-gray-900">$4.88M average breach costs</span> and agile competitors.
+                                        In 2026, your corporate website is not a marketing asset; it is <span className="font-semibold text-gray-900">operational infrastructure</span>. Legacy systems and monolithic codebases create <span className="font-bold text-[#E92228]">&quot;Innovation Paralysis,&quot;</span> leaving you vulnerable to <span className="font-semibold text-gray-900">$4.88M average breach costs</span> and agile competitors.
                                     </p>
                                     <p>
                                         We don&apos;t just write code. We deliver <span className="font-bold text-[#E92228]">Total Application Modernization</span>. By transitioning to composable, AI-integrated architectures, we turn your cost center into a revenue engine, securing your data and future-proofing your brand against the next decade of digital disruption.
@@ -290,7 +289,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
             </section>
 
             {/* 3. SERVICE GRID - 6 Block Grid */}
-            <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
+            <section className="py-16 sm:py-20 lg:py-24 bg-[#F9F1F0]">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="flex items-center mb-12">
@@ -328,7 +327,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
             </section>
 
             {/* 4. KEY BENEFITS - The Hard Stats */}
-            <section id="roi-benchmarks" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] text-white">
+            <section id="roi-benchmarks" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#1F1F1F] via-[#2a2a2a] to-[#1F1F1F] text-white">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
@@ -382,7 +381,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
             </section>
 
             {/* 5. LIFECYCLE FLOW - Vertical Timeline */}
-            <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
+            <section className="py-16 sm:py-20 lg:py-24 bg-[#F9F1F0]">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center justify-center mb-16">
@@ -464,8 +463,8 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
                                     <p className="text-red-400 font-semibold mb-2 text-sm">Pain Point:</p>
                                     <p className="text-gray-300 mb-6 font-body leading-relaxed">Needing to prove value fast without technical debt.</p>
 
-                                    <p className="text-green-400 font-semibold mb-2 text-sm">Our Offer:</p>
-                                    <p className="text-gray-300 mb-8 font-body leading-relaxed">Rapid deployment of "Headless" architectures. Scalable foundations (Node.js/Fastify) that grow with your funding rounds.</p>
+                                    <p className="text-[#E92228] font-semibold mb-2 text-sm">Our Offer:</p>
+                                    <p className="text-gray-300 mb-8 font-body leading-relaxed">Rapid deployment of &quot;Headless&quot; architectures. Scalable foundations (Node.js/Fastify) that grow with your funding rounds.</p>
 
                                     <button
                                         onClick={() => setIsModalOpen(true)}
@@ -481,7 +480,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
 
 
                             {/* Segment B - Global Enterprise */}
-                            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 sm:p-10 border-2 border-gray-100 relative overflow-hidden group hover:border-[#E92228]/30 hover:shadow-2xl transition-all duration-300">
+                            <div className="bg-gradient-to-br from-[#F9F1F0] to-white rounded-2xl p-8 sm:p-10 border-2 border-gray-100 relative overflow-hidden group hover:border-[#E92228]/30 hover:shadow-2xl transition-all duration-300">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#E92228]/10 rounded-full blur-3xl group-hover:w-48 group-hover:h-48 transition-all duration-500"></div>
                                 <div className="relative z-10">
                                     <span className="text-[#E92228] text-sm font-bold uppercase tracking-wider font-heading">Segment B</span>
@@ -489,10 +488,10 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
                                     <p className="text-gray-500 text-sm mb-4 font-heading">Fortune 500 / Multinationals</p>
 
                                     <p className="text-red-600 font-semibold mb-2 text-sm">Pain Point:</p>
-                                    <p className="text-gray-600 mb-6 font-body leading-relaxed">"Legacy Paralysis" and Supply Chain Vulnerability.</p>
+                                    <p className="text-gray-600 mb-6 font-body leading-relaxed">&quot;Legacy Paralysis&quot; and Supply Chain Vulnerability.</p>
 
-                                    <p className="text-green-600 font-semibold mb-2 text-sm">Our Offer:</p>
-                                    <p className="text-gray-600 mb-8 font-body leading-relaxed">Risk-averse modernization. We focus on "Compliance-as-Code," Data Mesh implementation, and preserving institutional knowledge while upgrading the stack.</p>
+                                    <p className="text-[#E92228] font-semibold mb-2 text-sm">Our Offer:</p>
+                                    <p className="text-gray-600 mb-8 font-body leading-relaxed">Risk-averse modernization. We focus on &quot;Compliance-as-Code,&quot; Data Mesh implementation, and preserving institutional knowledge while upgrading the stack.</p>
 
                                     <button
                                         onClick={() => setIsModalOpen(true)}
@@ -511,7 +510,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
             </section>
 
             {/* 7. TECH STACK - Technology Partners Section */}
-            <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
+            <section className="py-16 sm:py-20 lg:py-24 bg-[#F9F1F0]">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
@@ -587,7 +586,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
                                 { name: "PostgreSQL", slug: "postgresql" },
                                 { name: "Datadog", slug: "datadog" },
                                 { name: "NVIDIA", slug: "nvidia" }
-                            ].map((tech: any, idx) => (
+                            ].map((tech: { name: string; url?: string; isSvg?: boolean; icon?: React.ReactNode; slug?: string }, idx) => (
                                 <div
                                     key={idx}
                                     className="relative flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group cursor-default"
@@ -598,6 +597,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
                                                 {tech.icon}
                                             </div>
                                         ) : (
+                                            /* eslint-disable-next-line @next/next/no-img-element */
                                             <img
                                                 src={tech.url || `https://cdn.simpleicons.org/${tech.slug}`}
                                                 alt={tech.name}
@@ -619,7 +619,7 @@ export default function CorporateDXPLayout({ service: _service }: { service: Web
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
+            <section className="py-16 sm:py-20 lg:py-24 bg-[#F9F1F0]">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center justify-center mb-12">

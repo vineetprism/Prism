@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import { ConsultancyModal } from '../Modal/ConsultancyModal';
-import { WebDevService } from '../../data/websiteDevSolutions';
 import {
     Network,
     Unplug,
@@ -12,10 +11,7 @@ import {
     Bot,
     GitBranch,
     ShieldCheck,
-    Zap,
-    Wallet,
-    TrendingUp,
-    Lock,
+
     Search,
     Code2,
     Rocket,
@@ -27,7 +23,7 @@ import {
     Layers,
     Cpu,
     Activity,
-    Timer
+
 } from 'lucide-react';
 
 // Tech icon mapping
@@ -48,7 +44,7 @@ const techIconMap: { [key: string]: React.ReactNode } = {
     "TimescaleDB": <Database className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
 };
 
-export default function RedevelopmentLayout({ service: _service }: { service: WebDevService }) {
+export default function RedevelopmentLayout() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
@@ -119,7 +115,7 @@ export default function RedevelopmentLayout({ service: _service }: { service: We
                                 </div>
 
                                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] font-heading">
-                                    Stop <span className="text-gray-500 line-through">"Redesigning."</span>
+                                    Stop <span className="text-gray-500 line-through">&quot;Redesigning.&quot;</span>
                                     <br />
                                     Start <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] to-[#ff6b6b]">Reinventing.</span>
                                 </h1>
@@ -137,7 +133,7 @@ export default function RedevelopmentLayout({ service: _service }: { service: We
                                         <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                                     </button>
                                     <p className="text-gray-500 text-sm italic">
-                                        Zero-Risk "X-Ray" Analysis of your current codebase.
+                                        Zero-Risk &quot;X-Ray&quot; Analysis of your current codebase.
                                     </p>
                                 </div>
                             </div>
@@ -177,7 +173,7 @@ export default function RedevelopmentLayout({ service: _service }: { service: We
                         {/* Warning Callout */}
                         <div className="bg-[#E92228]/5 border-l-4 border-[#E92228] p-5 rounded-r-xl mb-12 text-left max-w-2xl mx-auto">
                             <p className="text-gray-700 font-medium">
-                                <span className="text-[#E92228] font-bold">⚠️ Technical Debt Warning:</span> Prism Infoways moves you from "Lift and Shift" to <span className="font-semibold">"Migrate to Modernize"</span>—turning your IT department from a cost center into an innovation engine.
+                                <span className="text-[#E92228] font-bold">⚠️ Technical Debt Warning:</span> Prism Infoways moves you from &quot;Lift and Shift&quot; to <span className="font-semibold">&quot;Migrate to Modernize&quot;</span>—turning your IT department from a cost center into an innovation engine.
                             </p>
                         </div>
 
@@ -218,7 +214,7 @@ export default function RedevelopmentLayout({ service: _service }: { service: We
                                         ))}
                                     </div>
                                     <span className="text-[#E92228] text-sm font-bold uppercase tracking-wider">Microservices</span>
-                                    <span className="text-emerald-600 text-xs font-medium mt-1">Scalable & Agile</span>
+                                    <span className="text-[#E92228] text-xs font-medium mt-1">Scalable & Agile</span>
                                 </div>
                             </div>
                             <p className="text-gray-500 text-sm mt-8 italic">Transitioning from rigid monoliths to flexible, decoupled microservices.</p>
@@ -380,7 +376,7 @@ export default function RedevelopmentLayout({ service: _service }: { service: We
                                 </h3>
 
                                 <p className="text-gray-400 mb-6 font-body leading-relaxed">
-                                    You cannot afford downtime. Our <span className="font-semibold text-white">"Strangler Fig"</span> approach ensures <span className="text-[#E92228] font-semibold">zero operational disruption</span> while we pay down your technical debt and modernize your security posture.
+                                    You cannot afford downtime. Our <span className="font-semibold text-white">&quot;Strangler Fig&quot;</span> approach ensures <span className="text-[#E92228] font-semibold">zero operational disruption</span> while we pay down your technical debt and modernize your security posture.
                                 </p>
 
                                 <a href="#enterprise" className="inline-flex items-center text-[#E92228] font-bold hover:underline text-lg">
@@ -475,7 +471,7 @@ export default function RedevelopmentLayout({ service: _service }: { service: We
                         Ready to Reinvent Your Digital Core?
                     </h2>
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-body">
-                        Let's eliminate your technical debt and build a future-proof platform.
+                        Let&apos;s eliminate your technical debt and build a future-proof platform.
                     </p>
                     <button
                         onClick={() => setIsModalOpen(true)}
