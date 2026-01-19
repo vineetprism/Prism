@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { ConsultancyModal } from '../Modal/ConsultancyModal';
-import { WebDevService } from '@/data/websiteDevSolutions';
 
 // Import New Modular Components
 import Hero from '../AndroidApp/Hero';
@@ -15,11 +14,7 @@ import TechStack from '../AndroidApp/TechStack';
 import FAQ from '../AndroidApp/FAQ';
 import CTA from '../AndroidApp/CTA';
 
-interface AndroidAppLayoutProps {
-    service: WebDevService;
-}
-
-export default function AndroidAppLayout(_props: AndroidAppLayoutProps) {
+export default function AndroidAppLayout() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);

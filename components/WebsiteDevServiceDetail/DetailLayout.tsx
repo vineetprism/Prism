@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Sidebar from './Sidebar';
 import { WebDevService } from '@/data/websiteDevSolutions';
 import AndroidAppLayout from './AndroidAppLayout';
+import IOSAppLayout from './iOSAppLayout';
 
 interface DetailLayoutProps {
     service: WebDevService;
@@ -13,7 +14,12 @@ interface DetailLayoutProps {
 export default function DetailLayout({ service }: DetailLayoutProps) {
     // Route to custom Android layout
     if (service.slug === 'android-app-development') {
-        return <AndroidAppLayout service={service} />;
+        return <AndroidAppLayout />;
+    }
+
+    // Route to custom iOS layout
+    if (service.slug === 'ios-app-development') {
+        return <IOSAppLayout />;
     }
 
     return (
