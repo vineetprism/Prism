@@ -7,7 +7,7 @@ import DetailLayout from '@/components/WebsiteDevServiceDetail/DetailLayout';
 // Get all App Development slugs for static generation
 export async function generateStaticParams() {
     // Exclude hardcoded slugs
-    const hardcodedSlugs = ['android-app-development'];
+    const hardcodedSlugs = ['android-app-development', 'mobile-app-design'];
 
     const appDevSlugs = Object.keys(WEBSITE_DEV_SOLUTIONS_DATA).filter(
         slug =>
