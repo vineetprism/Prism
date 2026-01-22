@@ -46,7 +46,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                     </h1>
 
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto font-body">
-                        Don't just patch a dying app. Re-engineer it for the next decade with high-performance .NET 8 architecture.
+                        Don&apos;t just patch a dying app. Re-engineer it for the next decade with high-performance .NET 8 architecture.
                     </p>
                 </div>
 
@@ -110,13 +110,13 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             <div className="space-y-4 my-6">
                                 <div className="flex items-center justify-between text-sm">
                                     <span className="text-gray-400">Performance</span>
-                                    <span className="text-green-400 font-mono">+250%</span>
+                                    <span className="text-white font-mono font-bold">+250%</span>
                                 </div>
                                 <div className="h-1.5 w-full bg-gray-800 rounded-full overflow-hidden">
-                                    <div className="h-full bg-green-500 w-[95%]"></div>
+                                    <div className="h-full bg-[#E92228] w-[95%] shadow-[0_0_10px_rgba(233,34,40,0.5)]"></div>
                                 </div>
-                                <div className="flex items-center gap-2 text-xs text-green-400">
-                                    <CheckCircle2 className="w-3 h-3" />
+                                <div className="flex items-center gap-2 text-xs text-white/80">
+                                    <CheckCircle2 className="w-3 h-3 text-[#E92228]" />
                                     <span>Android 15 / iOS 18 Ready</span>
                                 </div>
                             </div>
@@ -128,11 +128,11 @@ export default function Hero({ onOpenModal }: HeroProps) {
                 <div className="text-center mt-16">
                     <button
                         onClick={onOpenModal}
-                        className="group relative inline-flex items-center justify-center gap-4 bg-white text-[#1F1F1F] font-bold px-10 py-5 rounded-full text-lg hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.2)]"
+                        className="cursor-pointer group relative inline-flex items-center justify-center gap-4 bg-[#E92228] text-white font-bold px-10 py-5 rounded-full text-lg hover:bg-white hover:text-[#E92228] transition-all duration-300 shadow-[0_0_20px_rgba(233,34,40,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]"
                     >
                         Initiate Migration Audit
-                        <div className="w-8 h-8 bg-[#E92228] rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                            <ArrowRight className="w-4 h-4 text-white" />
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-[#E92228] group-hover:text-white transition-colors">
+                            <ArrowRight className="w-4 h-4 text-white group-hover:text-white" />
                         </div>
                     </button>
                     <p className="mt-4 text-sm text-gray-500">

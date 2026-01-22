@@ -1,4 +1,4 @@
-export type ServiceCategory = 'WebsiteDevelopment' | 'AppDevelopment' | 'Enterprises' | 'Expertise';
+export type ServiceCategory = 'WebsiteDevelopment' | 'AppDevelopment' | 'Enterprises' | 'Expertise' | 'Cybersecurity';
 
 export interface WebDevService {
     title: string;
@@ -186,8 +186,67 @@ export const WEBSITE_DEV_SOLUTIONS_DATA: Record<string, WebDevService> = {
     'react-native-app-development': { slug: 'react-native-app-development', title: 'React Native App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'gaming-app-development': { slug: 'gaming-app-development', title: 'Gaming App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'xamarin-app-development': { slug: 'xamarin-app-development', title: 'Xamarin App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
-    'ios-sdk-app-development': { slug: 'ios-sdk-app-development', title: 'iOS SDK App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
-    'android-sdk-app-development': { slug: 'android-sdk-app-development', title: 'Android SDK App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'ios-sdk-app-development': {
+        slug: 'ios-sdk-app-development',
+        title: 'iOS SDK App Development',
+        category: 'AppDevelopment',
+        description: 'Transform Business Logic into Intelligent Digital Assets with enterprise-grade iOS solutions.',
+        features: ['Swift & SwiftUI', 'Legacy Migration', 'Enterprise Security'],
+
+        // Rich Content
+        hero: {
+            title: 'Transform Business Logic into Intelligent Digital Assets.',
+            subtitle: 'Drive 30-40% higher operational efficiency with enterprise-grade iOS solutions designed for scale, security, and zero-friction compliance.',
+            cta: 'Start Your Technical Assessment'
+        },
+        businessImpact: {
+            content: "The iOS ecosystem is no longer just a channel; it is the primary revenue driver, capturing 75% of global consumer app spending. We move beyond simple functional deployment to build \"Intelligent Mobility\" ecosystems—integrating On-Device ML, AR, and Cloud connectivity to future-proof your enterprise against a $626 billion market trajectory."
+        },
+        serviceGrid: [
+            { title: 'Native Engineering', description: 'High-performance development using Swift & SwiftUI. We build responsive, ABI-stable applications that scale from iPhone SE to iPad Pro.' },
+            { title: 'Legacy Rescue & Migration', description: 'Stabilize and modernize aging Objective-C codebases. We eliminate technical debt and migrate to Swift without disrupting operations.' },
+            { title: 'The Compliance Shield', description: 'Guaranteed App Store approval support. We conduct pre-submission audits for Privacy Manifests and HIG standards to prevent rejection.' },
+            { title: 'Performance Tuning', description: 'Eliminate crashes and memory leaks. We utilize XCode Instruments to optimize memory retention and battery consumption for fluid UX.' },
+            { title: 'Next-Gen Integration', description: 'Unlock the power of the device. Implementation of ARKit for immersive experiences and CoreML for secure, on-device intelligence.' },
+            { title: 'Enterprise Security', description: 'Bank-grade protection. We implement SSL Pinning, Keychain storage, and code obfuscation to protect IP and prevent data breaches.' }
+        ],
+        benefitsList: [
+            { title: 'Operational Efficiency', description: 'Custom workflows reduce manual friction, delivering verified 30-40% efficiency gains over generic software.' },
+            { title: 'Maximum Monetization', description: 'Target the premium user base. iOS users drive higher average order values and 5x higher Customer Lifetime Value (CLV).' },
+            { title: 'Rapid Validation', description: 'Leverage our agile frameworks to launch MVPs faster. 91.9% of our rapid-dev projects recover investment within year one.' },
+            { title: 'Risk Mitigation', description: 'From "Unexpected Rejections" to data theft, our rigorous compliance and security protocols de-risk your digital innovation.' }
+        ],
+        lifecycle: [
+            { step: 'Step 1', title: 'Strategic Assessment (The Blueprint)', description: 'Feasibility audits, MVP scoping, and User Persona mapping. We define the "Why" before writing the code.' },
+            { step: 'Step 2', title: 'Agile Transition (The Build)', description: 'Iterative engineering using SwiftUI for rapid UI dev and Combine for robust data handling. Bi-weekly sprints with visible deliverables.' },
+            { step: 'Step 3', title: 'Rigorous Monitoring (The Quality Firewall)', description: 'Automated testing via XCTest, memory profiling to catch leaks, and security audits before the binary ever leaves the building.' },
+            { step: 'Step 4', title: 'Lifecycle Optimization (The Growth)', description: 'App Store Optimization (ASO), seamless iOS version updates, and continuous feature integration to prevent churn.' }
+        ],
+        audience: {
+            startup: {
+                focus: 'Speed & Validation',
+                points: ['You need to hit the market fast. We provide rapid MVP development, cost-efficient resource scaling, and a direct path to monetization.']
+            },
+            enterprise: {
+                focus: 'Scale & Security',
+                points: ['You need to integrate and transform. We provide legacy modernization, strict data governance, and secure integration with backend legacy systems.']
+            }
+        },
+        techStack: {
+            frontend: ['Swift', 'SwiftUI', 'UIKit', 'Combine'],
+            cms: ['CoreML', 'ARKit', 'Xcode', 'TestFlight'],
+            cloud: ['Firebase', 'Jenkins', 'CI/CD'],
+            commerce: ['StoreKit', 'Apple Pay', 'In-App Purchase']
+        },
+        faq: [
+            { question: "My previous app was rejected by the App Store. Can you fix it?", answer: "Yes. We offer a \"Compliance Rescue\" service. We audit your code against Apple's latest guidelines (including Privacy Manifests) to identify the rejection trigger and fix it for resubmission." },
+            { question: "Should we build in SwiftUI or UIKit?", answer: "We recommend SwiftUI for most new \"greenfield\" projects for its speed and code efficiency. However, for complex legacy apps requiring granular control, we maintain deep expertise in UIKit." },
+            { question: "How do you handle data security for enterprise apps?", answer: "We employ a \"Security-First\" architecture. This includes SSL Pinning for network requests, Keychain Services for credential storage, and code obfuscation to prevent reverse engineering." },
+            { question: "Do you support legacy Objective-C apps?", answer: "Absolutely. We are one of the few firms with a dedicated \"Legacy Modernization\" team that can maintain your existing Objective-C app while incrementally migrating it to Swift." },
+            { question: "What happens after the app launches?", answer: "Launch is just the beginning. We offer Lifecycle Management packages to handle iOS updates, bug fixes, and feature additions, ensuring your investment doesn't degrade over time." }
+        ]
+    },
+
     'ecommerce-app-development': { slug: 'ecommerce-app-development', title: 'Ecommerce App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'education-app-development': { slug: 'education-app-development', title: 'Education App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'corporate-business-app-development': { slug: 'corporate-business-app-development', title: 'Corporate Business App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
@@ -201,4 +260,59 @@ export const WEBSITE_DEV_SOLUTIONS_DATA: Record<string, WebDevService> = {
     'all-business-app-development': { slug: 'all-business-app-development', title: 'All Business App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'custom-app-development': { slug: 'custom-app-development', title: 'Custom App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
     'website-to-app-development': { slug: 'website-to-app-development', title: 'Website to App Development', category: 'AppDevelopment', description: '<p>Coming Soon...</p>', features: [] },
+    'android-sdk-app-development': {
+        slug: 'android-sdk-app-development',
+        title: 'Android SDK App Development',
+        category: 'AppDevelopment',
+        description: 'Secure your digital core with enterprise-grade Android SDKs and Kotlin Multiplatform.',
+        features: ['Kotlin Multiplatform', 'SDK Architecture', 'Device Farm Testing'],
+
+        // Rich Content
+        hero: {
+            title: 'Secure Your Digital Core with Enterprise-Grade Android SDKs.',
+            subtitle: 'Move beyond fragmentation. We engineer high-performance, compliant Android architectures that reduce technical debt and maximize ROI using Kotlin Multiplatform.',
+            cta: 'Consult Our Architects'
+        },
+        businessImpact: {
+            content: "In 2025, the mobile endpoint is not just a channel; it is your infrastructure. With the global Cost of Poor Software Quality (CoPQ) reaching $2.41 Trillion, the risk of sub-par engineering is existential. Prism Infoways eliminates this risk by replacing legacy fragility with resilient, defensible Android architectures."
+        },
+        serviceGrid: [
+            { title: 'Kotlin Multiplatform (KMP)', description: 'Reduce dev costs by 60% by sharing business logic across iOS and Android while retaining 100% native UI performance.' },
+            { title: 'SDK Facade Architecture', description: 'Defensive SDK design using Facade Patterns to prevent integration conflicts and ensure seamless client-side adoption.' },
+            { title: 'Compliance & Security', description: 'Automated generation of SBOMs and Privacy Manifests to meet EU Cyber Resilience, GDPR, and HIPAA standards.' },
+            { title: 'Modern UI Engineering', description: "High-fidelity interfaces built with Jetpack Compose for 'Lookahead' animations and fluid, jank-free user experiences." },
+            { title: 'Legacy Modernization', description: 'Strategic migration of monolithic Java codebases to modular Kotlin architectures without disrupting business continuity.' },
+            { title: 'AI-Driven Quality Eng.', description: "'Shift Left' automated testing pipelines that catch defects early, reducing the cost of bugs by 100x." }
+        ],
+        benefitsList: [
+            { title: 'Economic Efficiency', description: 'Leverage KMP to share 99% of business logic, cutting duplicate maintenance costs by half.' },
+            { title: 'Risk Mitigation', description: "Eliminate the 'Process Killing' risks of fragmented device manufacturers through rigorous device farm testing." },
+            { title: 'Data Sovereignty', description: 'Secure your proprietary algorithms with ProGuard/R8 obfuscation and encrypted, token-based authentication.' },
+            { title: 'Market Velocity', description: 'Accelerate integration for your partners with strictly versioned (SemVer), self-documenting SDKs.' }
+        ],
+        techStack: {
+            frontend: ['Kotlin', 'Java 17', 'Jetpack Compose', 'Material Design 3'],
+            cms: ['Kotlin Multiplatform', 'Google Jetpack', 'Dokka'],
+            cloud: ['Jenkins', 'GitLab CI', 'Maven Central', 'Docker'],
+            commerce: ['Retrofit', 'OkHttp', 'Room', 'Coroutines/Flow']
+        },
+        faq: [
+            { question: "Why choose Kotlin Multiplatform (KMP) over Flutter or React Native?", answer: "KMP allows us to share business logic while using 100% native UI (Jetpack Compose). This ensures the app feels native and performant, while still reducing logic code by ~60%." },
+            { question: "How do you handle Android Device Fragmentation?", answer: "We utilize cloud-based device farms to test against the top 100 most common device models. We specifically code defensibly against aggressive battery management used by manufacturers like Xiaomi and OnePlus." },
+            { question: "How do you secure SDKs against reverse engineering?", answer: "We employ rigorous code obfuscation using R8/ProGuard and implement encrypted data storage (Jetpack Security). For regulated industries, we provide full SBOMs and Privacy Manifests." },
+            { question: "What is your approach to SDK Versioning?", answer: "We strictly adhere to Semantic Versioning (Major.Minor.Patch). We use automated CI/CD tools to enforce this, ensuring updates never break client integrations." },
+            { question: "Do you provide SDK documentation?", answer: "Yes. We use 'Docs as Code' (Dokka) to generate up-to-date HTML documentation directly from the source code." }
+        ]
+    },
+
+    // Cybersecurity Solutions
+    'managed-cybersecurity-services': { slug: 'managed-cybersecurity-services', title: 'Managed Cybersecurity Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'cybersecurity-risk-assessment-services': { slug: 'cybersecurity-risk-assessment-services', title: 'Cybersecurity Risk Assessment Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'virtual-ciso-services-solutions': { slug: 'virtual-ciso-services-solutions', title: 'Virtual CISO Services & Solutions', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'multi-factor-authentication-managed-services': { slug: 'multi-factor-authentication-managed-services', title: 'Multi Factor Authentication Managed Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'endpoint-detection-response-services': { slug: 'endpoint-detection-response-services', title: 'Endpoint Detection & Response Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'intrusion-detection-response-services': { slug: 'intrusion-detection-response-services', title: 'Intrusion Detection & Response Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'phishing-prevention-training-services': { slug: 'phishing-prevention-training-services', title: 'Phishing Prevention Training Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'vulnerability-testing-assessment-services': { slug: 'vulnerability-testing-assessment-services', title: 'Vulnerability Testing & Assessment Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'professional-dark-web-monitoring': { slug: 'professional-dark-web-monitoring', title: 'Professional Dark Web Monitoring', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
 };

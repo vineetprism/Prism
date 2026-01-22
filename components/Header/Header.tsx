@@ -76,6 +76,19 @@ const OUR_SERVICES = [
     { title: 'Web Development', href: '/service_details/web-development' },
 ];
 
+// Cybersecurity Solutions (static data)
+const CYBERSECURITY_SOLUTIONS = [
+    { title: 'Managed Cybersecurity Services', href: '/service_details/managed-cybersecurity-services' },
+    { title: 'Cybersecurity Risk Assessment Services', href: '/service_details/cybersecurity-risk-assessment-services' },
+    { title: 'Virtual CISO Services & Solutions', href: '/service_details/virtual-ciso-services-solutions' },
+    { title: 'Multi Factor Authentication Managed Services', href: '/service_details/multi-factor-authentication-managed-services' },
+    { title: 'Endpoint Detection & Response Services', href: '/service_details/endpoint-detection-response-services' },
+    { title: 'Intrusion Detection & Response Services', href: '/service_details/intrusion-detection-response-services' },
+    { title: 'Phishing Prevention Training Services', href: '/service_details/phishing-prevention-training-services' },
+    { title: 'Vulnerability Testing & Assessment Services', href: '/service_details/vulnerability-testing-assessment-services' },
+    { title: 'Professional Dark Web Monitoring', href: '/service_details/professional-dark-web-monitoring' },
+];
+
 const BASE_NAV_ITEMS = [
     { title: 'Home', href: '/' },
     { title: 'About Us', href: '/about' },
@@ -335,13 +348,13 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
                             <div
                                 className="bg-white rounded-md shadow-lg ring-1 ring-black/5 overflow-hidden"
                                 style={{
-                                    width: '1100px',
-                                    maxWidth: '90vw',
+                                    width: '1450px',
+                                    maxWidth: '95vw',
                                 }}
                             >
                                 <div className="flex flex-col md:flex-row md:items-stretch">
-                                    {/* Website Development Solutions - Left Column (Scrollable) */}
-                                    <div className="w-full md:w-1/3 px-5 py-5 relative group">
+                                    {/* Website Development Solutions - Column 1 (Scrollable) */}
+                                    <div className="w-full md:w-1/4 px-4 py-5 relative group">
                                         <h4 className="text-sm font-bold text-red-600 mb-5 uppercase tracking-wide">Website Development Solutions</h4>
                                         <div className="relative">
                                             <ul className="space-y-1.5 max-h-[450px] overflow-y-auto custom-scrollbar pr-2 relative z-10 pb-4">
@@ -366,7 +379,7 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
                                     <div className="hidden md:block w-px bg-gray-200" />
 
                                     {/* Our Services - Column 2 */}
-                                    <div className="w-full md:w-1/3 px-5 py-5">
+                                    <div className="w-full md:w-1/4 px-4 py-5">
                                         <h4 className="text-sm font-bold text-red-600 mb-5 uppercase tracking-wide">Our Services</h4>
                                         <ul className="space-y-1.5">
                                             {OUR_SERVICES.map((s, i) => (
@@ -386,8 +399,8 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
 
                                     <div className="hidden md:block w-px bg-gray-200" />
 
-                                    {/* App Development Solutions - Right Column (Scrollable) */}
-                                    <div className="w-full md:w-1/3 px-5 py-5 relative group">
+                                    {/* App Development Solutions - Column 3 (Scrollable) */}
+                                    <div className="w-full md:w-1/4 px-4 py-5 relative group">
                                         <h4 className="text-sm font-bold text-red-600 mb-5 uppercase tracking-wide">App Development Solutions</h4>
                                         <div className="relative">
                                             <ul className="space-y-1.5 max-h-[450px] overflow-y-auto custom-scrollbar pr-2 relative z-10 pb-4">
@@ -407,6 +420,27 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
                                             {/* Scroll Indicator Gradient */}
                                             <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white to-transparent pointer-events-none z-20" />
                                         </div>
+                                    </div>
+
+                                    <div className="hidden md:block w-px bg-gray-200" />
+
+                                    {/* Cybersecurity Solutions - Column 4 */}
+                                    <div className="w-full md:w-1/4 px-4 py-5">
+                                        <h4 className="text-sm font-bold text-red-600 mb-5 uppercase tracking-wide">Cybersecurity Solutions</h4>
+                                        <ul className="space-y-1.5">
+                                            {CYBERSECURITY_SOLUTIONS.map((s, i) => (
+                                                <li key={s.title + i}>
+                                                    <Link
+                                                        href={s.href}
+                                                        onClick={handleClose}
+                                                        aria-label={s.title}
+                                                        className="block px-2 py-1 hover:bg-red-50 hover:text-red-600 transition-colors duration-150 rounded cursor-pointer"
+                                                    >
+                                                        <span className="text-sm font-semibold text-foreground">{s.title}</span>
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

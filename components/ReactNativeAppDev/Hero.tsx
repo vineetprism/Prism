@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowRight, CheckCircle, ArrowDown, Smartphone, Zap, Code2, Layers, RefreshCw } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ArrowDown, Zap, Layers, RefreshCw } from 'lucide-react';
 
 interface HeroProps {
     onOpenModal: () => void;
@@ -118,7 +118,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             <div className="flex flex-wrap gap-4">
                                 {["JSI & Fabric Architecture", "Enterprise Security"].map((signal, index) => (
                                     <div key={index} className="inline-flex items-center gap-2 text-gray-500 text-sm">
-                                        <CheckCircle className="w-4 h-4 text-[#E92228]" />
+                                        <CheckCircle2 className="w-4 h-4 text-[#E92228]" />
                                         <span className="font-medium">{signal}</span>
                                     </div>
                                 ))}

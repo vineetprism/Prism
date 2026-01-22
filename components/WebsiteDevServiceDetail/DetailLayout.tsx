@@ -6,6 +6,9 @@ import Sidebar from './Sidebar';
 import { WebDevService } from '@/data/websiteDevSolutions';
 import AndroidAppLayout from './AndroidAppLayout';
 import IOSAppLayout from './iOSAppLayout';
+import IOSSdkLayout from './iOSSdkLayout';
+import AndroidSdkLayout from './AndroidSdkLayout';
+import CybersecurityLayout from './CybersecurityLayout';
 
 interface DetailLayoutProps {
     service: WebDevService;
@@ -21,6 +24,22 @@ export default function DetailLayout({ service }: DetailLayoutProps) {
     if (service.slug === 'ios-app-development') {
         return <IOSAppLayout />;
     }
+
+    // Route to custom iOS SDK layout
+    if (service.slug === 'ios-sdk-app-development') {
+        return <IOSSdkLayout />;
+    }
+
+    // Route to custom Android SDK layout
+    if (service.slug === 'android-sdk-app-development') {
+        return <AndroidSdkLayout />;
+    }
+
+    // Route to custom Cybersecurity layout
+    if (service.slug === 'managed-cybersecurity-services') {
+        return <CybersecurityLayout />;
+    }
+
 
     return (
         <main className="w-full bg-white">
