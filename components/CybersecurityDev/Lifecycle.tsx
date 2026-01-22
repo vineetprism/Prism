@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Scan, Settings, Eye, BarChart3, ArrowRight } from 'lucide-react';
+import { Scan, Settings, Eye, BarChart3 } from 'lucide-react';
 
 const steps = [
     {
@@ -34,7 +34,7 @@ const steps = [
     },
 ];
 
-export default function LifecycleDesign2() {
+export default function Lifecycle() {
     return (
         <section className="py-20 lg:py-28 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,18 +63,12 @@ export default function LifecycleDesign2() {
                             const IconComponent = step.icon;
                             return (
                                 <div key={idx} className="flex flex-col items-center flex-1 group">
-                                    {/* Icon Circle */}
                                     <div className="w-24 h-24 bg-gradient-to-br from-[#E92228] to-[#bd202e] rounded-full flex items-center justify-center mb-4 shadow-xl shadow-[#E92228]/30 group-hover:scale-110 transition-transform duration-300 relative">
                                         <IconComponent className="w-10 h-10 text-white" />
                                         <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center border-2 border-[#E92228] text-xs font-bold text-[#E92228] font-heading">
                                             {step.number}
                                         </div>
                                     </div>
-
-                                    {/* Arrow */}
-                                    {idx < steps.length - 1 && (
-                                        <ArrowRight className="absolute top-10 w-8 h-8 text-[#E92228]" style={{ left: `${((idx + 1) * 100) / steps.length}%` }} />
-                                    )}
                                 </div>
                             );
                         })}
@@ -87,7 +81,7 @@ export default function LifecycleDesign2() {
                         const IconComponent = step.icon;
                         return (
                             <div key={idx} className="group">
-                                {/* Mobile Icon (visible on mobile only) */}
+                                {/* Mobile Icon */}
                                 <div className="lg:hidden w-16 h-16 bg-gradient-to-br from-[#E92228] to-[#bd202e] rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-[#E92228]/30 relative">
                                     <IconComponent className="w-8 h-8 text-white" />
                                     <div className="absolute -top-2 -right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center border-2 border-[#E92228] text-xs font-bold text-[#E92228] font-heading">

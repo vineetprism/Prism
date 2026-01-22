@@ -76,7 +76,6 @@ export default function Benefits() {
                                             <p className="text-gray-600 leading-relaxed font-body text-sm">
                                                 {benefit.description}
                                             </p>
-                                            {/* Underline Accent */}
                                             <div className="w-12 h-0.5 bg-[#E92228] mt-4 group-hover:w-24 transition-all duration-300" />
                                         </div>
                                     </div>
@@ -85,15 +84,12 @@ export default function Benefits() {
                         </div>
                     </div>
 
-                    {/* Right Column - Dynamic Stats Display */}
+                    {/* Right Column - Stats Display */}
                     <div className="relative">
-                        {/* Background Decorative Elements */}
                         <div className="absolute -top-20 -right-20 w-80 h-80 bg-[#E92228]/5 rounded-full blur-3xl" />
                         <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-blue-500/5 rounded-full blur-2xl" />
 
-                        {/* Stats Container */}
                         <div className="relative bg-white rounded-3xl border-2 border-gray-200 p-8 lg:p-12">
-                            {/* Header */}
                             <div className="text-center mb-10">
                                 <h3 className="text-2xl font-bold text-gray-900 font-heading mb-2">
                                     Security by the Numbers
@@ -101,9 +97,7 @@ export default function Benefits() {
                                 <p className="text-gray-500 text-sm">Real results from our MDR service</p>
                             </div>
 
-                            {/* Stats Grid */}
                             <div className="grid grid-cols-2 gap-6">
-                                {/* Stat 1 */}
                                 <div className="text-center p-6 bg-gradient-to-br from-[#E92228]/5 to-transparent rounded-2xl">
                                     <p className="text-4xl lg:text-5xl font-bold text-[#E92228] font-heading mb-2">
                                         &lt;1
@@ -111,7 +105,6 @@ export default function Benefits() {
                                     <p className="text-gray-600 text-sm font-medium">Minute Detection</p>
                                 </div>
 
-                                {/* Stat 2 */}
                                 <div className="text-center p-6 bg-gradient-to-br from-slate-100 to-transparent rounded-2xl">
                                     <p className="text-4xl lg:text-5xl font-bold text-gray-900 font-heading mb-2">
                                         10
@@ -119,7 +112,6 @@ export default function Benefits() {
                                     <p className="text-gray-600 text-sm font-medium">Min Investigation</p>
                                 </div>
 
-                                {/* Stat 3 */}
                                 <div className="text-center p-6 bg-gradient-to-br from-slate-100 to-transparent rounded-2xl">
                                     <p className="text-4xl lg:text-5xl font-bold text-gray-900 font-heading mb-2">
                                         60
@@ -127,7 +119,6 @@ export default function Benefits() {
                                     <p className="text-gray-600 text-sm font-medium">Min Remediation</p>
                                 </div>
 
-                                {/* Stat 4 */}
                                 <div className="text-center p-6 bg-gradient-to-br from-[#E92228]/5 to-transparent rounded-2xl">
                                     <p className="text-4xl lg:text-5xl font-bold text-[#E92228] font-heading mb-2">
                                         403%
@@ -136,7 +127,6 @@ export default function Benefits() {
                                 </div>
                             </div>
 
-                            {/* Bottom Badge */}
                             <div className="mt-8 p-4 bg-slate-900 rounded-xl text-center">
                                 <p className="text-white font-bold text-sm">
                                     The <span className="text-[#E92228]">1-10-60</span> Rule in Action

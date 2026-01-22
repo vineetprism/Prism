@@ -12,19 +12,17 @@ export default function Audience({ onOpenModal }: AudienceProps) {
         <section className="py-20 lg:py-28 bg-gradient-to-br from-gray-50 to-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto">
-                    {/* Header */}
                     <div className="text-center mb-16">
-                        <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">
-                            Tailored Solutions
+                        <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block font-mono">
+                            Who We Serve
                         </span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading mb-4">
-                            Security That Fits Your Stage
+                            Tailored Security Solutions
                         </h2>
                     </div>
 
-                    {/* Two Column Cards */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        {/* Growth & Mid-Market */}
+                        {/* Startups */}
                         <div className="group relative bg-white rounded-3xl p-8 lg:p-10 border-2 border-gray-100 hover:border-[#E92228]/30 transition-all duration-300 hover:shadow-2xl overflow-hidden">
                             <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-[#E92228]/10 to-transparent rounded-tr-3xl"></div>
                             
@@ -33,29 +31,25 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                                     <Rocket className="w-8 h-8 text-white" />
                                 </div>
 
-                                <span className="inline-block bg-[#E92228]/10 text-[#E92228] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
-                                    For Growth & Mid-Market
+                                <span className="inline-block bg-[#E92228]/10 text-[#E92228] text-xs font-bold px-3 py-1 rounded-full font-mono uppercase tracking-wider mb-4">
+                                    For Startups & SaaS Builders
                                 </span>
 
                                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 font-heading mb-4 group-hover:text-[#E92228] transition-colors duration-300">
-                                    The &quot;Virtual SOC&quot;
+                                    Scale Without Technical Debt.
                                 </h3>
 
-                                <p className="text-[#E92228] font-semibold text-sm mb-3">
-                                    Pain Point: &quot;I have limited IT staff and can&apos;t afford a full security team.&quot;
-                                </p>
-
                                 <p className="text-gray-600 leading-relaxed font-body mb-6">
-                                    A turnkey security department. We handle the hygiene, patching, and 24/7 eyes-on-glass so you can focus on scaling the business.
+                                    You need speed. Our automated DAST/SAST integration and API pentesting ensure your product is secure before the next funding round.
                                 </p>
 
                                 <button onClick={onOpenModal} className="inline-flex items-center gap-2 text-[#E92228] font-bold hover:gap-3 transition-all cursor-pointer">
-                                    Learn More <ChevronRight className="w-4 h-4" />
+                                    Start Your Security Journey <ChevronRight className="w-4 h-4" />
                                 </button>
                             </div>
                         </div>
 
-                        {/* Enterprise & Regulated */}
+                        {/* Enterprise */}
                         <div className="group relative bg-gradient-to-br from-[#1F1F1F] to-[#2a2a2a] rounded-3xl p-8 lg:p-10 border-2 border-gray-800 hover:border-[#E92228]/50 transition-all duration-300 hover:shadow-2xl overflow-hidden">
                             <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-[#E92228]/20 to-transparent rounded-tr-3xl"></div>
                             
@@ -64,24 +58,20 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                                     <Building2 className="w-8 h-8 text-white" />
                                 </div>
 
-                                <span className="inline-block bg-[#E92228]/20 text-[#E92228] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
-                                    For Enterprise & Regulated
+                                <span className="inline-block bg-[#E92228]/20 text-[#E92228] text-xs font-bold px-3 py-1 rounded-full font-mono uppercase tracking-wider mb-4">
+                                    For Enterprise & Critical Infra
                                 </span>
 
                                 <h3 className="text-2xl lg:text-3xl font-bold text-white font-heading mb-4 group-hover:text-[#E92228] transition-colors duration-300">
-                                    The &quot;Co-Managed Augmentation&quot;
+                                    Governance & Continuity.
                                 </h3>
 
-                                <p className="text-[#E92228] font-semibold text-sm mb-3">
-                                    Pain Point: &quot;I have a team, but they are drowning in alerts and compliance audits.&quot;
-                                </p>
-
                                 <p className="text-gray-400 leading-relaxed font-body mb-6">
-                                    We act as the force multiplier. We handle Tier 1/2 triage and overnight monitoring, freeing your senior engineers for strategic architecture.
+                                    You need visibility. We offer &quot;Security-as-a-Service&quot; and Third-Party Risk Management (TPRM) to secure complex hybrid environments.
                                 </p>
 
                                 <button onClick={onOpenModal} className="inline-flex items-center gap-2 text-[#E92228] font-bold hover:gap-3 transition-all cursor-pointer">
-                                    Learn More <ChevronRight className="w-4 h-4" />
+                                    Request Enterprise Consultation <ChevronRight className="w-4 h-4" />
                                 </button>
                             </div>
                         </div>

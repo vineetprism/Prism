@@ -70,7 +70,7 @@ export default function ServiceGrid() {
                                     key={idx}
                                     className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border-t-4 border-[#E92228] overflow-hidden"
                                 >
-                                    {/* Icon - Red Background */}
+                                    {/* Icon */}
                                     <div className="w-14 h-14 bg-[#E92228] rounded-xl flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
                                         <IconComponent className="w-7 h-7 text-white" />
                                     </div>
@@ -83,7 +83,7 @@ export default function ServiceGrid() {
                                         {service.description}
                                     </p>
 
-                                    {/* Bottom Line Hover Animation */}
+                                    {/* Bottom Line Animation */}
                                     <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#E92228] to-[#ff6b6b] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                                 </div>
                             );

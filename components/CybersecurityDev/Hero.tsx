@@ -17,19 +17,10 @@ export default function Hero({ onOpenModal }: HeroProps) {
 
                 {/* Aurora Mesh Gradients */}
                 <div className="absolute top-0 left-0 w-full h-full">
-                    {/* Large Red Glow - Top Right */}
                     <div className="absolute -top-20 right-0 w-[900px] h-[900px] bg-gradient-to-bl from-[#E92228]/20 via-[#E92228]/10 to-transparent rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '4s' }} />
-
-                    {/* Pink/Magenta Accent - Center */}
                     <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] bg-gradient-to-tr from-pink-200/40 via-rose-100/30 to-transparent rounded-full blur-[80px]" />
-
-                    {/* Blue Accent - Bottom Left */}
                     <div className="absolute bottom-0 -left-20 w-[700px] h-[700px] bg-gradient-to-tr from-blue-200/30 via-indigo-100/20 to-transparent rounded-full blur-[100px]" />
-
-                    {/* Orange/Warm Accent - Right Side */}
                     <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-gradient-to-l from-orange-100/30 via-amber-50/20 to-transparent rounded-full blur-[80px]" />
-
-                    {/* Purple Accent - Top Left */}
                     <div className="absolute -top-40 left-1/3 w-[400px] h-[400px] bg-gradient-to-br from-violet-200/20 to-transparent rounded-full blur-[60px]" />
                 </div>
 
@@ -70,7 +61,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                     ))}
                 </div>
 
-                {/* Glowing Lines - Decorative */}
+                {/* Glowing Lines */}
                 <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#E92228]/20 to-transparent" />
                 <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-300/30 to-transparent" />
             </div>
@@ -144,7 +135,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             </div>
                         </div>
 
-                        {/* Right Column - Premium 3D Network Visualization */}
+                        {/* Right Column - 3D Network Visualization */}
                         <div className="relative flex items-center justify-center lg:justify-end">
                             <div className="relative w-[340px] h-[340px] sm:w-[420px] sm:h-[420px] lg:w-[520px] lg:h-[520px]">
 
@@ -182,28 +173,22 @@ export default function Hero({ onOpenModal }: HeroProps) {
                                 {/* Inner Ring */}
                                 <div className="absolute inset-20 sm:inset-24 lg:inset-28 rounded-full bg-gradient-to-br from-[#E92228]/5 to-transparent border border-[#E92228]/20" />
 
-                                {/* Central Shield - Premium Glass Card */}
+                                {/* Central Shield */}
                                 <div className="absolute inset-24 sm:inset-32 lg:inset-36 rounded-3xl overflow-hidden">
-                                    {/* Glass Background */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-red-50 backdrop-blur-xl" />
                                     <div className="absolute inset-0 bg-white/80" />
-
-                                    {/* Inner Shadow */}
                                     <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(233,34,40,0.1)]" />
 
-                                    {/* Shield Content */}
                                     <div className="relative w-full h-full flex items-center justify-center">
                                         <div className="relative">
                                             <Shield className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-[#E92228] drop-shadow-lg" strokeWidth={1.5} />
                                             <Lock className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-slate-800" strokeWidth={2} />
-
-                                            {/* Pulse Ring */}
                                             <div className="absolute inset-0 rounded-full animate-ping opacity-20 bg-[#E92228]" style={{ animationDuration: '2s' }} />
                                         </div>
                                     </div>
                                 </div>
 
-                                {/* Floating Info Cards with Glass Effect */}
+                                {/* Floating Info Cards */}
                                 <div className="absolute -top-2 right-4 sm:right-8 lg:right-4 bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl border border-slate-100/80 px-4 py-3 flex items-center gap-3 animate-float-slow">
                                     <div className="w-11 h-11 bg-gradient-to-br from-green-500 to-emerald-400 rounded-xl flex items-center justify-center shadow-lg shadow-green-500/30">
                                         <Activity className="w-5 h-5 text-white" />
@@ -234,7 +219,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                                     </div>
                                 </div>
 
-                                {/* Connection Lines (SVG) */}
+                                {/* Connection Lines SVG */}
                                 <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 520 520">
                                     <defs>
                                         <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -242,7 +227,6 @@ export default function Hero({ onOpenModal }: HeroProps) {
                                             <stop offset="100%" stopColor="#E92228" stopOpacity="0" />
                                         </linearGradient>
                                     </defs>
-                                    {/* Animated connecting lines */}
                                     <line x1="260" y1="180" x2="400" y2="80" stroke="url(#line-gradient)" strokeWidth="1" strokeDasharray="4 4" className="animate-dash" />
                                     <line x1="260" y1="340" x2="120" y2="440" stroke="url(#line-gradient)" strokeWidth="1" strokeDasharray="4 4" className="animate-dash" />
                                     <line x1="340" y1="260" x2="480" y2="260" stroke="url(#line-gradient)" strokeWidth="1" strokeDasharray="4 4" className="animate-dash" />
@@ -267,22 +251,10 @@ export default function Hero({ onOpenModal }: HeroProps) {
                     50% { transform: translateY(-12px); }
                 }
                 @keyframes float-particle {
-                    0%, 100% { 
-                        transform: translateY(0) translateX(0) scale(1); 
-                        opacity: 0.6;
-                    }
-                    25% { 
-                        transform: translateY(-20px) translateX(10px) scale(1.1); 
-                        opacity: 0.8;
-                    }
-                    50% { 
-                        transform: translateY(-10px) translateX(-5px) scale(0.9); 
-                        opacity: 0.5;
-                    }
-                    75% { 
-                        transform: translateY(-25px) translateX(5px) scale(1.05); 
-                        opacity: 0.7;
-                    }
+                    0%, 100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.6; }
+                    25% { transform: translateY(-20px) translateX(10px) scale(1.1); opacity: 0.8; }
+                    50% { transform: translateY(-10px) translateX(-5px) scale(0.9); opacity: 0.5; }
+                    75% { transform: translateY(-25px) translateX(5px) scale(1.05); opacity: 0.7; }
                 }
                 @keyframes dash {
                     to { stroke-dashoffset: -20; }
@@ -291,18 +263,10 @@ export default function Hero({ onOpenModal }: HeroProps) {
                     0%, 100% { background-size: 200% 200%; background-position: left center; }
                     50% { background-size: 200% 200%; background-position: right center; }
                 }
-                .animate-float-slow {
-                    animation: float-slow 4s ease-in-out infinite;
-                }
-                .animate-float-particle {
-                    animation: float-particle 10s ease-in-out infinite;
-                }
-                .animate-dash {
-                    animation: dash 2s linear infinite;
-                }
-                .animate-gradient-x {
-                    animation: gradient-x 3s ease infinite;
-                }
+                .animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
+                .animate-float-particle { animation: float-particle 10s ease-in-out infinite; }
+                .animate-dash { animation: dash 2s linear infinite; }
+                .animate-gradient-x { animation: gradient-x 3s ease infinite; }
             `}</style>
         </section>
     );
