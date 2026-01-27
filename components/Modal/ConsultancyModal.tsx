@@ -10,18 +10,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
 interface ConsultancyModalProps {
     open: boolean;
     onOpenChange: (open: boolean) => void;
+    serviceTitle: string;
 }
 
 function isValidEmail(email: string) {
@@ -47,11 +41,15 @@ function isValidPhoneInput(raw: string) {
 
 function normalizePhone(raw: string) {
     const digits = raw.replace(/\D/g, "");
-    if (digits.startsWith("0") && digits.length === 11) return digits;
+    // If it starts with 0 and has 11 digits, strip the leading 0 (backend strict max:10)
+    if (digits.startsWith("0") && digits.length === 11) return digits.substring(1);
+    // If it's longer than 10 digits, we might want to trim it, or let validation fail.
+    // For now, let's just return digits. The backend validation max:10 will catch >10.
+    // User asked to follow backend rules.
     return digits;
 }
 
-export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) {
+export function ConsultancyModal({ open, onOpenChange, serviceTitle }: ConsultancyModalProps) {
     const [formData, setFormData] = React.useState({
         fullName: "",
         email: "",
@@ -96,10 +94,8 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
         };
     }, []);
 
-    const API_BASE =
-        typeof window !== "undefined" ? process.env.NEXT_PUBLIC_API_BASE ?? "" : "";
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const _endpoint = (API_BASE ? API_BASE.replace(/\/$/, "") : "") + "/api/consultancies";
+    const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "https://admin.prisminfoways.com";
+    const endpoint = `${API_BASE}/api/service-inquiry`;
 
     const validate = () => {
         const e: Record<string, string> = {};
@@ -112,8 +108,7 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
         else if (!isValidPhoneInput(formData.phoneNumber))
             e.phoneNumber = "Invalid phone number";
 
-        if (!formData.occupation) e.occupation = "Occupation is required";
-        if (!formData.interestedIn) e.interestedIn = "Select a service";
+        if (!formData.interestedIn) e.interestedIn = "Organisation Name is required";
         if (!formData.message.trim()) e.message = "Message is required";
         return e;
     };
@@ -131,22 +126,39 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
 
         setSubmitting(true);
 
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const _payload = {
-            name: formData.fullName.trim(),
-            email: formData.email.trim(),
+        const payload = {
+            full_name: formData.fullName.trim(),
+            business_email: formData.email.trim(),
             phone: normalizePhone(formData.phoneNumber.trim()),
-            occupation: formData.occupation,
-            interested: formData.interestedIn,
+            designation: formData.occupation.trim(),
+            organization_name: formData.interestedIn.trim(),
+            service_title: serviceTitle,
             message: formData.message.trim(),
         };
 
         try {
-            // Simulation of API call if endpoint is not real
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            // In real scenario: const res = await fetch(endpoint, ...);
+            const res = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(payload),
+            });
 
-            setSuccessMsg("Message sent successfully!");
+            if (!res.ok) {
+                const errData = await res.json();
+                let errorMsg = errData.message || "Submission failed";
+
+                if (errData.errors) {
+                    const detailedErrors = Object.values(errData.errors).flat().join(", ");
+                    errorMsg = detailedErrors || errorMsg;
+                }
+
+                throw new Error(errorMsg);
+            }
+
+            setSuccessMsg("Inquiry sent successfully!");
 
             setFormData({
                 fullName: "",
@@ -162,8 +174,10 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
                 onOpenChange(false);
                 setSuccessMsg(null);
             }, 2000);
-        } catch {
-            setErrors({ __global: "Network error. Try again." });
+        } catch (error: unknown) {
+            console.error(error);
+            const msg = error instanceof Error ? error.message : "Network error. Try again.";
+            setErrors({ __global: msg });
         } finally {
             setSubmitting(false);
         }
@@ -181,27 +195,25 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="max-w-[95vw] sm:max-w-[700px] max-h-[90vh] overflow-y-auto p-4 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl bg-white shadow-2xl border-none mx-2 sm:mx-auto">
-                <DialogHeader className="mb-6 text-left">
-                    <DialogTitle className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading mb-2">
-                        Send Us A Message
+            <DialogContent className="max-w-[95vw] sm:max-w-[640px] max-h-[90vh] overflow-y-auto p-0 rounded-lg">
+                <DialogHeader className="border-b px-4 py-3 sm:px-6 sm:py-4">
+                    <DialogTitle className="text-2xl font-normal text-red-600">
+                        Consultancy
                     </DialogTitle>
-                    <p className="text-gray-600 text-lg font-body">
-                        Give us a chance to serve and bring magic to your brand.
-                    </p>
                 </DialogHeader>
 
-                <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-                    {errors.__global && (
+                <form onSubmit={handleSubmit} className="px-6 py-6 space-y-6" noValidate>
+                    {errors.__global ? (
                         <div className="text-sm text-red-700 bg-red-50 p-3 rounded">{errors.__global}</div>
-                    )}
-                    {successMsg && (
-                        <div className="text-sm text-green-800 bg-green-50 p-3 rounded">{successMsg}</div>
-                    )}
+                    ) : null}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {successMsg ? (
+                        <div className="text-sm text-green-800 bg-green-50 p-3 rounded">{successMsg}</div>
+                    ) : null}
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 hidden-scrollbar">
                         <div className="space-y-2">
-                            <Label htmlFor="fullName" className="text-gray-900 font-bold text-base">
+                            <Label htmlFor="fullName" className="text-gray-700 font-medium">
                                 Full Name<span className="text-red-600">*</span>
                             </Label>
                             <Input
@@ -210,91 +222,97 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
                                 placeholder="Enter Your Name"
                                 value={formData.fullName}
                                 onChange={handleInputChange}
-                                className={`h-12 border-gray-200 rounded-lg focus:ring-red-500 focus:border-red-500 ${errors.fullName ? "border-red-500" : ""}`}
+                                aria-invalid={!!errors.fullName}
+                                required
+                                className="w-full border-gray-300"
                             />
-                            {errors.fullName && <p className="text-xs text-red-600">{errors.fullName}</p>}
+                            {errors.fullName ? (
+                                <p className="text-xs text-red-600 mt-1">{errors.fullName}</p>
+                            ) : null}
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="email" className="text-gray-900 font-bold text-base">
-                                Your Email Address<span className="text-red-600">*</span>
+                            <Label htmlFor="email" className="text-gray-700 font-medium">
+                                Business Email<span className="text-red-600">*</span>
                             </Label>
                             <Input
                                 id="email"
                                 name="email"
                                 type="email"
-                                placeholder="prisminfoways@example.com"
+                                placeholder="Enter Your Business Email"
                                 value={formData.email}
                                 onChange={handleInputChange}
-                                className={`h-12 border-gray-200 rounded-lg focus:ring-red-500 focus:border-red-500 ${errors.email ? "border-red-500" : ""}`}
+                                aria-invalid={!!errors.email}
+                                required
+                                className="w-full border-gray-300"
                             />
-                            {errors.email && <p className="text-xs text-red-600">{errors.email}</p>}
+                            {errors.email ? (
+                                <p className="text-xs text-red-600 mt-1">{errors.email}</p>
+                            ) : null}
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                            <Label htmlFor="phoneNumber" className="text-gray-900 font-bold text-base">
-                                Your Phone<span className="text-red-600">*</span>
+                            <Label htmlFor="phoneNumber" className="text-gray-700 font-medium">
+                                Phone Number<span className="text-red-600">*</span>
                             </Label>
                             <Input
                                 id="phoneNumber"
                                 name="phoneNumber"
                                 type="tel"
-                                placeholder="9876543210"
+                                placeholder="Enter Your Phone Number"
                                 value={formData.phoneNumber}
                                 onChange={handleInputChange}
-                                className={`h-12 border-gray-200 rounded-lg focus:ring-red-500 focus:border-red-500 ${errors.phoneNumber ? "border-red-500" : ""}`}
+                                aria-invalid={!!errors.phoneNumber}
+                                required
+                                className="w-full border-gray-300"
                             />
-                            {errors.phoneNumber && <p className="text-xs text-red-600">{errors.phoneNumber}</p>}
+                            {errors.phoneNumber ? (
+                                <p className="text-xs text-red-600 mt-1">{errors.phoneNumber}</p>
+                            ) : null}
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="occupation" className="text-gray-900 font-bold text-base">
-                                Occupation<span className="text-red-600">*</span>
+                            <Label htmlFor="occupation" className="text-gray-700 font-medium">
+                                Designation
                             </Label>
-                            <Select
+                            <Input
+                                id="occupation"
+                                name="occupation"
+                                placeholder="Enter Your Designation"
                                 value={formData.occupation}
-                                onValueChange={(val) => setFormData(prev => ({ ...prev, occupation: val }))}
-                            >
-                                <SelectTrigger className={`h-12 border-gray-200 rounded-lg focus:ring-red-500 focus:border-red-500 ${errors.occupation ? "border-red-500" : ""}`}>
-                                    <SelectValue placeholder="Select Occupation" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectItem value="student">Student</SelectItem>
-                                    <SelectItem value="professional">Professional</SelectItem>
-                                    <SelectItem value="business_owner">Business Owner</SelectItem>
-                                    <SelectItem value="other">Other</SelectItem>
-                                </SelectContent>
-                            </Select>
-                            {errors.occupation && <p className="text-xs text-red-600">{errors.occupation}</p>}
+                                onChange={handleInputChange}
+                                aria-invalid={!!errors.occupation}
+                                className="w-full border-gray-300"
+                            />
+                            {errors.occupation ? (
+                                <p className="text-xs text-red-600 mt-1">{errors.occupation}</p>
+                            ) : null}
                         </div>
                     </div>
 
                     <div className="space-y-2">
-                        <Label htmlFor="interestedIn" className="text-gray-900 font-bold text-base">
-                            Interested In<span className="text-red-600">*</span>
+                        <Label htmlFor="interestedIn" className="text-gray-700 font-medium">
+                            Organisation Name<span className="text-red-600">*</span>
                         </Label>
-                        <Select
+                        <Input
+                            id="interestedIn"
+                            name="interestedIn"
+                            placeholder="Enter Your Organisation Name"
                             value={formData.interestedIn}
-                            onValueChange={(val) => setFormData(prev => ({ ...prev, interestedIn: val }))}
-                        >
-                            <SelectTrigger className={`h-12 border-gray-200 rounded-lg focus:ring-red-500 focus:border-red-500 ${errors.interestedIn ? "border-red-500" : ""}`}>
-                                <SelectValue placeholder="Select Interest" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="web_development">Web Development</SelectItem>
-                                <SelectItem value="mobile_app">Mobile App</SelectItem>
-                                <SelectItem value="consulting">Consulting</SelectItem>
-                                <SelectItem value="ui_ux">UI/UX Design</SelectItem>
-                                <SelectItem value="other">Other</SelectItem>
-                            </SelectContent>
-                        </Select>
-                        {errors.interestedIn && <p className="text-xs text-red-600">{errors.interestedIn}</p>}
+                            onChange={handleInputChange}
+                            aria-invalid={!!errors.interestedIn}
+                            required
+                            className="w-full border-gray-300"
+                        />
+                        {errors.interestedIn ? (
+                            <p className="text-xs text-red-600 mt-1">{errors.interestedIn}</p>
+                        ) : null}
                     </div>
 
                     <div className="space-y-2">
-                        <Label htmlFor="message" className="text-gray-900 font-bold text-base">
+                        <Label htmlFor="message" className="text-gray-700 font-medium">
                             Message<span className="text-red-600">*</span>
                         </Label>
                         <Textarea
@@ -303,21 +321,23 @@ export function ConsultancyModal({ open, onOpenChange }: ConsultancyModalProps) 
                             placeholder="How can we help you?"
                             value={formData.message}
                             onChange={handleInputChange}
-                            className={`min-h-[120px] border-gray-200 rounded-lg focus:ring-red-500 focus:border-red-500 resize-none ${errors.message ? "border-red-500" : ""}`}
+                            className="w-full min-h-[100px] border-gray-300 resize-none"
                         />
-                        {errors.message && <p className="text-xs text-red-600">{errors.message}</p>}
+                        {errors.message ? (
+                            <p className="text-xs text-red-600 mt-1">{errors.message}</p>
+                        ) : null}
                     </div>
 
-                    <div className="">
+                    <div className="flex justify-center pt-2">
                         <Button
                             type="submit"
+                            className="inline-flex items-center justify-center gap-2 w-fit px-8 py-4 rounded-full 
+                      border-2 text-white font-bold text-md bg-red-500 hover:bg-white hover:text-red-500 
+                      hover:border-red-500 transition-all duration-300 group/btn cursor-pointer"
                             disabled={submitting}
-                            className="bg-[#E92228] hover:bg-[#bd202e] text-white font-bold text-lg py-6 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-auto min-w-[200px]"
                         >
-                            {submitting ? "SENDING..." : "SEND MESSAGE"}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
+                            {submitting ? "Submitting…" : "SUBMIT REQUEST"}
+                            <span className="ml-2">→</span>
                         </Button>
                     </div>
                 </form>

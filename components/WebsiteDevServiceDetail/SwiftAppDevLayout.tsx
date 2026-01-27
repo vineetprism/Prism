@@ -55,7 +55,7 @@ export default function SwiftAppDevLayout() {
                 <CTA onOpenModal={openModal} />
             </Suspense>
 
-            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} serviceTitle="Swift App Development" />
         </>
     );
 }

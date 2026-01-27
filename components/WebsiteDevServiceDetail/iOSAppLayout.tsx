@@ -31,7 +31,7 @@ export default function IOSAppLayout() {
             <FAQ />
             <CTA onOpenModal={openModal} />
 
-            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} serviceTitle="iOS App Development" />
         </main>
     );
 }

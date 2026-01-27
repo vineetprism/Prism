@@ -30,7 +30,7 @@ export default function ReactNativeAppDevLayout() {
             <FAQ />
 
             {/* Consultancy Modal */}
-            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} serviceTitle="React Native App Development" />
         </>
     );
 }

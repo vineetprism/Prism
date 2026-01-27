@@ -31,7 +31,7 @@ export default function AndroidAppLayout() {
             <FAQ />
             <CTA onOpenModal={openModal} />
 
-            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} serviceTitle="Android App Development" />
         </main>
     );
 }

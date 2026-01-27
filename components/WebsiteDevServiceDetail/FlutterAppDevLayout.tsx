@@ -30,6 +30,7 @@ export default function FlutterAppDevLayout() {
             <ConsultancyModal
                 open={isModalOpen}
                 onOpenChange={setIsModalOpen}
+                serviceTitle="Flutter App Development"
             />
         </>
     );

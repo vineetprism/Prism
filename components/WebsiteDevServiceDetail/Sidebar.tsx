@@ -266,7 +266,9 @@ export default function Sidebar() {
                                         ? `/service_details/app-development/${service.slug}`
                                         : activeCategory === 'WebsiteDevelopment'
                                             ? `/service_details/website-development/${service.slug}`
-                                            : `/service_details/${service.slug}`}
+                                            : activeCategory === 'Cybersecurity'
+                                                ? `/service_details/cybersecurity/${service.slug}`
+                                                : `/service_details/${service.slug}`}
                                     className={cn(
                                         "block px-3 sm:px-4 py-2.5 sm:py-3.5 text-xs sm:text-sm font-semibold transition-all duration-200 rounded-lg group relative",
                                         isActive

@@ -31,7 +31,7 @@ export default function StaticWebsiteDevelopment() {
             <FAQ />
             <CTA onOpenModal={openModal} />
 
-            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} serviceTitle="Static Website Development" />
         </main>
     );
 }

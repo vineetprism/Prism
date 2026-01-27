@@ -31,7 +31,7 @@ export default function CMSWebsiteLayout() {
             <FAQ />
             <CTA onOpenModal={openModal} />
 
-            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} serviceTitle="CMS Website Development" />
         </main>
     );
 }

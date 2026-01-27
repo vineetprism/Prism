@@ -78,15 +78,15 @@ const OUR_SERVICES = [
 
 // Cybersecurity Solutions (static data)
 const CYBERSECURITY_SOLUTIONS = [
-    { title: 'Managed Cybersecurity Services', href: '/service_details/managed-cybersecurity-services' },
-    { title: 'Cybersecurity Risk Assessment Services', href: '/service_details/cybersecurity-risk-assessment-services' },
-    { title: 'Virtual CISO Services & Solutions', href: '/service_details/virtual-ciso-services-solutions' },
-    { title: 'Multi Factor Authentication Managed Services', href: '/service_details/multi-factor-authentication-managed-services' },
-    { title: 'Endpoint Detection & Response Services', href: '/service_details/endpoint-detection-response-services' },
-    { title: 'Intrusion Detection & Response Services', href: '/service_details/intrusion-detection-response-services' },
-    { title: 'Phishing Prevention Training Services', href: '/service_details/phishing-prevention-training-services' },
-    { title: 'Vulnerability Testing & Assessment Services', href: '/service_details/vulnerability-testing-assessment-services' },
-    { title: 'Professional Dark Web Monitoring', href: '/service_details/professional-dark-web-monitoring' },
+    { title: 'Managed Cybersecurity Services', href: '/service_details/cybersecurity/managed-cybersecurity-services' },
+    { title: 'Cybersecurity Risk Assessment Services', href: '/service_details/cybersecurity/cybersecurity-risk-assessment-services' },
+    { title: 'Virtual CISO Services & Solutions', href: '/service_details/cybersecurity/virtual-ciso-services-solutions' },
+    { title: 'Multi Factor Authentication Managed Services', href: '/service_details/cybersecurity/multi-factor-authentication-managed-services' },
+    { title: 'Endpoint Detection & Response Services', href: '/service_details/cybersecurity/endpoint-detection-response-services' },
+    { title: 'Intrusion Detection & Response Services', href: '/service_details/cybersecurity/intrusion-detection-response-services' },
+    { title: 'Phishing Prevention Training Services', href: '/service_details/cybersecurity/phishing-prevention-training-services' },
+    { title: 'Vulnerability Testing & Assessment Services', href: '/service_details/cybersecurity/vulnerability-testing-assessment-services' },
+    { title: 'Professional Dark Web Monitoring', href: '/service_details/cybersecurity/professional-dark-web-monitoring' },
 ];
 
 const BASE_NAV_ITEMS = [

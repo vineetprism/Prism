@@ -308,7 +308,64 @@ export const WEBSITE_DEV_SOLUTIONS_DATA: Record<string, WebDevService> = {
     // Cybersecurity Solutions
     'managed-cybersecurity-services': { slug: 'managed-cybersecurity-services', title: 'Managed Cybersecurity Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
     'cybersecurity-risk-assessment-services': { slug: 'cybersecurity-risk-assessment-services', title: 'Cybersecurity Risk Assessment Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
-    'virtual-ciso-services-solutions': { slug: 'virtual-ciso-services-solutions', title: 'Virtual CISO Services & Solutions', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
+    'virtual-ciso-services-solutions': {
+        slug: 'virtual-ciso-services-solutions',
+        title: 'Virtual CISO Services & Solutions',
+        category: 'Cybersecurity',
+        description: 'Secure your organization, accelerate SOC 2/ISO 27001 compliance, and reduce breach risk by 70%. Get the strategic oversight of a veteran CISO without the $250k+ salary burden.',
+        features: ['SOC 2 Readiness', 'Zero Long-Term Contracts', 'Conflict-Free Advisory'],
+        hero: {
+            title: 'Enterprise-Grade Security Leadership. Fractional Cost.',
+            subtitle: 'Secure your organization, accelerate SOC 2/ISO 27001 compliance, and reduce breach risk by 70%. Get the strategic oversight of a veteran CISO without the $250k+ salary burden.',
+            cta: 'Start Your 100-Day Security Roadmap'
+        },
+        businessImpact: {
+            content: "In an era where the average data breach costs $4.88 million, security is no longer just IT maintenance—it is your insurance policy. The traditional hiring model is broken; with salaries inflating and tenure shrinking, your business cannot afford strategic drift. Prism Infoways delivers Fractional Strategic Leadership to navigate complex regulatory landscapes."
+        },
+        serviceGrid: [
+            { title: 'Regulatory Compliance Engine', description: 'Architecting your path to SOC 2 Type II, ISO 27001, and CMMC in months, not years, using automated evidence collection.' },
+            { title: 'Third-Party Risk Management', description: 'We implement "Pre-Contract Security Gates" to vet vendors and manage the Business Associate Agreement (BAA) lifecycle.' },
+            { title: 'Incident Response Planning', description: 'Development of battle-tested IR plans and execution of Tabletop Exercises (TTX) to ensure your team is ready when—not if—an attack occurs.' },
+            { title: 'Governance & Policy Design', description: 'Drafting enforceable Information Security Policies, Acceptable Use Policies, and Disaster Recovery protocols tailored to your specific culture.' },
+            { title: 'Board Advisory & Reporting', description: 'Quarterly presentations that translate technical vulnerability metrics into financial risk models for your Board of Directors.' },
+            { title: 'Security Architecture Review', description: 'Overseeing the deployment of MFA, SSO (Okta/Entra), and EDR tools to eliminate "Shadow IT" and harden your perimeter.' }
+        ],
+        benefitsList: [
+            { title: '70% Cost Efficiency', description: 'Eliminate the $425k+ Total Cost of Ownership of a full-time executive. Reallocate savings ($200k+) into operational tooling and cyber insurance.' },
+            { title: 'Accelerated Sales Cycles', description: 'Stop losing enterprise deals due to security questionnaires. We slash response times and achieve SOC 2 readiness in as little as 12 weeks.' },
+            { title: 'Platform-Driven Visibility', description: 'We leverage AI-driven GRC platforms (Drata, Vanta) to provide real-time, 24/7 visibility into your compliance posture—no spreadsheets required.' },
+            { title: 'Conflict-Free Independence', description: 'Unlike MSPs, we don\'t resell hardware. Our advice is objective, technology-agnostic, and focused entirely on your risk profile, not our margins.' }
+        ],
+        lifecycle: [
+            { step: 'Phase 1', title: 'Assessment (Discovery)', description: 'We deploy automated scanning (Cynomi/Reco) to map "Shadow IT" and conduct deep-dive stakeholder interviews. Deliverable: Gap Analysis.' },
+            { step: 'Phase 2', title: 'Transition (Strategy)', description: 'We build the Risk Register and prioritize the Remediation Roadmap. Quick wins (MFA, Admin rights) are executed immediately. Deliverable: Policy Library.' },
+            { step: 'Phase 3', title: 'Monitoring (Execution)', description: 'Launching Vendor Risk Management (VRM) and conducting Ransomware Tabletop Exercises to test your defenses. Deliverable: Security Training.' },
+            { step: 'Phase 4', title: 'Optimization (Governance)', description: 'Steady-state leadership. We manage the audit cycle and present "State of Security" metrics to your Board. Deliverable: Quarterly Business Reviews.' }
+        ],
+        audience: {
+            startup: {
+                focus: 'SOC 2 / ISO 27001 Certification.',
+                points: ['We can\'t close deals with Banks/Enterprises without a security report.', 'Aggressive, automation-first sprint to get you "Audit Ready".']
+            },
+            enterprise: {
+                focus: 'CMMC, HIPAA, & Operational Resilience.',
+                points: ['We are worried about Ransomware stopping the production line.', 'Governance-heavy approach focusing on Business Continuity & supply chain hardening.']
+            }
+        },
+        techStack: {
+            frontend: ['Drata', 'Vanta'],
+            cms: ['Cynomi', 'RealCISO'],
+            cloud: ['Okta', 'Microsoft Entra ID'],
+            commerce: ['Tenable', 'Qualys', 'AppOmni']
+        },
+        faq: [
+            { question: "How is a vCISO different from a full-time CISO?", answer: "A vCISO provides the same executive-level strategy and governance but on a fractional basis. You get the expertise of a veteran leader for a specific scope at ~30% of the cost." },
+            { question: "Can you help us get SOC 2 certified?", answer: "Yes. We act as the architect, implementing controls and managing the GRC platform to reduce the timeline to 2-4 months." },
+            { question: "Do you provide 24/7 monitoring (SOC)?", answer: "We provide strategy and governance, overseeing your MSSP to ensure they are performing effectively, but do not operate SOC analysts ourselves to maintain independence." },
+            { question: "What is the pricing model?", answer: "We operate on a flat-rate monthly retainer ($3k-$15k/month) to ensure predictable billing and avoid hourly traps." },
+            { question: "How quickly can we start?", answer: "We can deploy the 'First 100 Days' framework within 48 hours of contract signing." }
+        ]
+    },
     'multi-factor-authentication-managed-services': { slug: 'multi-factor-authentication-managed-services', title: 'Multi Factor Authentication Managed Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
     'endpoint-detection-response-services': { slug: 'endpoint-detection-response-services', title: 'Endpoint Detection & Response Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },
     'intrusion-detection-response-services': { slug: 'intrusion-detection-response-services', title: 'Intrusion Detection & Response Services', category: 'Cybersecurity', description: '<p>Coming Soon...</p>', features: [] },

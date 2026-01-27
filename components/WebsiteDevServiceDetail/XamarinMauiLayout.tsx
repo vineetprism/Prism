@@ -30,7 +30,7 @@ export default function XamarinMauiLayout() {
             <FAQ />
 
             {/* Consultancy Modal */}
-            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} serviceTitle="Xamarin App Development" />
         </>
     );
 }

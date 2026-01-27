@@ -31,7 +31,7 @@ export default function MobileAppDevLayout() {
             <FAQ />
             <CTA onOpenModal={openModal} />
 
-            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+            <ConsultancyModal open={isModalOpen} onOpenChange={setIsModalOpen} serviceTitle="Mobile App Development" />
         </>
     );
 }
