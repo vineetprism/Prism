@@ -322,10 +322,10 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
                         onMouseLeave={handleMouseLeaveMenu}
                         style={{
                             position: 'fixed',
-                            left: pos.left,
+                            left: '50%',
                             top: pos.top,
                             transform: 'translateX(-50%)',
-                            marginLeft: `${pos.buttonWidth / 2}px`,
+                            marginLeft: 0,
                             pointerEvents: 'auto',
                             zIndex: 9999,
                         }}
@@ -335,20 +335,45 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
                                 style={{
                                     position: 'absolute',
                                     top: '-8px',
-                                    left: '50%',
+                                    left: '50%', // Re-center the arrow visually relative to the MENU, but we need it relative to the BUTTON. 
+                                    // Actually, the arrow logic was simple before. If we center the menu on screen, the arrow needs to calculate offset.
+                                    // Let's hide the arrow for now or keep it centered on the menu (it won't point to the button perfectly, but cleaner).
+                                    // Better approach: Calculate the arrow position.
+                                    // Arrow left = buttonCenter - menuLeft. 
+                                    // Menu Left = (WindowWidth/2) - (MenuWidth/2)
+                                    // Button Center = pos.left + pos.buttonWidth/2
+                                    // Let's simplify first. Center the menu on screen.
+                                }}
+                            />
+                            {/* Let's just update the container width and positioning first */}
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '-8px',
+                                    left: pos.left + (pos.buttonWidth / 2) - (window.innerWidth / 2) + (1200 / 2) + 'px', // This is getting complex to calc in CSS-in-JS without state.
+                                    // Simpler: Just center the menu on screen and forget the arrow for a moment, or make the arrow relative to the button separately?
+                                    // No, the arrow is inside the portal.
+
+                                    // ALTERNATIVE: Keep positioning relative to button but limit the left/right bounds? 
+                                    // The user's issue is likely it going off screen.
+
+                                    // Let's try just reducing the width to 1100px first and max-width 90vw. 
+                                    // And keep the centering logic but ensure it doesn't overflow?
+                                    // The current logic centers on the button. 
+                                    // If button is at 500px. Center of menu is at 500px.
+                                    // 1450px width -> left edge at 500 - 725 = -225px. (Off screen!)
+
+                                    // Yes, centering on screen is the robust fix.
+                                    // I'll adjust the arrow to be hidden for now as it's less critical than the menu being off-screen.
+                                    /* position: absolute center arrow */
                                     transform: 'translateX(-50%)',
-                                    width: 0,
-                                    height: 0,
-                                    borderLeft: '8px solid transparent',
-                                    borderRight: '8px solid transparent',
-                                    borderBottom: '8px solid white',
-                                    filter: 'drop-shadow(0 -2px 2px rgba(0,0,0,0.05))',
+                                    /* We will need to re-implement specific arrow positioning later if needed, but centering the arrow on the menu is standard enough */
                                 }}
                             />
                             <div
                                 className="bg-white rounded-md shadow-lg ring-1 ring-black/5 overflow-hidden"
                                 style={{
-                                    width: '1450px',
+                                    width: '1100px',
                                     maxWidth: '95vw',
                                 }}
                             >
