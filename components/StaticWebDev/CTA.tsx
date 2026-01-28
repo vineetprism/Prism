@@ -14,7 +14,7 @@ export default function CTA({ onOpenModal }: CTAProps) {
                     Ready to Accelerate Your Digital Presence?
                 </h2>
                 <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto font-body">
-                    Let&apos;s architect your next-generation website that delivers unmatched performance and security.
+                    Let&apos;s architect a next-generation static website engineered for unmatched performance, security, and scale.
                 </p>
                 <button
                     onClick={onOpenModal}

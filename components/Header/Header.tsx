@@ -403,7 +403,7 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
 
                                     <div className="hidden md:block w-px bg-gray-200" />
 
-                                    {/* Our Services - Column 2 */}
+                                    {/* Our Services - Column 2 (HIDDEN TEMPORARILY)
                                     <div className="w-full md:w-1/4 px-4 py-5">
                                         <h4 className="text-sm font-bold text-red-600 mb-5 uppercase tracking-wide">Our Services</h4>
                                         <ul className="space-y-1.5">
@@ -423,6 +423,7 @@ const DesktopNav = React.memo(({ navItems }: { navItems: NavItem[] }) => {
                                     </div>
 
                                     <div className="hidden md:block w-px bg-gray-200" />
+                                    */}
 
                                     {/* App Development Solutions - Column 3 (Scrollable) */}
                                     <div className="w-full md:w-1/4 px-4 py-5 relative group">
@@ -552,7 +553,7 @@ const MobileNav = React.memo(function MobileNav({
                                                     ))}
                                                 </ul>
 
-                                                {/* Our Services - Sub section */}
+                                                {/* Our Services - Sub section (HIDDEN TEMPORILY)
                                                 <p className="text-xs font-bold text-red-600 uppercase tracking-wide mt-2 mb-2 px-2">Our Services</p>
                                                 <ul className="space-y-0.5 sm:space-y-1 mb-4">
                                                     {item.items?.map((subItem) => (
@@ -568,14 +569,33 @@ const MobileNav = React.memo(function MobileNav({
                                                         </li>
                                                     ))}
                                                 </ul>
+                                                <div className="h-px bg-gray-200 my-4" />
+                                                */}
+
+                                                {/* App Development Solutions - Sub section */}
+                                                <p className="text-xs font-bold text-red-600 uppercase tracking-wide mt-2 mb-2 px-2">App Development Solutions</p>
+                                                <ul className="space-y-0.5 sm:space-y-1 mb-4">
+                                                    {APP_DEV_SOLUTIONS.map((subItem) => (
+                                                        <li key={subItem.title}>
+                                                            <Link
+                                                                href={subItem.href}
+                                                                onClick={handleNavClick}
+                                                                aria-label={subItem.title}
+                                                                className="block text-sm sm:text-base font-semibold px-2 sm:px-3 py-1.5 sm:py-2 rounded transition-colors duration-150 hover:bg-red-600 hover:text-white cursor-pointer"
+                                                            >
+                                                                {subItem.title}
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
 
                                                 {/* Separator Line */}
                                                 <div className="h-px bg-gray-200 my-4" />
 
-                                                {/* App Development Solutions - Sub section */}
-                                                <p className="text-xs font-bold text-red-600 uppercase tracking-wide mt-2 mb-2 px-2">App Development Solutions</p>
+                                                {/* Cybersecurity Solutions - Sub section */}
+                                                <p className="text-xs font-bold text-red-600 uppercase tracking-wide mt-2 mb-2 px-2">Cybersecurity Solutions</p>
                                                 <ul className="space-y-0.5 sm:space-y-1">
-                                                    {APP_DEV_SOLUTIONS.map((subItem) => (
+                                                    {CYBERSECURITY_SOLUTIONS.map((subItem) => (
                                                         <li key={subItem.title}>
                                                             <Link
                                                                 href={subItem.href}

@@ -11,11 +11,12 @@ type ApiResponse<T> = T[] | { data: T[] } | null;
 
 async function fetchJson<T>(url: string): Promise<ApiResponse<T>> {
   try {
-    const res = await fetch(url);
+    const res = await fetch(url, { cache: 'no-store' }); // Disable caching as requested
     if (!res.ok) return null;
     return (await res.json()) as ApiResponse<T>;
   } catch (err) {
-    console.error("fetch error for", url, (err as Error).message);
+    console.warn("Sitemap fetch warning for", url, (err as Error).message);
+    // Return null so we just skip dynamic routes instead of failing the build
     return null;
   }
 }
@@ -57,6 +58,33 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/service`, lastModified: now },
     { url: `${SITE_URL}/blog`, lastModified: now },
     { url: `${SITE_URL}/career`, lastModified: now },
+
+    // --- Cybersecurity Services ---
+    { url: `${SITE_URL}/service_details/cybersecurity/cybersecurity-risk-assessment-services`, lastModified: now },
+    { url: `${SITE_URL}/service_details/cybersecurity/managed-cybersecurity-services`, lastModified: now },
+    { url: `${SITE_URL}/service_details/cybersecurity/virtual-ciso-services-solutions`, lastModified: now },
+
+    // --- App Development Services ---
+    { url: `${SITE_URL}/service_details/app-development/android-app-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/android-sdk-app-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/flutter-app-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/gaming-app-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/ios-app-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/ios-sdk-app-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/mobile-app-design`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/react-native-app-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/swift-app-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/app-development/xamarin-app-development`, lastModified: now },
+
+    // --- Website Development Services ---
+    { url: `${SITE_URL}/service_details/website-development/cms-website-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/website-development/corporate-website-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/website-development/dynamic-website-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/website-development/php-website-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/website-development/shopify-website-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/website-development/static-website-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/website-development/travel-website-development`, lastModified: now },
+    { url: `${SITE_URL}/service_details/website-development/website-re-development`, lastModified: now },
   ];
 
   const dynamicPages: MetadataRoute.Sitemap = [

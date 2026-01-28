@@ -7,24 +7,32 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: "If it's 'static,' does that mean I can't have dynamic features like search or logins?",
-            answer: "Not at all. We use APIs to load dynamic features like Algolia search, forms, and Auth0 user authentication instantly. You get static speed with dynamic power."
+            question: "What Is Static Website Development?",
+            answer: "Static website development is a modern approach where web pages are pre-built and served directly via CDNs, eliminating server-side processing. This results in faster load times, higher security, and predictable performance compared to dynamic websites."
         },
         {
-            question: "Will my marketing team need to learn code to update the site?",
-            answer: "No. We implement Headless CMS interfaces that look similar to WordPress. Your team drags-and-drops content; the system handles the code."
+            question: "How Is A Static Website Different From A Dynamic Website?",
+            answer: "A static website delivers pre-rendered pages without database queries, while dynamic websites generate pages at runtime. Static websites are faster, more secure, and easier to scale, making them ideal for enterprise-grade performance and SEO."
         },
         {
-            question: "How does this impact my SEO?",
-            answer: "It is a massive advantage. Google prioritizes page speed. Static sites naturally excel at Core Web Vitals, often resulting in immediate ranking boosts."
+            question: "Are Static Websites Secure For Enterprise Use?",
+            answer: "Yes. With no database connected to the presentation layer, static websites remove common attack vectors such as SQL injection and server-side exploits, making them inherently secure and suitable for enterprise environments."
         },
         {
-            question: "Is migrating from WordPress difficult?",
-            answer: "It requires planning, but it is our specialty. We use automated tools to map and transfer your content, ensuring your SEO history is preserved."
+            question: "Can Static Websites Scale For High Traffic?",
+            answer: "Absolutely. Static website services leverage global CDNs, allowing websites to scale automatically from hundreds to millions of users without downtime, infrastructure upgrades, or performance degradation."
         },
         {
-            question: "How does this architecture improve security?",
-            answer: "It virtually eliminates the attack surface. There is no database to hack and no login page to brute-force on the public site, making it ideal for high-security sectors."
+            question: "Do Static Websites Support SEO And Core Web Vitals?",
+            answer: "Yes. Static website development consistently outperforms Core Web Vitals due to minimal TTFB, fast rendering, and clean code structures—leading to better crawlability, rankings, and user engagement."
+        },
+        {
+            question: "Is Content Management Possible With Static Websites?",
+            answer: "Yes. Static websites can be integrated with headless CMS platforms, enabling non-technical teams to manage content while maintaining static performance, security, and scalability."
+        },
+        {
+            question: "What Businesses Benefit Most From Static Website Designing Services?",
+            answer: "Enterprises, SaaS companies, startups, and content-heavy brands benefit most from static website designing services due to lower operational costs, higher reliability, and improved digital performance."
         }
     ];
 

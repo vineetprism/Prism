@@ -24,7 +24,7 @@ async function getServices(): Promise<{ data?: Service[] }> {
     const url = `${API_BASE.replace(/\/$/, '')}/api/services`;
     // ... existing fetch logic
     try {
-        const res = await fetch(url, { next: { revalidate: 86400 } });
+        const res = await fetch(url, { cache: 'no-store' });
         if (!res.ok) return { data: [] }; // Handle error gracefully
         return res.json() as Promise<{ data?: Service[] }>;
     } catch (e) {
@@ -37,7 +37,7 @@ async function getServiceBySlug(slug: string): Promise<Service | null> {
     const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? '';
     const singleUrl = `${API_BASE.replace(/\/$/, '')}/api/services/${encodeURIComponent(slug)}`;
     try {
-        const res = await fetch(singleUrl, { next: { revalidate: 3600 } });
+        const res = await fetch(singleUrl, { cache: 'no-store' });
         if (res.ok) {
             return (await res.json()) as Service;
         }

@@ -10,7 +10,7 @@ async function getSeoData(slug: string) {
     const API_BASE = process.env.NEXT_PUBLIC_API_BASE || '';
     const url = `${API_BASE.replace(/\/$/, '')}/api/services-seo/${slug}`;
     try {
-        const res = await fetch(url, { next: { revalidate: 3600 } });
+        const res = await fetch(url, { cache: 'no-store' });
         if (!res.ok) return null;
         return await res.json();
     } catch (error) {

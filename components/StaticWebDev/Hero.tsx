@@ -24,10 +24,10 @@ export default function Hero({ onOpenModal }: HeroProps) {
                     <div className="w-full lg:w-[60%] xl:w-[65%]">
                         <div className="text-center lg:text-left">
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight font-heading">
-                                Static Website Development: <br /> <span className="text-[#E92228]">The Foundation of Digital Velocity</span>
+                                Static Website Development: <br /> <span className="text-[#E92228]">Turning Digital Performance Into Enterprise ROI</span>
                             </h1>
                             <p className="text-gray-600 text-lg sm:text-xl lg:text-2xl leading-relaxed font-body mb-10 max-w-3xl mx-auto lg:mx-0">
-                                Immutable architectures engineered for the speed of now. We replace infrastructure complexity with architectural elegance, delivering sub-second load times and global availability.
+                                Immutable architectures engineered for the speed of now. Our static website development solutions help enterprises replace infrastructure complexity with architectural clarity, delivering sub-second load times, enterprise-grade security, and global availability.
                             </p>
 
                             <div>

@@ -8,7 +8,7 @@ async function getSeoData() {
     const url = `${API_BASE.replace(/\/$/, '')}/api/services-seo/flutter-app-development`;
 
     try {
-        const res = await fetch(url, { next: { revalidate: 3600 } });
+        const res = await fetch(url, { cache: 'no-store' });
         if (!res.ok) return null;
         return await res.json();
     } catch (error) {

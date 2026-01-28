@@ -6,23 +6,23 @@ export default function Benefits() {
     const benefits = [
         {
             number: "01",
-            title: "Unmatched Performance",
-            description: "Eliminate Time to First Byte (TTFB). With 0.8s average load times, you dominate Core Web Vitals and boost conversion rates."
+            title: "Unmatched Performance at Enterprise Scale",
+            description: "Our static website development architecture eliminates TTFB, delivers ~0.8s load times, exceeds Core Web Vitals thresholds, and improves engagement and conversion metrics across distributed global traffic."
         },
         {
             number: "02",
-            title: "Ironclad Security",
-            description: "With no database connected to the presentation layer, SQL injection attacks are mathematically impossible. Secure by default."
+            title: "Ironclad Security by Design",
+            description: "Our static website designing services decouple databases from the presentation layer, removing entire classes of vulnerabilities such as SQL injection and ensuring a predictable, low-risk security posture with minimal ongoing patching."
         },
         {
             number: "03",
-            title: "Infinite Scalability",
-            description: "Handle Super Bowl level traffic spikes without crashing. Your site scales from 100 to 1 million users automatically via global CDNs."
+            title: "Infinite Scalability Without Infrastructure Stress",
+            description: "Delivered as enterprise-grade static website services, the platform auto-scales via global CDNs to support traffic surges from hundreds to millions of users—without downtime, reconfiguration, or performance regression."
         },
         {
             number: "04",
-            title: "Reduced TCO",
-            description: "Cut operational expenses by 65%. Save on expensive hosting, database licenses, and emergency maintenance contracts."
+            title: "Reduced Total Cost of Ownership (TCO)",
+            description: "As a performance-focused static website development company, we reduce TCO by up to 65% by eliminating complex hosting layers, database licensing, and reactive maintenance while maintaining predictable performance at scale."
         }
     ];
 

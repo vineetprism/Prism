@@ -8,25 +8,25 @@ export default function Lifecycle() {
             step: "01",
             title: "Assessment",
             subtitle: "Discovery & Architecture",
-            description: "We audit your current stack, define data models, and select the perfect tech mix (Next.js vs. Gatsby) to align with your 3-year growth roadmap."
+            description: "We evaluate your existing stack, define scalable data models, and select the optimal technology framework (Next.js or Gatsby) aligned with your long-term growth roadmap."
         },
         {
             step: "02",
             title: "Transition",
             subtitle: "Development & Migration",
-            description: "Atomic design implementation and 'Hydration' architecture. We run automated scripts to migrate legacy content, ensuring no data is lost."
+            description: "We implement atomic design and hydration-ready architecture, executing automated migrations to transition legacy content with complete data integrity."
         },
         {
             step: "03",
             title: "Monitoring",
             subtitle: "Automated Deployment",
-            description: "CI/CD setup. When you press 'Publish,' the system rebuilds and deploys globally in seconds. Rigorous testing ensures zero-downtime launches."
+            description: "CI/CD pipelines enable instant global deployments. Each publish triggers automated builds, testing, and zero-downtime releases across CDN networks."
         },
         {
             step: "04",
             title: "Optimization",
             subtitle: "Growth & Iteration",
-            description: "Post-launch performance audits and analytics integration to ensure the site maintains 'Green' scores on Lighthouse as you scale content."
+            description: "Continuous performance audits and analytics ensure sustained Lighthouse \"Green\" scores while supporting scalable content and ongoing optimization."
         }
     ];
 
