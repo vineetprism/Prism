@@ -13,7 +13,7 @@ export default function ServiceGrid() {
         {
             icon: Zap,
             title: "High-Performance Search Engineering",
-            desc: <>Stop the "Thundering Herd." We implement multi-tier caching (Redis/ElastiCache) to achieve p99.9 latency under 25ms, ensuring instant availability checks across your platform.</>
+            desc: <>Stop the &quot;Thundering Herd.&quot; We implement multi-tier caching (Redis/ElastiCache) to achieve p99.9 latency under 25ms, ensuring instant availability checks across your platform.</>
         },
         {
             icon: Network,

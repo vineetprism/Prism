@@ -9,13 +9,13 @@ export default function Lifecycle() {
             icon: Search,
             title: "Strategic Discovery & Audit",
             subtitle: "Phase 1",
-            desc: <>We don't guess. We map your technical debt, analyze legacy code, and define user personas (e.g., "The Spontaneous Traveler") before writing a line of code through comprehensive <span className="font-bold text-white">travel website development</span> methodology.</>
+            desc: <>We don&apos;t guess. We map your technical debt, analyze legacy code, and define user personas (e.g., &quot;The Spontaneous Traveler&quot;) before writing a line of code through comprehensive <span className="font-bold text-white">travel website development</span> methodology.</>
         },
         {
             icon: Rocket,
             title: "Agile Engineering & MVP",
             subtitle: "Phase 2",
-            desc: <>Velocity over perfection. We deploy "Thin Slice" architectures to validate tech stacks early, launching MVPs in as little as 30-90 days with our agile approach.</>
+            desc: <>Velocity over perfection. We deploy &quot;Thin Slice&quot; architectures to validate tech stacks early, launching MVPs in as little as 30-90 days with our agile approach.</>
         },
         {
             icon: Activity,
