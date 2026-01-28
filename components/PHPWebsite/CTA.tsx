@@ -11,10 +11,10 @@ export default function CTA({ onOpenModal }: CTAProps) {
         <section className="py-16 sm:py-20 bg-gray-900">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 font-heading">
-                    Ready to Modernize Your PHP Stack?
+                    Ready to Modernize Your PHP Stack with Our PHP Website Development Company?
                 </h2>
                 <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-body">
-                    Let&apos;s engineer a high-performance platform that scales with your ambition.
+                    Let&apos;s engineer a high-performance platform that scales with your ambition. Partner with a leading <span className="text-white font-bold">php website development company in India</span> for enterprise-grade solutions.
                 </p>
                 <button
                     onClick={onOpenModal}

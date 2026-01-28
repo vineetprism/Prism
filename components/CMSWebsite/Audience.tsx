@@ -9,10 +9,10 @@ export default function Audience() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
-                        <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Tailored Solutions</span>
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading">
-                            Built for Your Scale
+                            Tailored CMS Website Development Solutions
                         </h2>
+                        <p className="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">Built for your scale with <span className="font-bold text-gray-900">cms website development company in India</span> expertise across every business stage.</p>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -31,10 +31,7 @@ export default function Audience() {
                                 Lightweight, cost-effective CMS solutions (<span className="font-semibold">Laravel with Filament V3, Strapi, Payload CMS</span>) that scale with your business without enterprise overhead.
                             </p>
 
-                            <a href="#startup" className="inline-flex items-center text-[#E92228] font-bold hover:underline">
-                                View Startup Accelerators
-                                <ChevronRight className="w-4 h-4 ml-1" />
-                            </a>
+
                         </div>
 
                         {/* Card B - Enterprise & Public Sector */}
@@ -52,10 +49,7 @@ export default function Audience() {
                                 Robust DXP implementations (<span className="font-semibold">Sitecore, Adobe AEM, Drupal</span>) designed for complex compliance needs, global content supply chains, and multi-region governance.
                             </p>
 
-                            <a href="#enterprise" className="inline-flex items-center text-[#E92228] font-bold hover:underline">
-                                View Enterprise Solutions
-                                <ChevronRight className="w-4 h-4 ml-1" />
-                            </a>
+
                         </div>
                     </div>
                 </div>

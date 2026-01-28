@@ -22,6 +22,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.SITE_URL || 'https://www.prisminfoways.com'),
   title: "Web Development Company in Delhi & Gurugram | Prism Infoways",
   description:
     "Looking for a trusted web development company in Delhi, Gurugram & India? Prism Infoways delivers expert IT solutions, web design & digital transformation. Get started today!",

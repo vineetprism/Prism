@@ -16,7 +16,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading mb-6">
-                            Built for You
+                            Built for You: Tailored Dynamic Website Solutions
                         </h2>
 
                         {/* Toggle Switch */}
@@ -51,7 +51,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                                 </div>
                                 <h3 className="text-3xl font-bold text-gray-900 font-heading mb-4">Scale & Velocity</h3>
                                 <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                                    You need an MVP that isn&apos;t throwaway code. We build scalable foundations (MERN/Laravel) that let you launch fast and handle your first million users.
+                                    You need an MVP that isn&apos;t throwaway code. Our <span className="font-bold text-gray-900">dynamic website design services</span> build scalable foundations (MERN/Laravel) that let you launch fast and handle your first million users.
                                 </p>
                                 <button
                                     onClick={onOpenModal}
@@ -70,7 +70,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                                 </div>
                                 <h3 className="text-3xl font-bold text-gray-900 font-heading mb-4">Security & Governance</h3>
                                 <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                                    You need compliance, disaster recovery, and integration with legacy mainframes. We deliver ISO-grade security and &quot;Digital Reinvention.&quot;
+                                    You need compliance, disaster recovery, and legacy system integration. Our <span className="font-bold text-gray-900">dynamic website development company</span> delivers ISO-grade security and enterprise-scale digital transformation.
                                 </p>
                                 <button
                                     onClick={onOpenModal}

@@ -16,9 +16,10 @@ export default function Lifecycle() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading">
-                            The Prism Scaling Cycle
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading mb-4">
+                            The Prism Development Scaling Cycle
                         </h2>
+                        <p className="text-gray-500 text-lg max-w-2xl mx-auto">Our proven methodology for building <span className="font-bold text-gray-900">php website development services</span> that grow with your business demands.</p>
                     </div>
 
                     <div className="relative">

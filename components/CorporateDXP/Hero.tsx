@@ -120,7 +120,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                                 Build the <span className="text-[#E92228]">Central Nervous System</span> of Your Digital Enterprise.
                             </h1>
                             <p className="text-gray-300 text-lg sm:text-xl lg:text-2xl leading-relaxed font-body mb-10 max-w-3xl mx-auto lg:mx-0">
-                                Move beyond the brochure. We engineer <span className="text-white font-semibold">AI-native, cloud-resilient</span> corporate platforms designed to eliminate legacy debt and drive a <span className="text-[#E92228] font-bold">9,900% ROI</span> through superior User Experience.
+                                Move beyond a brochure-led presence. Our <span className="text-white font-semibold">corporate website development</span> approach delivers AI-native, cloud-resilient platforms designed to eliminate legacy technical debt, support enterprise-scale growth, and drive up to <span className="text-[#E92228] font-bold">9,900% ROI</span> through performance-led architecture and superior user experience.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start">

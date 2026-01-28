@@ -16,10 +16,10 @@ export default function CTA({ onOpenModal }: CTAProps) {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 font-heading">
-                    Ready to Engineer Your Revenue Engine?
+                    Ready to Engineer Your Revenue Engine with Dynamic Website Development?
                 </h2>
                 <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-body">
-                    Let&apos;s build the mission-critical web application that scales with your ambition.
+                    Let&apos;s build the mission-critical dynamic web application that scales with your ambition.
                 </p>
                 <button
                     onClick={onOpenModal}

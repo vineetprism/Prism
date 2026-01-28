@@ -31,10 +31,7 @@ export default function Audience() {
                                 You need to move fast. We build <span className="font-semibold">composable stacks</span> that allow you to pivot quickly, integrate with Stripe/HubSpot instantly, and look like a Fortune 500 company from <span className="text-[#E92228] font-semibold">Day 1</span>.
                             </p>
 
-                            <a href="#startup" className="inline-flex items-center text-[#E92228] font-bold hover:underline text-lg">
-                                Build for Speed
-                                <ChevronRight className="w-5 h-5 ml-1" />
-                            </a>
+
                         </div>
 
                         {/* Card B - Enterprise */}
@@ -52,10 +49,7 @@ export default function Audience() {
                                 You cannot afford downtime. Our <span className="font-semibold text-white">&quot;Strangler Fig&quot;</span> approach ensures <span className="text-[#E92228] font-semibold">zero operational disruption</span> while we pay down your technical debt and modernize your security posture.
                             </p>
 
-                            <a href="#enterprise" className="inline-flex items-center text-[#E92228] font-bold hover:underline text-lg">
-                                Modernize Safely
-                                <ChevronRight className="w-5 h-5 ml-1" />
-                            </a>
+
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ export default function Lifecycle() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
-                        <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Our Process</span>
+                        <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Our Website Redevelopment Process</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading">
                             The 4-Phase Modernization Lifecycle
                         </h2>

@@ -15,17 +15,17 @@ export default function BusinessImpact() {
                 <div className="max-w-4xl mx-auto text-center">
                     <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-4 block">Why Modernize Now</span>
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-heading mb-8">
-                        The Economic Imperative
+                        Why Website Redevelopment Now: The Economic Imperative
                     </h2>
 
                     <p className="text-xl text-gray-600 leading-relaxed font-body mb-8">
-                        Your website is no longer just a billboard; it is the <span className="font-semibold text-gray-900">operating system of your business</span>. Legacy systems are a liability—costing you <span className="text-[#E92228] font-bold">30% more in hosting fees</span> and exposing you to security breaches averaging <span className="text-[#E92228] font-bold">$4.44M</span>.
+                        Your website is no longer just a billboard; it is the operating system of your business. Legacy systems are a liability—costing you 30% more in hosting fees and exposing you to security breaches averaging $4.44M. Strategic <span className="font-bold text-gray-900">website redevelopment</span> eliminates these risks while unlocking growth potential.
                     </p>
 
                     {/* Warning Callout */}
                     <div className="bg-[#E92228]/5 border-l-4 border-[#E92228] p-5 rounded-r-xl mb-12 text-left max-w-2xl mx-auto">
                         <p className="text-gray-700 font-medium">
-                            <span className="text-[#E92228] font-bold">⚠️ Technical Debt Warning:</span> Prism Infoways moves you from &quot;Lift and Shift&quot; to <span className="font-semibold">&quot;Migrate to Modernize&quot;</span>—turning your IT department from a cost center into an innovation engine.
+                            <span className="text-[#E92228] font-bold">Technical Debt Warning:</span> Prism Infoways moves you from &quot;Lift and Shift&quot; to <span className="text-[#E92228] font-bold">&quot;Migrate to Modernize&quot;</span>—turning your IT department from a cost center into an innovation engine.
                         </p>
                     </div>
 

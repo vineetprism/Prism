@@ -8,25 +8,25 @@ export default function Lifecycle() {
             step: "01",
             title: "Assessment",
             subtitle: "Value Stream Mapping",
-            desc: "We don't guess. We use AI tools to reverse-engineer your legacy code, map dependencies, and identify \"Knowledge Fragmentation\" gaps before we start."
+            desc: "AI-driven analysis reverse-engineers legacy systems, maps dependencies, and surfaces knowledge gaps before development begins."
         },
         {
             step: "02",
             title: "Transition",
-            subtitle: "The AI-Augmented Build",
-            desc: "Agile sprints powered by Copilots. We build modular components using React/Next.js, ensuring type safety with Python and Pydantic."
+            subtitle: "AI-Augmented Build",
+            desc: "Agile, copilot-assisted sprints deliver modular React/Next.js components with strict type safety and scalable architecture."
         },
         {
             step: "03",
             title: "Monitoring",
             subtitle: "Resilience Engineering",
-            desc: "Deployment is not the end. We implement \"Blue/Green\" strategies and SRE protocols to monitor Experience Level Agreements (XLAs)."
+            desc: "Blue/Green deployments and SRE practices ensure continuous availability and experience-level performance tracking."
         },
         {
             step: "04",
             title: "Optimization",
             subtitle: "Continuous Evolution",
-            desc: "We treat your site as a product. Continuous feedback loops drive feature updates, ensuring you never face \"legacy\" issues again."
+            desc: "Product-led iteration powered by real-time feedback keeps the platform modern, scalable, and free from legacy drag."
         }
     ];
 
@@ -37,7 +37,7 @@ export default function Lifecycle() {
                     <div className="flex items-center justify-center mb-16">
                         <span className="w-1.5 h-10 bg-[#E92228] mr-4 rounded-full"></span>
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading">
-                            The Lifecycle Flow
+                            The Corporate Website Development Lifecycle
                         </h2>
                     </div>
 

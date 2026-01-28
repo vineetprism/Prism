@@ -7,7 +7,7 @@ export default function Benefits() {
         { num: "01", title: "Velocity & Agility", stat: "50%", statLabel: "More Deploys", desc: "Increase deployment frequency by 50%. Move from quarterly \"Big Bang\" releases to daily, risk-free feature updates." },
         { num: "02", title: "Cost Efficiency", stat: "30%", statLabel: "Reduced Waste", desc: "Shift from CAPEX to OPEX. Modern cloud architectures reduce hosting waste by up to 30% via auto-scaling." },
         { num: "03", title: "Conversion Acceleration", stat: "8.4%", statLabel: "More Conversions", desc: "Speed equals revenue. A 0.1s improvement in load time can drive an 8.4% increase in retail conversions." },
-        { num: "04", title: "Future-Proof Security", stat: "80", statLabel: "Days Saved", desc: "Eliminate \"Black Box\" vulnerabilities. Documented, modern codebases reduce breach containment time by 80 days." }
+        { num: "04", title: "Future-Proof Security", stat: "80", statLabel: "Days Saved", desc: "Eliminate \"Black Box\" vulnerabilities. Our <span className=\"font-bold text-gray-900\">website redevelopment company</span> delivers documented, modern codebases that reduce breach containment time by 80 days." }
     ];
 
     return (
@@ -17,7 +17,7 @@ export default function Benefits() {
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Measurable Outcomes</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            The Business Case
+                            The Website Redevelopment Business Case
                         </h2>
                     </div>
 
@@ -38,7 +38,9 @@ export default function Benefits() {
                                             <span className="text-xs text-[#E92228] font-bold uppercase">{benefit.statLabel}</span>
                                         </div>
                                     </div>
-                                    <p className="text-gray-600 leading-relaxed font-body text-lg">{benefit.desc}</p>
+                                    <p className="text-gray-600 leading-relaxed font-body text-lg">
+                                        {typeof benefit.desc === 'string' ? <span dangerouslySetInnerHTML={{ __html: benefit.desc }} /> : benefit.desc}
+                                    </p>
                                 </div>
                             </div>
                         ))}

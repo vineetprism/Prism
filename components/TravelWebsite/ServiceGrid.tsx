@@ -5,12 +5,36 @@ import { Cloud, Zap, Network, Brain, Plane, ShieldCheck } from 'lucide-react';
 
 export default function ServiceGrid() {
     const services = [
-        { icon: Cloud, title: "Cloud-Native Microservices", desc: "Decouple your logic. We migrate rigid monoliths to scalable AWS/GCP microservices, utilizing the Strangler Fig Pattern to ensure zero downtime during transition." },
-        { icon: Zap, title: "High-Performance Search Engineering", desc: "Stop the \"Thundering Herd.\" We implement multi-tier caching (Redis/ElastiCache) to achieve p99.9 latency under 25ms, ensuring instant availability checks." },
-        { icon: Network, title: "Federated GraphQL Orchestration", desc: "Unified Data Graphs. We aggregate disparate APIs (Flights, Hotels, Cars) into a single endpoint, reducing network payloads and mobile battery drain." },
-        { icon: Brain, title: "AI & Data Lakehouse Architecture", desc: "From Chatbots to Agentic AI. Centralize your data in Snowflake to power hyper-personalized itineraries and generative AI search agents." },
-        { icon: Plane, title: "Smart GDS & NDC Integration", desc: "Bypass legacy limitations. Direct integration with Amadeus, Sabre, and NDC standards to offer \"Retail-like\" experiences (legroom, meals) directly to users." },
-        { icon: ShieldCheck, title: "FinOps & Compliance Shield", desc: "Secure by Design. Full PCI-DSS and GDPR compliance architectures, coupled with automated resource downscaling to reduce cloud costs by up to 25%." }
+        {
+            icon: Cloud,
+            title: "Cloud-Native Microservices",
+            desc: <>Decouple your logic. Our <span className="font-bold text-white">travel website development</span> services migrate rigid monoliths to scalable AWS/GCP microservices, utilizing the Strangler Fig Pattern to ensure zero downtime during transition.</>
+        },
+        {
+            icon: Zap,
+            title: "High-Performance Search Engineering",
+            desc: <>Stop the "Thundering Herd." We implement multi-tier caching (Redis/ElastiCache) to achieve p99.9 latency under 25ms, ensuring instant availability checks across your platform.</>
+        },
+        {
+            icon: Network,
+            title: "Federated GraphQL Orchestration",
+            desc: <>Unified Data Graphs. We aggregate disparate APIs (Flights, Hotels, Cars) into a single endpoint, reducing network payloads and mobile battery drain for superior user experience.</>
+        },
+        {
+            icon: Brain,
+            title: "AI & Data Lakehouse Architecture",
+            desc: <>From Chatbots to Agentic AI. Centralize your data in Snowflake to power hyper-personalized itineraries and generative AI search agents through intelligent <span className="font-bold text-white">travel agency website development</span>.</>
+        },
+        {
+            icon: Plane,
+            title: "Smart GDS & NDC Integration",
+            desc: <>Bypass legacy limitations. Direct integration with Amadeus, Sabre, and NDC standards to offer retail-like experiences (legroom, meals) directly to users.</>
+        },
+        {
+            icon: ShieldCheck,
+            title: "FinOps & Compliance Shield",
+            desc: <>Secure by Design. Full PCI-DSS and GDPR compliance architectures, coupled with automated resource downscaling to reduce cloud costs by up to 25%.</>
+        }
     ];
 
     return (
@@ -30,7 +54,7 @@ export default function ServiceGrid() {
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">The Gold Standard Stack</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-heading">
-                            Enterprise-Grade Capabilities
+                            Enterprise-Grade Travel Website Development Capabilities
                         </h2>
                     </div>
 
@@ -48,7 +72,9 @@ export default function ServiceGrid() {
                                         <service.icon className="w-7 h-7 text-white" />
                                     </div>
                                     <h3 className="text-xl font-bold text-white font-heading mb-3 group-hover:text-[#E92228] transition-colors">{service.title}</h3>
-                                    <p className="text-gray-400 leading-relaxed font-body text-sm">{service.desc}</p>
+                                    <p className="text-gray-400 leading-relaxed font-body text-sm">
+                                        {service.desc}
+                                    </p>
                                 </div>
                             </div>
                         ))}

@@ -37,7 +37,7 @@ export default function Lifecycle() {
                     <div className="flex items-center justify-center mb-16">
                         <span className="w-1.5 h-10 bg-[#E92228] mr-4 rounded-full"></span>
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading">
-                            The Lifecycle Flow
+                            The Best Static Web Development Lifecycle Flow
                         </h2>
                     </div>
 

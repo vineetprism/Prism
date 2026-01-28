@@ -13,7 +13,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading mb-4">
-                            Are you a...
+                            Are You Building Your Corporate Website for Speed or Scale?
                         </h2>
                     </div>
 

@@ -21,7 +21,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Card A - Scale-Up */}
-                        <div className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 lg:p-10 border-2 border-gray-100 hover:border-[#E92228] transition-all duration-300 hover:shadow-xl">
+                        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 lg:p-10 border-2 border-[#E92228] shadow-xl transition-all duration-300">
                             <div className="inline-flex items-center gap-2 bg-[#E92228] text-white px-4 py-2 rounded-full mb-6 text-sm font-bold">
                                 <Rocket className="w-4 h-4" />
                                 The Scale-Up (SME/Startup)
@@ -56,7 +56,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                         </div>
 
                         {/* Card B - Enterprise */}
-                        <div className="group bg-gradient-to-br from-gray-900 to-[#0a0a0a] rounded-2xl p-8 lg:p-10 border-2 border-gray-800 hover:border-[#E92228] transition-all duration-300 hover:shadow-xl">
+                        <div className="bg-gradient-to-br from-gray-900 to-[#0a0a0a] rounded-2xl p-8 lg:p-10 border-2 border-gray-800 shadow-xl transition-all duration-300">
                             <div className="inline-flex items-center gap-2 bg-white text-gray-900 px-4 py-2 rounded-full mb-6 text-sm font-bold">
                                 <Building2 className="w-4 h-4" />
                                 The Enterprise (Airline/Hotel Chain)

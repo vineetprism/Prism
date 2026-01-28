@@ -50,7 +50,7 @@ export default function TechStack() {
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Technologies We Use</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            The Modern Enterprise Stack
+                            The Modern PHP Website Development Stack
                         </h2>
                     </div>
 
@@ -94,6 +94,6 @@ export default function TechStack() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

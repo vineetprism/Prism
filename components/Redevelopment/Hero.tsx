@@ -38,11 +38,11 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] font-heading">
                                 Stop <span className="text-gray-500 line-through">&quot;Redesigning.&quot;</span>
                                 <br />
-                                Start <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] to-[#ff6b6b]">Reinventing.</span>
+                                Start <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] to-[#ff6b6b]">Reinventing with Website Redevelopment</span>
                             </h1>
 
                             <p className="text-gray-400 text-lg sm:text-xl leading-relaxed font-body max-w-2xl">
-                                Transform your legacy monolithic website into a scalable, <span className="text-white font-medium">AI-ready Digital Core</span>. We utilize the <span className="text-[#E92228] font-semibold">Strangler Fig Pattern</span> to modernize your infrastructure without operational downtime.
+                                Transform your legacy monolithic website into a scalable, AI-ready Digital Core. Our <span className="text-white font-bold">website redevelopment services</span> utilize the Strangler Fig Pattern to modernize your infrastructure without operational downtime.
                             </p>
 
                             <div className="space-y-3">

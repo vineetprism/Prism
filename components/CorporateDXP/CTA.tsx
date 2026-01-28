@@ -19,10 +19,10 @@ export default function CTA({ onOpenModal }: CTAProps) {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 font-heading">
-                    Ready to Transform Your Digital Enterprise?
+                    Ready to Transform Your Corporate Website Development Strategy?
                 </h2>
                 <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto font-body">
-                    Let&apos;s architect the central nervous system that will power your business for the next decade.
+                    Build the central platform your organization will operate on for years to come.
                 </p>
                 <button
                     onClick={onOpenModal}

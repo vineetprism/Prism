@@ -15,7 +15,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Who We Serve</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            Solutions for Every Stage
+                            PHP Website Development Solutions for Every Stage
                         </h2>
                     </div>
 

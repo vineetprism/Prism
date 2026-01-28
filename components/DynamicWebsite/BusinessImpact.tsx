@@ -23,8 +23,7 @@ export default function BusinessImpact() {
                         <div className="relative">
                             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-[#E92228] rounded-full hidden lg:block"></div>
                             <p className="text-xl sm:text-2xl lg:text-3xl text-gray-800 leading-relaxed font-body lg:pl-8">
-                                In 2025, a website is not a URL—it is your <span className="font-bold text-gray-900">primary operational layer</span>.
-                                You don&apos;t need a design agency; you need a partner who understands that
+                                In 2026, your website isn&apos;t a URL—it&apos;s your operational backbone. You don&apos;t need a design agency; you need a <span className="font-bold text-gray-900">dynamic website development company</span> that architects systems where
                                 <span className="font-bold text-gray-900"> Performance = Revenue</span> and
                                 <span className="font-bold text-gray-900"> Downtime = Liability</span>.
                             </p>

@@ -14,22 +14,22 @@ import {
 
 // Tech icon mapping
 const techIconMap: { [key: string]: React.ReactNode } = {
-    "Next.js": <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "React Native": <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Flutter": <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Java (Spring Boot)": <Server className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Kotlin": <Server className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Node.js": <Server className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Snowflake": <Database className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "PostgreSQL": <Database className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Cassandra": <Database className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "AWS": <Cloud className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Kubernetes (EKS)": <Network className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Terraform": <Layers className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Docker": <Server className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Redis": <Zap className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Elasticsearch": <Search className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Algolia": <Search className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
+    "Next.js": <Code2 className="w-4 h-4 text-[#E92228]" />,
+    "React Native": <Code2 className="w-4 h-4 text-[#E92228]" />,
+    "Flutter": <Code2 className="w-4 h-4 text-[#E92228]" />,
+    "Java (Spring Boot)": <Server className="w-4 h-4 text-[#E92228]" />,
+    "Kotlin": <Server className="w-4 h-4 text-[#E92228]" />,
+    "Node.js": <Server className="w-4 h-4 text-[#E92228]" />,
+    "Snowflake": <Database className="w-4 h-4 text-[#E92228]" />,
+    "PostgreSQL": <Database className="w-4 h-4 text-[#E92228]" />,
+    "Cassandra": <Database className="w-4 h-4 text-[#E92228]" />,
+    "AWS": <Cloud className="w-4 h-4 text-[#E92228]" />,
+    "Kubernetes (EKS)": <Network className="w-4 h-4 text-[#E92228]" />,
+    "Terraform": <Layers className="w-4 h-4 text-[#E92228]" />,
+    "Docker": <Server className="w-4 h-4 text-[#E92228]" />,
+    "Redis": <Zap className="w-4 h-4 text-[#E92228]" />,
+    "Elasticsearch": <Search className="w-4 h-4 text-[#E92228]" />,
+    "Algolia": <Search className="w-4 h-4 text-[#E92228]" />,
 };
 
 export default function TechStack() {
@@ -52,17 +52,17 @@ export default function TechStack() {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
                         {techStack.map((group, idx) => (
-                            <div key={idx} className="bg-white rounded-2xl p-6 border border-gray-200">
-                                <h4 className="text-gray-900 font-bold text-lg mb-5 font-heading">{group.category}</h4>
+                            <div key={idx} className="bg-white rounded-2xl p-6 border-t-4 border-[#E92228] shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <h4 className="text-gray-900 font-bold text-lg mb-5 font-heading border-b border-gray-100 pb-2">{group.category}</h4>
                                 <div className="space-y-3">
                                     {group.items.map((item, i) => (
-                                        <div key={i} className="group flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
-                                            <div className="w-8 h-8 flex items-center justify-center">
-                                                {techIconMap[item] || <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />}
+                                        <div key={i} className="flex items-center gap-3 p-3 rounded-lg bg-[#E92228]/10 border border-[#E92228]/20 transition-all">
+                                            <div className="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm shrink-0">
+                                                {techIconMap[item] || <Code2 className="w-4 h-4 text-[#E92228]" />}
                                             </div>
-                                            <span className="text-gray-700 font-medium text-sm group-hover:text-gray-900 transition-colors">{item}</span>
+                                            <span className="text-[#E92228] font-medium text-sm">{item}</span>
                                         </div>
                                     ))}
                                 </div>

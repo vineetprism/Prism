@@ -12,10 +12,10 @@ export default function CTA({ onOpenModal }: CTAProps) {
         <section className="py-20 lg:py-28 bg-[#3a3a3a] text-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading mb-6">
-                    Ready to Transform Your Digital Experience?
+                    Ready to Transform Your Digital Experience with CMS Website Development Services?
                 </h2>
                 <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-body">
-                    Let&apos;s architect a CMS solution that scales with your ambitions.
+                    Let&apos;s architect a <span className="text-white font-bold">cms website solution</span> that scales with your ambitions.
                 </p>
                 <button
                     onClick={onOpenModal}

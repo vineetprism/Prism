@@ -28,11 +28,6 @@ export default function ServiceGrid() {
             icon: <LinkIcon className="w-10 h-10 text-[#E92228]" />
         },
         {
-            title: "Cloud-Native Infrastructure",
-            description: "Serverless and containerized deployments (Docker/Kubernetes) that auto-scale to handle traffic spikes without crashing.",
-            icon: <Cloud className="w-10 h-10 text-[#E92228]" />
-        },
-        {
             title: "AI-Infused User Experiences",
             description: "Integrate LLMs and Python agents for \"Smart Search,\" personalized recommendations, and automated customer service workflows.",
             icon: <Brain className="w-10 h-10 text-[#E92228]" />
@@ -50,9 +45,9 @@ export default function ServiceGrid() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading mb-4">
-                            Our Capabilities
+                            Our Dynamic Website Development Services Capabilities
                         </h2>
-                        <p className="text-gray-500 text-lg max-w-2xl mx-auto">From rescue to innovation—comprehensive solutions for modern enterprises</p>
+                        <p className="text-gray-500 text-lg max-w-2xl mx-auto">From rescue to innovation our comprehensive solutions for modern enterprises.</p>
                     </div>
 
                     {/* Bento Grid */}

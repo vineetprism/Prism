@@ -36,13 +36,10 @@ export default function BusinessImpact() {
 
                             <div className="relative bg-white p-8 lg:p-10 rounded-2xl shadow-xl border-l-4 border-[#E92228]">
                                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 font-heading mb-6">
-                                    Code That <span className="text-[#E92228]">Compounds Value</span>
+                                    PHP Development That Compounds Business Value
                                 </h2>
                                 <p className="text-gray-600 text-lg leading-relaxed font-body mb-6">
-                                    In the modern digital ecosystem, technology selection defines competitive trajectory. PHP has evolved into a formidable enterprise platform. At Prism Infoways, we don&apos;t just &apos;write code.&apos;
-                                </p>
-                                <p className="text-gray-600 text-lg leading-relaxed font-body">
-                                    We engineer resilient systems using the <span className="font-semibold text-[#E92228]">&apos;Strangler Fig&apos; pattern</span> to modernize legacy monoliths and Asynchronous architectures to crush latency—delivering a Total Cost of Ownership that fuels reinvestment.
+                                    In the modern digital ecosystem, technology selection defines competitive trajectory. PHP has evolved into a formidable enterprise platform. As a <span className="font-bold text-gray-900">php website development services company</span> , we don&apos;t just write code—we engineer resilient systems using the &apos;Strangler Fig&apos; pattern to modernize legacy monoliths and asynchronous architectures to crush latency, delivering Total Cost of Ownership that fuels reinvestment.
                                 </p>
                             </div>
                         </div>

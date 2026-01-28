@@ -7,23 +7,23 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: "Isn't PHP considered a \"legacy\" language?",
+            question: "Q. Isn't Php Considered A \"Legacy\" Language?",
             answer: "Not anymore. Modern PHP (8.x) features JIT compilation, strong typing, and massive performance improvements. It powers 79% of the web, including giants like Slack and Wikipedia. It is \"legacy\" only in longevity, but \"cutting-edge\" in capability."
         },
         {
-            question: "Can PHP handle high-traffic enterprise applications?",
+            question: "Q. Can Php Handle High-Traffic Enterprise Applications?",
             answer: "Absolutely. When architected correctly with caching layers (Redis) and asynchronous queues (Horizon), PHP applications handle millions of requests. We optimize systems to handle 50k+ concurrent connections seamlessly."
         },
         {
-            question: "How do you handle migration from old PHP versions (5.6/7.x)?",
+            question: "Q. How Do You Handle Migration From Old Php Versions (5.6/7.X)?",
             answer: "We use the \"Strangler Fig\" pattern. We don't rewrite everything at once. We wrap your legacy app in a modern API layer and replace functionality piece-by-piece, ensuring zero business interruption."
         },
         {
-            question: "Is PHP secure enough for Fintech or Healthcare?",
+            question: "Q. Is Php Secure Enough For Fintech Or Healthcare?",
             answer: "Yes. We adhere to OWASP standards. Modern frameworks prevent SQL injection and XSS by default. We add layers of static analysis and encryption to meet GDPR and HIPAA requirements."
         },
         {
-            question: "Why choose Prism Infoways over a large GSI?",
+            question: "Q. Why Choose Prism Infoways Over A Large Gsi?",
             answer: "We offer the \"Hybrid\" advantage. You get the process rigor and architectural maturity of a Global System Integrator, but with the agility, speed, and cost-structure of a specialized boutique."
         }
     ];

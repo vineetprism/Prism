@@ -8,7 +8,7 @@ export default function FAQ() {
     const faqs = [
         {
             question: "What Is Static Website Development?",
-            answer: "Static website development is a modern approach where web pages are pre-built and served directly via CDNs, eliminating server-side processing. This results in faster load times, higher security, and predictable performance compared to dynamic websites."
+            answer: <> <span className="font-bold text-gray-900">Static website development</span> is a modern approach where web pages are pre-built and served directly via CDNs, eliminating server-side processing. This results in faster load times, higher security, and predictable performance compared to dynamic websites.</>
         },
         {
             question: "How Is A Static Website Different From A Dynamic Website?",
@@ -20,11 +20,11 @@ export default function FAQ() {
         },
         {
             question: "Can Static Websites Scale For High Traffic?",
-            answer: "Absolutely. Static website services leverage global CDNs, allowing websites to scale automatically from hundreds to millions of users without downtime, infrastructure upgrades, or performance degradation."
+            answer: <>Absolutely. <span className="font-bold text-gray-900">Static website services</span> leverage global CDNs, allowing websites to scale automatically from hundreds to millions of users without downtime, infrastructure upgrades, or performance degradation.</>
         },
         {
             question: "Do Static Websites Support SEO And Core Web Vitals?",
-            answer: "Yes. Static website development consistently outperforms Core Web Vitals due to minimal TTFB, fast rendering, and clean code structures—leading to better crawlability, rankings, and user engagement."
+            answer: <>Yes. <span className="font-bold text-gray-900">Static website development</span> consistently outperforms Core Web Vitals due to minimal TTFB, fast rendering, and clean code structures—leading to better crawlability, rankings, and user engagement.</>
         },
         {
             question: "Is Content Management Possible With Static Websites?",
@@ -32,7 +32,7 @@ export default function FAQ() {
         },
         {
             question: "What Businesses Benefit Most From Static Website Designing Services?",
-            answer: "Enterprises, SaaS companies, startups, and content-heavy brands benefit most from static website designing services due to lower operational costs, higher reliability, and improved digital performance."
+            answer: <>Enterprises, SaaS companies, startups, and content-heavy brands benefit most from <span className="font-bold text-gray-900">static website designing services</span> due to lower operational costs, higher reliability, and improved digital performance.</>
         }
     ];
 

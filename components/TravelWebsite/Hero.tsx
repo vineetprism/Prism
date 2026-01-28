@@ -85,17 +85,12 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-[1.05] font-heading">
-                                Engineered for{' '}
-                                <span className="relative inline-block">
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] via-[#ff6b6b] to-[#E92228]">Velocity</span>
-                                    <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#E92228] to-transparent rounded-full"></span>
-                                </span>
-                                <br />
-                                <span className="text-[#E92228]">The Next-Gen Travel Ecosystem.</span>
+                                Travel Website Sections: <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] via-[#ff6b6b] to-[#E92228]">Building Next-Gen Ecosystem</span>
                             </h1>
 
                             <p className="text-gray-600 text-lg sm:text-xl leading-relaxed font-body max-w-2xl">
-                                Move beyond transaction-based legacy systems. We architect <span className="text-gray-900 font-medium">cloud-native travel platforms</span> capable of handling <span className="text-[#E92228] font-bold">200k+ requests per second</span> with sub-millisecond latency.
+                                Transform legacy booking platforms into AI-powered revenue engines. Our <span className="font-bold text-gray-900">travel website development</span> services architect scalable, cloud-native systems that handle 200k+ requests per second with sub-millisecond latency.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 items-start">

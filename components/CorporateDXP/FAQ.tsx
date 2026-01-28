@@ -7,24 +7,44 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: "We have a massive legacy monolith. Do we need to rebuild from scratch?",
-            answer: "No. We advocate for the 'Strangler Fig' pattern. We gradually replace specific functionalities with microservices, allowing the new system to grow around the old one until the legacy system can be safely decommissioned without business disruption."
+            question: "What is corporate website development?",
+            answer: <><span className="font-bold text-gray-900">Corporate website development</span> is the process of designing and engineering a scalable, secure, and performance-driven website that serves as operational infrastructure for an enterprise—not just a marketing presence.</>
         },
         {
-            question: "How do you ensure AI features don't hallucinate or pose a security risk?",
-            answer: "We implement strict guardrails using tools like NVIDIA NeMo and RAG (Retrieval-Augmented Generation) architectures. This ensures your AI agents only reference approved corporate data and adhere to strict safety protocols."
+            question: "How is a corporate website different from a regular business website?",
+            answer: <>A <span className="font-bold text-gray-900">corporate company website</span> supports complex structures such as multiple stakeholders, compliance, integrations, scalability, and governance, whereas regular business websites focus mainly on basic visibility and lead generation.</>
         },
         {
-            question: "How does UX design translate to a 9,900% ROI?",
-            answer: "Research shows that every $1 invested in UX returns $100. By removing friction, optimizing load times (where 100ms delay drops conversion), and personalizing journeys, we directly increase customer acquisition and retention rates."
+            question: "Why is corporate website development important for enterprises?",
+            answer: <>Modern <span className="font-bold text-gray-900">corporate website development</span> enables faster digital operations, stronger security, better user experience, and measurable ROI while reducing legacy technical debt and operational risk.</>
         },
         {
-            question: "What is 'Shift-Left' Security and why does it matter?",
-            answer: "Instead of testing for security at the end, we integrate SAST and DAST scanning into the code-writing process. This reduces vulnerability remediation time by 27% and prevents costly post-launch patches."
+            question: "What are corporate website design services?",
+            answer: <><span className="font-bold text-gray-900">Corporate website design services</span> include UX strategy, information architecture, UI systems, accessibility, and performance optimization—designed specifically for enterprise users, decision-makers, and global audiences.</>
         },
         {
-            question: "How quickly can you deploy a modernized MVP?",
-            answer: "By leveraging AI coding agents and component-driven libraries, we can reduce standard development cycles by 30-50%, often delivering a functional MVP in weeks rather than months."
+            question: "Are corporate websites secure?",
+            answer: <>Yes. When built by a professional <span className="font-bold text-gray-900">corporate website development company</span>, corporate websites use modern architectures, compliance-driven security, and hardened infrastructure to reduce vulnerabilities and breach risks.</>
+        },
+        {
+            question: "Can a corporate website scale for global traffic?",
+            answer: <>Yes. A modern <span className="font-bold text-gray-900">corporate website</span> is built to scale across regions using cloud-native infrastructure, CDNs, and modular architectures that support millions of users without downtime.</>
+        },
+        {
+            question: "How does corporate website development improve ROI?",
+            answer: <>By improving performance, UX, security, and operational efficiency, <span className="font-bold text-gray-900">corporate website development</span> turns the website into a revenue-enabling platform rather than a cost center.</>
+        },
+        {
+            question: "Who needs corporate website designing services?",
+            answer: <>Enterprises, multinational companies, Fortune 500 organizations, and fast-growing businesses require <span className="font-bold text-gray-900">corporate website designing services</span> to manage complexity, scale securely, and maintain brand authority.</>
+        },
+        {
+            question: "How long does corporate website development take?",
+            answer: <>Timelines vary based on complexity, but enterprise-grade <span className="font-bold text-gray-900">corporate website development</span> typically follows phased delivery—architecture, build, deployment, and optimization—for faster time-to-value.</>
+        },
+        {
+            question: "How do I choose the right corporate website development company?",
+            answer: <>Choose a <span className="font-bold text-gray-900">corporate website development company</span> with experience in enterprise architecture, security, scalability, compliance, and measurable business outcomes—not just visual design.</>
         }
     ];
 

@@ -44,8 +44,9 @@ export default function TechStack() {
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Technology Partners</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            The Convergence Stack
+                            Technology Partners: The Website Redevelopment Stack
                         </h2>
+                        <p className="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">Industry-leading platforms powering our <span className="font-bold text-gray-900">website redevelopment company</span> transformation services.</p>
                     </div>
 
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">

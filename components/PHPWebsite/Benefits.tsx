@@ -4,10 +4,10 @@ import React from 'react';
 
 export default function Benefits() {
     const benefits = [
-        { num: "01", title: "Economic Efficiency", desc: "Reduce development costs by 45% compared to Java/Python stacks. Access a global talent pool that prevents vendor lock-in and reduces recruitment risks." },
-        { num: "02", title: "Elastic Scalability", desc: "Shatter the \"PHP doesn't scale\" myth. Our asynchronous queuing architectures (RabbitMQ/Horizon) support 50,000+ concurrent users per instance." },
+        { num: "01", title: "Economic Efficiency", desc: <>Reduce development costs by 45% compared to Java/Python stacks. Our <span className="font-bold text-gray-900">php website development company in india</span> leverages a global talent pool that prevents vendor lock-in and reduces recruitment risks.</> },
+        { num: "02", title: "Elastic Scalability", desc: "Shatter the \"PHP doesn't scale\" myth. Our custom development services use asynchronous queuing architectures (RabbitMQ/Horizon) supporting 50,000+ concurrent users per instance." },
         { num: "03", title: "Security Confidence", desc: "We implement \"Defense in Depth.\" With 70% of experts rating modern PHP security as \"High,\" we add layers of ORM protection, CSRF tokens, and automated vulnerability scanning." },
-        { num: "04", title: "Rapid Velocity", desc: "Move from concept to deployment in weeks, not months. The rich ecosystem of Composer packages allows us to focus on unique business logic, not boilerplate." }
+        { num: "04", title: "Rapid Velocity", desc: <>Move from concept to deployment in weeks, not months. Our <span className="font-bold text-gray-900">php coding for website design</span> leverages the rich Composer ecosystem, allowing us to focus on unique business logic, not boilerplate.</> }
     ];
 
     return (
@@ -16,7 +16,7 @@ export default function Benefits() {
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading">
-                            The PHP Advantage
+                            The PHP Website Development Advantage
                         </h2>
                     </div>
 

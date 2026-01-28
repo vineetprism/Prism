@@ -5,7 +5,7 @@ import React from 'react';
 export default function Lifecycle() {
     const steps = [
         { phase: "01", title: "The Deep Dive", subtitle: "Discovery", desc: "We map user personas, audit technical feasibility, and define Business KPIs before writing a line of code.", color: "bg-[#E92228]" },
-        { phase: "02", title: "The Blueprint", subtitle: "Architecture", desc: "UX wireframing and System Architecture modeling. We build a digital twin to validate scalability.", color: "bg-[#E92228]" },
+        { phase: "02", title: "The Blueprint", subtitle: "Architecture", desc: <>UX wireframing and <span className="font-bold text-gray-900">dynamic website system architecture</span> modeling. We build a digital twin to validate scalability.</>, color: "bg-[#E92228]" },
         { phase: "03", title: "The Build", subtitle: "Agile Development", desc: "2-week iterative sprints. You see working demos every fortnight. No \"Black Box\" development.", color: "bg-[#E92228]" },
         { phase: "04", title: "The Evolution", subtitle: "Run & Optimize", desc: "Moving beyond SLAs to Experience Level Agreements (XLAs). We iterate based on data.", color: "bg-[#E92228]" }
     ];

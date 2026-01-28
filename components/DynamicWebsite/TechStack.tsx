@@ -33,7 +33,7 @@ export default function TechStack() {
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading mb-2">
                             The Modern Convergence Stack
                         </h2>
-                        <p className="text-gray-500">Industry-leading technologies for scalable solutions</p>
+                        <p className="text-gray-500">Industry-leading technologies powering scalable <span className="font-bold text-gray-900">dynamic website solutions</span>.</p>
                     </div>
 
                     {/* Tech Pills */}

@@ -47,11 +47,10 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-8 leading-[1.1] font-heading drop-shadow-lg">
-                                Engineer Your<br />
-                                <span className="text-white/90">Digital Revenue Engine.</span>
+                                Dynamic Website Development Company Engineering Revenue Growth
                             </h1>
                             <p className="text-white/80 text-lg sm:text-xl lg:text-2xl leading-relaxed font-body mb-10 max-w-3xl mx-auto lg:mx-0">
-                                Move beyond static brochures. We build <span className="text-white font-semibold">mission-critical, cloud-native</span> web applications that drive <span className="font-bold text-white bg-white/20 px-2 py-0.5 rounded">748% ROI</span> and scale with your business ambition.
+                                Move beyond static brochures. Our dynamic website development services build mission-critical, cloud-native web applications that drive 748% ROI and scale with your business ambition.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start">

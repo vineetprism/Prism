@@ -6,11 +6,48 @@ export default function FAQ() {
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
     const faqs = [
-        { q: "Will re-developing my site hurt my SEO rankings?", a: "No. We execute a \"No-Loss Migration\" strategy. By utilizing Next.js for Server-Side Rendering and a meticulous 301 redirect map, we often see an increase in rankings due to improved Core Web Vitals (Speed and Mobile usability)." },
-        { q: "Do we have to shut down our current business during the build?", a: "Absolutely not. We use the Strangler Fig Pattern. We build the new system alongside the old one, routing specific traffic to the new features gradually. Your users never experience downtime." },
-        { q: "How is this different from a standard website redesign?", a: "A redesign is a \"facelift\" (Frontend). We perform Application Modernization (Full Stack). We refactor the backend logic, decouple the database, and optimize the infrastructure. It's a fundamental business transformation, not just a paint job." },
-        { q: "Can you work with our existing legacy database?", a: "Yes. We specialize in \"Binary Archaeology.\" We can build modern APIs that sit on top of your legacy databases, allowing you to keep your data while modernizing the user interface." },
-        { q: "What is \"Agentic Readiness\"?", a: "Modern websites must be readable by AI. We structure your data and APIs so that future AI agents (yours or your customers') can interact with your business autonomously." }
+        {
+            q: "What is website redevelopment and how does it differ from redesign?",
+            a: <>
+                <span className="font-bold text-gray-900">Website redevelopment</span> is a complete architectural transformation of your digital platform, not just a visual refresh. While redesign updates appearance, our infrastructure addresses core technical issues—modernizing your tech stack, eliminating technical debt, improving performance, and building scalable foundations. It&apos;s engineering transformation, not cosmetic change.
+            </>
+        },
+        {
+            q: "Will my website go offline during redevelopment?",
+            a: <>
+                No. Our <span className="font-bold text-gray-900">website redevelopment services</span> ensure zero downtime. We use parallel development and gradual migration strategies where the new system is built alongside your existing platform, with carefully orchestrated cutover that maintains continuous operations throughout the transformation.
+            </>
+        },
+        {
+            q: "How much does website redevelopment cost?",
+            a: <>
+                Investment varies based on platform complexity, integrations, and migration scope. Enterprise typically ranges from $30,000 to $200,000+. However, clients often see <span className="font-bold text-gray-900">30% reduction</span> in hosting costs and <span className="font-bold text-gray-900">50% faster</span> deployment cycles that deliver ROI within 12-18 months.
+            </>
+        },
+        {
+            q: "What are the signs my website needs redevelopment, not just redesign?",
+            a: <>
+                Key indicators include: slow page load times (3+ seconds), frequent crashes during traffic spikes, security vulnerabilities, high maintenance costs, inability to integrate new tools, poor mobile performance, or technology that&apos;s 5+ years old. If these sound familiar, it&apos;s time to <span className="font-bold text-gray-900">redevelop website</span> infrastructure strategically.
+            </>
+        },
+        {
+            q: "Can you redevelop my website while preserving SEO rankings?",
+            a: <>
+                Absolutely. <span className="font-bold text-gray-900">SEO preservation</span> is critical in our methodology. We implement proper <span className="font-bold text-gray-900">301 redirects</span>, maintain URL structures where beneficial, preserve metadata, and ensure improved <span className="font-bold text-gray-900">Core Web Vitals</span>—often resulting in better rankings post-launch due to enhanced performance.
+            </>
+        },
+        {
+            q: "What technologies do you use for website redevelopment?",
+            a: <>
+                We select technologies based on your specific needs. Common stacks include <span className="font-bold text-gray-900">React/Next.js</span> for frontend, <span className="font-bold text-gray-900">Node.js</span> or <span className="font-bold text-gray-900">Laravel</span> for backend, <span className="font-bold text-gray-900">headless CMS platforms</span> (<span className="font-bold text-gray-900">Contentful</span>, <span className="font-bold text-gray-900">Strapi</span>), and <span className="font-bold text-gray-900">cloud infrastructure</span> (<span className="font-bold text-gray-900">AWS</span>, <span className="font-bold text-gray-900">Azure</span>). Our company recommends the optimal stack for your scalability and business objectives.
+            </>
+        },
+        {
+            q: "Do you provide support after website redevelopment is complete?",
+            a: <>
+                Yes. Post-launch support is essential. Our <span className="font-bold text-gray-900">redevelopment services</span> include <span className="font-bold text-gray-900">continuous monitoring</span>, <span className="font-bold text-gray-900">performance optimization</span>, <span className="font-bold text-gray-900">security patches</span>, <span className="font-bold text-gray-900">feature enhancements</span>, and <span className="font-bold text-gray-900">strategic guidance</span>. We implement observability tools (Datadog, New Relic) for proactive issue detection and resolution.
+            </>
+        }
     ];
 
     return (
@@ -38,7 +75,9 @@ export default function FAQ() {
                                 </button>
                                 {openFAQ === idx && (
                                     <div className="px-6 pb-6 pt-0">
-                                        <p className="text-gray-600 leading-relaxed font-body">{faq.a}</p>
+                                        <p className="text-gray-600 leading-relaxed font-body">
+                                            {faq.a}
+                                        </p>
                                     </div>
                                 )}
                             </div>

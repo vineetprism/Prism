@@ -40,19 +40,11 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] font-heading">
-                                Architecting{' '}
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] to-[#ff6b6b]">
-                                    Intelligent
-                                </span>
-                                <br />
-                                Digital Experiences
+                                Architecting CMS Website Development <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] to-[#ff6b6b]">Intelligent Digital Experiences</span>
                             </h1>
 
                             <p className="text-gray-400 text-lg sm:text-xl leading-relaxed font-body max-w-2xl">
-                                Move beyond monolithic legacy systems. We build{' '}
-                                <span className="text-white font-medium">AI-integrated, headless CMS architectures</span>{' '}
-                                that drive <span className="text-[#E92228] font-semibold">83% faster time-to-market</span>{' '}
-                                and seamless omnichannel delivery.
+                                Move beyond monolithic legacy systems. Our <span className="text-white font-bold">cms website development services</span> build AI-integrated, headless CMS architectures that drive <span className="text-[#E92228] font-bold">83% faster time-to-market</span> and seamless omnichannel delivery.
                             </p>
 
                             {/* Glassmorphism Stats Row */}
@@ -74,8 +66,8 @@ export default function Hero({ onOpenModal }: HeroProps) {
                                 <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl px-5 py-3 flex items-center gap-3">
                                     <Server className="w-5 h-5 text-[#E92228]" />
                                     <div>
-                                        <div className="text-xl font-bold text-white font-heading">99.9%</div>
-                                        <div className="text-gray-400 text-xs">Uptime SLA</div>
+                                        <div className="text-xl font-bold text-white font-heading">99.99%</div>
+                                        <div className="text-gray-400 text-xs">Uptime</div>
                                     </div>
                                 </div>
                             </div>

@@ -8,25 +8,25 @@ export default function Benefits() {
             num: "01",
             metric: "9,900%",
             label: "Financial Velocity",
-            desc: "ROI on User Experience investments. We transform design from an aesthetic choice into a primary revenue driver."
+            desc: "Corporate Website Development ROI. We turn corporate website experience into a measurable revenue driver."
         },
         {
             num: "02",
             metric: "$2.2M",
             label: "Risk Mitigation",
-            desc: "Savings annually on data breach costs through AI-driven security automation and proactive threat modeling."
+            desc: "Secure Corporate Website Architecture. AI-driven corporate website design services reduce breach risk and annual security costs."
         },
         {
             num: "03",
             metric: "50%",
             label: "Development Speed",
-            desc: "Faster time-to-market. Our AI-augmented engineering teams reduce manual testing by 80%."
+            desc: "Enterprise Website Delivery Speed. As a corporate website development company, we accelerate time-to-market with AI-led engineering."
         },
         {
             num: "04",
             metric: "30%",
             label: "Operational Efficiency",
-            desc: "OpEx Reduction achieved by modernizing data platforms and retiring legacy infrastructure."
+            desc: "Optimized Corporate Website Platforms. Modern company corporate website architectures reduce OpEx and retire legacy systems."
         }
     ];
 

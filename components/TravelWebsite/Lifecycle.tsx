@@ -5,10 +5,30 @@ import { Search, Rocket, Activity, TrendingUp } from 'lucide-react';
 
 export default function Lifecycle() {
     const lifecycle = [
-        { icon: Search, title: "Strategic Discovery & Audit", subtitle: "Phase 1", desc: "We don't guess. We map your \"Technical Debt,\" analyze legacy code, and define user personas (e.g., \"The Spontaneous Traveler\") before writing a line of code." },
-        { icon: Rocket, title: "Agile Engineering & MVP", subtitle: "Phase 2", desc: "Velocity over perfection. We deploy \"Thin Slice\" architectures to validate tech stacks early, launching MVPs in as little as 30-90 days." },
-        { icon: Activity, title: "Resilience & Chaos Engineering", subtitle: "Phase 3", desc: "We break it on purpose. Using Chaos Engineering, we simulate network failures and database outages to ensure your Circuit Breakers hold up under pressure." },
-        { icon: TrendingUp, title: "FinOps & Continuous Optimization", subtitle: "Phase 4", desc: "Post-launch, we implement strict tagging and monitoring (Datadog/Grafana) to optimize resources and lower your cost-per-booking." }
+        {
+            icon: Search,
+            title: "Strategic Discovery & Audit",
+            subtitle: "Phase 1",
+            desc: <>We don't guess. We map your technical debt, analyze legacy code, and define user personas (e.g., "The Spontaneous Traveler") before writing a line of code through comprehensive <span className="font-bold text-white">travel website development</span> methodology.</>
+        },
+        {
+            icon: Rocket,
+            title: "Agile Engineering & MVP",
+            subtitle: "Phase 2",
+            desc: <>Velocity over perfection. We deploy "Thin Slice" architectures to validate tech stacks early, launching MVPs in as little as 30-90 days with our agile approach.</>
+        },
+        {
+            icon: Activity,
+            title: "Resilience & Chaos Engineering",
+            subtitle: "Phase 3",
+            desc: <>We break it on purpose. Using Chaos Engineering, we simulate network failures and database outages to ensure your Circuit Breakers hold up under pressure during peak booking periods.</>
+        },
+        {
+            icon: TrendingUp,
+            title: "FinOps & Continuous Optimization",
+            subtitle: "Phase 4",
+            desc: <>Post-launch, we implement strict tagging and monitoring (Datadog/Grafana) to optimize resources and lower your cost-per-booking through continuous improvement.</>
+        }
     ];
 
     return (
@@ -19,9 +39,8 @@ export default function Lifecycle() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
-                        <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Our Process</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading">
-                            The Engineering Lifecycle: From Audit to Automation
+                            Our Travel Website Development Process: The Engineering Lifecycle
                         </h2>
                     </div>
 
@@ -42,7 +61,9 @@ export default function Lifecycle() {
                                 <div className="flex-1 bg-gray-900 p-6 lg:p-8 rounded-2xl border border-gray-800 hover:border-[#E92228]/50 transition-colors duration-300">
                                     <p className="text-[#E92228] text-xs font-bold uppercase tracking-wider mb-2">{item.subtitle}</p>
                                     <h3 className="text-xl lg:text-2xl font-bold font-heading mb-3">{item.title}</h3>
-                                    <p className="text-gray-400 leading-relaxed font-body">{item.desc}</p>
+                                    <p className="text-gray-400 leading-relaxed font-body">
+                                        {item.desc}
+                                    </p>
                                 </div>
                             </div>
                         ))}

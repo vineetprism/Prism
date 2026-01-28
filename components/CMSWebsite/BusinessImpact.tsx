@@ -30,11 +30,11 @@ export default function BusinessImpact() {
                         </div>
 
                         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading mb-8 leading-tight text-gray-900">
-                            The <span className="text-[#E92228]">Central Nervous System</span> of Your Brand
+                            CMS Development Solutions: The <span className="text-[#E92228]">Central Nervous System</span> of Your Brand
                         </h2>
 
                         <p className="text-xl text-gray-600 leading-relaxed font-body mb-8 border-l-4 border-[#E92228] pl-6">
-                            In the digital economy, your CMS is not just a repository—it is the <span className="text-gray-900 font-semibold">operational engine</span> of your business. We transition organizations from high-debt legacy monoliths to agile ecosystems.
+                            In the digital economy, your CMS is not just a repository it is the operational engine of your business. As a leading <span className="text-gray-900 font-bold">cms website development company</span>, we transition organizations from high-debt legacy monoliths to agile ecosystems that power growth.
                         </p>
                     </div>
 

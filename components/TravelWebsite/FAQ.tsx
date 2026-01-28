@@ -6,11 +6,34 @@ export default function FAQ() {
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
     const faqs = [
-        { q: "How do you handle \"Double Bookings\" during high traffic?", a: "We implement robust concurrency control using Distributed Locking mechanisms. When a user selects a room or seat, we apply a temporary, time-bound lock (via Redis) that prevents other users from booking the same unit until the transaction clears or expires." },
-        { q: "Can you migrate our legacy Mainframe/COBOL system without downtime?", a: "Yes. We utilize the Strangler Fig Pattern. We build a cloud-native \"Anti-Corruption Layer\" around your legacy system and migrate functionality piece-by-piece. This allows you to keep operating while we modernize the backend." },
-        { q: "How do you manage slow responses from GDS providers (Amadeus/Sabre)?", a: "We use Asynchronous Processing and Circuit Breakers. If a provider is slow, our system serves the fast results first and \"trips the breaker\" on the slow provider to prevent your entire search engine from hanging." },
-        { q: "What is your approach to Data Security and GDPR?", a: "We employ a \"Security by Design\" approach. Sensitive PII is encrypted at rest, and payment data is tokenized via secure gateways so that raw credit card numbers never touch your servers, ensuring full PCI-DSS compliance." },
-        { q: "How does your architecture support \"Agentic AI\"?", a: "We build on a Data Lakehouse foundation (like Snowflake). This unifies your data, allowing LLMs to access clean, structured history to generate autonomous itineraries and personalized recommendations." }
+        {
+            q: "What features are essential for a modern travel booking website?",
+            a: "Essential features include real-time inventory management, dynamic pricing engines, secure payment gateways (PCI-DSS compliant), multi-currency support, GDS/NDC integrations, AI-powered search and recommendations, mobile responsiveness, and booking management dashboards. Our solutions deliver these capabilities with enterprise-grade reliability."
+        },
+        {
+            q: "How long does it take to develop a travel booking website?",
+            a: "Timeline varies by complexity. Basic projects launch in 8-12 weeks, while comprehensive platforms with GDS integrations and advanced features require 16-24 weeks. We use agile methodology to deliver working MVPs within 30-90 days, allowing early market validation."
+        },
+        {
+            q: "Can you integrate with GDS systems like Amadeus and Sabre?",
+            a: "Absolutely. Our travel website development includes direct integration with major GDS providers (Amadeus, Sabre, Travelport) and NDC standards. These integrations provide real-time access to flights, hotels, and car rentals with live availability and pricing."
+        },
+        {
+            q: "How do you handle high traffic during peak booking seasons?",
+            a: "We architect cloud-native, auto-scaling infrastructures that handle traffic spikes seamlessly. Our platforms use multi-tier caching, microservices architecture, and elastic scaling to manage 100,000+ concurrent users without performance degradation—critical for peak booking periods."
+        },
+        {
+            q: "Is my travel website secure for processing payments?",
+            a: "Yes. Security is fundamental in our approach. We implement PCI-DSS compliance, encrypted transactions, secure payment gateway integrations, fraud detection, and GDPR-compliant data handling. All platforms undergo rigorous security testing before launch."
+        },
+        {
+            q: "Can you build both B2C and B2B travel platforms?",
+            a: "Definitely. As a travel website development company, we develop consumer-facing booking sites, B2B agent portals, white-label solutions, and corporate travel management platforms. Our expertise spans all travel business models with appropriate role-based access and pricing structures."
+        },
+        {
+            q: "Do you provide ongoing support and maintenance after launch?",
+            a: "Yes. Post-launch support is critical for travel platforms. We offer 24/7 monitoring, performance optimization, security updates, GDS API maintenance, feature enhancements, and technical support to ensure your platform remains competitive and reliable as your business grows."
+        }
     ];
 
     return (
@@ -38,7 +61,9 @@ export default function FAQ() {
                                 </button>
                                 {openFAQ === idx && (
                                     <div className="px-6 pb-6 pt-0">
-                                        <p className="text-gray-600 leading-relaxed font-body">{faq.a}</p>
+                                        <p className="text-gray-600 leading-relaxed font-body">
+                                            {faq.a}
+                                        </p>
                                     </div>
                                 )}
                             </div>

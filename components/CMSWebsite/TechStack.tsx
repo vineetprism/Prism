@@ -84,7 +84,7 @@ export default function TechStack() {
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Trusted Technologies</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            The CMS & DXP Ecosystem
+                            Trusted Technologies: The CMS & DXP Ecosystem
                         </h2>
                     </div>
 

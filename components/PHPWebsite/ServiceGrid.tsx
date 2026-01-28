@@ -36,9 +36,9 @@ export default function ServiceGrid() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading mb-4">
-                            Our PHP Expertise
+                            Our PHP Website Development Services Expertise
                         </h2>
-                        <p className="text-gray-500 text-lg">Enterprise-grade solutions for modern businesses</p>
+                        <p className="text-gray-500 text-lg">Enterprise-grade solutions engineered by a leading <span className="font-bold text-gray-900">php development company</span> for modern businesses.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

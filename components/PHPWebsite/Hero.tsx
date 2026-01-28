@@ -33,11 +33,10 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             </span>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-[1.1] font-heading">
-                                Engineer High-Performance Platforms with{' '}
-                                <span className="text-[#E92228]">Modern Enterprise PHP</span>
+                                Engineer High-Performance Platforms with Modern PHP Development Solutions
                             </h1>
                             <p className="text-gray-600 text-lg sm:text-xl leading-relaxed font-body mb-10 max-w-3xl mx-auto lg:mx-0">
-                                Move beyond legacy scripting. We build secure, cloud-native architectures capable of handling <span className="font-semibold text-gray-900">50,000+ concurrent users</span> with <span className="font-semibold text-[#E92228]">45% greater cost efficiency</span> than Java counterparts.
+                                Move beyond legacy scripting. As a leading <span className="font-bold text-gray-900">php website development company in India</span>, we build secure, cloud-native architectures capable of handling 50,000+ concurrent users with 45% greater cost efficiency than Java counterparts.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start">

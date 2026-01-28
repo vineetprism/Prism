@@ -20,7 +20,7 @@ export default function CTA({ onOpenModal }: CTAProps) {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading mb-6">
-                    Ready to Reinvent Your Digital Core?
+                    Ready to Reinvent Your Digital Core with Website Redevelopment?
                 </h2>
                 <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-body">
                     Let&apos;s eliminate your technical debt and build a future-proof platform.

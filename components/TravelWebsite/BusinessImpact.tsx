@@ -27,17 +27,17 @@ export default function BusinessImpact() {
                         {/* Right - Content */}
                         <div className="lg:col-span-3">
                             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 font-heading mb-8">
-                                The Era of the Monolith is <span className="relative">Over<span className="absolute -bottom-2 left-0 w-full h-1 bg-[#E92228]"></span></span>.
+                                The Era of the Monolith is Over
                             </h2>
 
                             <div className="space-y-6">
                                 <p className="text-lg text-gray-600 leading-relaxed">
-                                    The winners in 2026 aren&apos;t just selling rooms; they are mastering <span className="font-semibold text-gray-900">inventory concurrency</span>, <span className="font-semibold text-gray-900">dynamic AI pricing</span>, and <span className="font-semibold text-gray-900">data sovereignty</span>.
+                                    The winners in 2026 aren&apos;t just selling rooms; they are mastering inventory concurrency, dynamic AI pricing, and data sovereignty.
                                 </p>
 
                                 <div className="bg-gradient-to-r from-[#0c1929] to-[#0a1628] rounded-2xl p-6 border-l-4 border-[#E92228]">
                                     <p className="text-gray-300 leading-relaxed">
-                                        We don&apos;t just build websites; we engineer <span className="text-[#E92228] font-bold">Intelligent Operations</span> that turn latency into conversion.
+                                        As a <span className="text-white font-bold">travel website development company</span>, we don&apos;t just build websites; we engineer Intelligent Operations that turn latency into conversion and transform booking platforms into strategic business assets.
                                     </p>
                                 </div>
                             </div>

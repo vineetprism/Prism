@@ -13,11 +13,11 @@ import {
 export default function ServiceGrid() {
     const services = [
         { icon: Unplug, title: "Digital Decoupling & API First", desc: "We break down monolithic barriers using \"Backend-for-Frontend\" (BFF) patterns, exposing your data via GraphQL and RESTful APIs for seamless integration." },
-        { icon: FileText, title: "Headless CMS Architecture", desc: "Separate your content from your code. Omnichannel delivery to web, mobile, and IoT using Strapi, Contentful, or Sanity." },
+        { icon: FileText, title: "Headless CMS Architecture", desc: "Separate your content from your code. Omnichannel delivery to web, mobile, and IoT using Strapi, Contentful, or Sanity—core to modern <span className=\"font-bold text-gray-900\">website redevelopment services</span>." },
         { icon: Cloud, title: "Cloud-Native Infrastructure", desc: "Move from fixed servers to elastic scalability. Containerized deployments (Docker/K8s) that scale to zero when idle, reducing Cloud TCO." },
         { icon: Bot, title: "AI Agent Integration", desc: "Agentic Readiness. We architect your \"Digital Core\" to support autonomous Python-based AI agents for customer service and data analysis." },
         { icon: GitBranch, title: "Legacy Migration (Strangler Fig)", desc: "Risk-free migration. We build the new system around the edges of the old one, gradually replacing functionality until the legacy system is retired." },
-        { icon: ShieldCheck, title: "DevSecOps & Compliance", desc: "Security baked in, not bolted on. Automated CI/CD pipelines with SAST/DAST scanning to ensure GDPR/CCPA compliance." }
+        { icon: ShieldCheck, title: "DevSecOps & Compliance", desc: "Security baked in, not bolted on. Automated CI/CD pipelines with SAST/DAST scanning to ensure GDPR/CCPA compliance throughout <span className=\"font-bold text-gray-900\">redevelopment of website</span> projects." }
     ];
 
     return (
@@ -42,7 +42,9 @@ export default function ServiceGrid() {
                                         <service.icon className="w-7 h-7 text-white" />
                                     </div>
                                     <h3 className="text-xl font-bold text-[#E92228] font-heading mb-3">{service.title}</h3>
-                                    <p className="text-gray-600 leading-relaxed font-body">{service.desc}</p>
+                                    <p className="text-gray-600 leading-relaxed font-body">
+                                        {typeof service.desc === 'string' ? <span dangerouslySetInnerHTML={{ __html: service.desc }} /> : service.desc}
+                                    </p>
                                 </div>
                             </div>
                         ))}

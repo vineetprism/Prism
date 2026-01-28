@@ -7,8 +7,8 @@ export default function Lifecycle() {
     const steps = [
         { icon: Search, title: "Assessment", timeline: "Weeks 1-4", desc: "Stakeholder interviews, legacy audit, and defining the \"Solution Architecture\" before code is written." },
         { icon: Code2, title: "Transition", timeline: "Months 2-6", desc: "Agile development sprints. Parallel tracks for \"Platform Build\" and \"Content Migration\" to accelerate delivery." },
-        { icon: ShieldCheck, title: "Monitoring", timeline: "Launch Window", desc: "Orchestrated cutover with dry runs, automated load testing, and \"Hour-by-Hour\" launch scheduling." },
-        { icon: Rocket, title: "Optimization", timeline: "Ongoing", desc: "Continuous delivery of new features, AI model tuning, and proactive security patching." }
+        { icon: ShieldCheck, title: "Launch Window Monitoring", timeline: "Launch Window", desc: "Orchestrated cutover with dry runs, automated load testing, and \"Hour-by-Hour\" launch scheduling." },
+        { icon: Rocket, title: "Ongoing Optimization", timeline: "Ongoing", desc: "Continuous delivery of new features, AI model tuning, and proactive security patching." }
     ];
 
     return (
@@ -17,9 +17,10 @@ export default function Lifecycle() {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Our Process</span>
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading">
-                            The Transformation Lifecycle
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading mb-4">
+                            The CMS Transformation Lifecycle
                         </h2>
+                        <p className="text-gray-500 text-lg max-w-2xl mx-auto">The transformation lifecycle powering <span className="font-bold text-gray-900">enterprise cms website development India</span> success.</p>
                     </div>
 
                     <div className="relative">
@@ -38,8 +39,8 @@ export default function Lifecycle() {
                                             <item.icon className="w-6 h-6 text-[#E92228] group-hover:text-white transition-colors duration-300" />
                                         </div>
                                         <div>
-                                            <p className="text-[#E92228] text-xs font-bold uppercase tracking-wider mb-1">{item.timeline}</p>
-                                            <h3 className="text-xl font-bold text-gray-900 font-heading mb-3">{item.title}</h3>
+                                            {/* <p className="text-[#E92228] text-xs font-bold uppercase tracking-wider mb-1">{item.timeline}</p> */}
+                                            <h3 className="text-xl font-bold text-gray-900 font-heading mb-3">{item.timeline} {item.title}</h3>
                                             <p className="text-gray-600 leading-relaxed font-body">{item.desc}</p>
                                         </div>
                                     </div>
