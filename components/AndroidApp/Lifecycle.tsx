@@ -15,7 +15,7 @@ export default function Lifecycle() {
             icon: GitBranch,
             title: "Transition",
             subtitle: "Agile Engineering",
-            desc: "2-week sprints using Trunk-Based Development. We integrate the \"Anti-Corruption Layer\" to connect your legacy backend safely."
+            desc: <>2-week sprints using Trunk-Based Development. We integrate the Anti-Corruption Layer to connect your legacy backend safely through proven <span className="font-bold">android application development company</span> methodology.</>
         },
         {
             icon: Activity,
@@ -40,7 +40,7 @@ export default function Lifecycle() {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">
-                            Delivery Lifecycle
+                            Android Application Development Solutions:
                         </span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading">
                             The Engineering Lifecycle

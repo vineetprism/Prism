@@ -8,14 +8,14 @@ export default function BusinessImpact() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="max-w-4xl mx-auto text-center">
                     <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-4 block">
-                        Market Thesis
+                        Market Thesis:
                     </span>
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-heading mb-8 leading-tight">
                         The &quot;<span className="text-[#E92228]">Total Reinvention</span>&quot; Mandate
                     </h2>
 
                     <p className="text-xl text-gray-600 leading-relaxed font-body mb-8">
-                        In 2025, an app is not a utility; it is your <span className="font-semibold text-gray-900">digital core</span>. While global integrators offer scale but lack agility, and boutiques offer design but lack integration depth, <span className="font-bold text-[#E92228]">Prism Infoways occupies the critical intersection</span>. We don&apos;t just write code; we engineer Anti-Corruption Layers that modernize your legacy stack and turn Technical Debt into measurable Business Value.
+                        In 2025, an app is not a utility; it is your digital core. While global integrators offer scale but lack agility, and boutiques offer design but lack integration depth, we occupy the critical intersection as an <span className="font-bold text-gray-900">android application development company</span>. We don&apos;t just write code; we engineer Anti-Corruption Layers that modernize your legacy stack and turn Technical Debt into measurable Business Value.
                     </p>
 
                     {/* Key Stat Callout */}

@@ -5,8 +5,8 @@ import { Search, Rocket, Activity, BarChart3 } from 'lucide-react';
 
 export default function Lifecycle() {
     const lifecycle = [
-        { num: "01", icon: Search, title: "Assessment", subtitle: "The Imagine Phase", desc: "Deep Dive: We audit your legacy code, map your data structures (ETL), and define business KPIs. We benchmark your SEO to ensure no traffic is lost during the transition." },
-        { num: "02", icon: Rocket, title: "Transition", subtitle: "The Deliver Phase", desc: "Build & Migrate: We execute the \"heavy lifting\"—frontend development, middleware construction, and rigorous data validation. We employ automated testing to verify every SKU and customer record." },
+        { num: "01", icon: Search, title: "Assessment", subtitle: "The Imagine Phase", desc: "Deep Dive: We review your existing code, analyze your data structures (ETL), and establish business KPIs. As a shopify website development company, we analyze your SEO to make sure that not a single visitor is lost in the transition." },
+        { num: "02", icon: Rocket, title: "Transition", subtitle: "The Deliver Phase", desc: "Build & Migrate: We perform the heavy lifting, which includes frontend development, building middleware, and thoroughly validating your data. Automated testing ensures that every SKU and customer is valid through our shopify ecommerce website development company processes." },
         { num: "03", icon: Activity, title: "Monitoring", subtitle: "The Validation Phase", desc: "Launch & Stabilize: Cutover management with precise DNS updates. We monitor server logs, 404 errors, and payment gateways in real-time to ensure immediate stability." },
         { num: "04", icon: BarChart3, title: "Optimization", subtitle: "The Run Phase", desc: "Growth & Scale: The launch is just day one. We transition to a growth retainer, using analytics to refine the funnel, personalization to increase AOV, and ongoing feature enhancements." }
     ];
@@ -18,7 +18,7 @@ export default function Lifecycle() {
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Our Methodology</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            The Prism Delivery Lifecycle
+                            Our Shopify Website Development Process: The Delivery Lifecycle
                         </h2>
                     </div>
 

@@ -15,14 +15,14 @@ const benefits = [
         title: "Uncompromised Stability",
         stat: "99.9%",
         statLabel: "Crash-Free Sessions",
-        desc: "We utilize Swift 6's strict concurrency checking to eliminate data races at the compiler level. This prevents the \"silent crashes\" that cause 71% of users to churn within 90 days."
+        desc: <>We utilize Swift 6&apos;s strict concurrency checking to eliminate data races at the compiler level. This prevents the &quot;silent crashes&quot; that cause 71% of users to churn within 90 days — a critical advantage of well-executed <span className="font-bold">iOS app development</span>.</>
     },
     {
         num: "03",
         title: "Operational Efficiency",
         stat: "-35%",
         statLabel: "Data Entry Errors",
-        desc: "For internal tools, we replace manual data entry with camera-based OCR and IoT beacon automation. This reduces human data entry errors by 35% and frees your workforce for high-value tasks."
+        desc: <>For internal tools, we replace manual data entry with camera-based OCR and IoT beacon automation. This reduces human data entry errors by 35% and frees your workforce for high-value tasks through smart <span className="font-bold">custom iOS app development</span>.</>
     },
     {
         num: "04",
@@ -43,7 +43,7 @@ export default function Benefits() {
                             The ROI
                         </span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            Why Prism for iOS?
+                            Why Choose Our iOS App Development Company?
                         </h2>
                     </div>
 

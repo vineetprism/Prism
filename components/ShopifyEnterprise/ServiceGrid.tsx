@@ -12,12 +12,12 @@ import {
 
 export default function ServiceGrid() {
     const services = [
-        { num: "01", icon: ArrowRightLeft, title: "Enterprise Migration & Replatforming", desc: "Execute \"Zero-Data-Loss\" migrations from Magento, Oracle, or Salesforce. We handle complex data mapping, SEO preservation, and 301 redirect strategies to protect your ranking." },
-        { num: "02", icon: Layers, title: "Headless Commerce (Hydrogen & Oxygen)", desc: "Decouple your frontend for sub-second load times. We build React-based storefronts using Shopify Hydrogen, deployed to the edge for maximum performance." },
-        { num: "03", icon: Settings, title: "Custom Middleware & ERP Integration", desc: "Synchronize your ecosystem. We build custom Node.js/Go middleware to connect Shopify seamlessly with SAP, NetSuite, and Microsoft Dynamics for real-time inventory and order logic." },
-        { num: "04", icon: Users, title: "B2B & Wholesale Solutions", desc: "Digitize your B2B operations. We configure custom pricing tiers, bulk ordering, and company profiles, leveraging Shopify Plus's native B2B capabilities and custom flows." },
-        { num: "05", icon: Palette, title: "High-Performance UX/UI Design", desc: "Design for conversion. Our mobile-first approach focuses on \"Shop Pay\" optimization and checkout extensibility to reduce cart abandonment and increase AOV." },
-        { num: "06", icon: TrendingUp, title: "Conversion Rate Optimization (CRO)", desc: "Data-driven growth. Post-launch, we utilize A/B testing and behavioral analytics to continuously refine the user journey and maximize revenue per session." }
+        { num: "01", icon: ArrowRightLeft, title: "Enterprise Migration & Replatforming", desc: "Achieve “Zero-Data-Loss” migrations from Magento, Oracle, or Salesforce. Our Shopify website development services address intricate data mapping, SEO optimization, and 301 redirect plans to safeguard your search engine rankings." },
+        { num: "02", icon: Layers, title: "Headless Commerce (Hydrogen & Oxygen)", desc: "Unlock sub-second load times by separating your frontend. We develop React-based storefronts using Shopify Hydrogen, hosted at the edge for optimal performance through cutting-edge Shopify ecommerce website development." },
+        { num: "03", icon: Settings, title: "Custom Middleware & ERP Integration", desc: "Integrate your entire ecosystem. We develop custom Node.js/Go middleware to integrate Shopify seamlessly with SAP, NetSuite, and Microsoft Dynamics for real-time inventory and order processing." },
+        { num: "04", icon: Users, title: "B2B & Wholesale Solutions", desc: "Optimize your B2B business. Our Shopify website development company sets up custom pricing levels, bulk ordering, and company profiles, leveraging Shopify Plus’s native B2B functionality and custom workflows." },
+        { num: "05", icon: Palette, title: "High-Performance UX/UI Design", desc: "Design for conversion. Our mobile-first design strategy emphasizes Shop Pay optimization and checkout extensibility to minimize cart abandonment and boost AOV." },
+        { num: "06", icon: TrendingUp, title: "Conversion Rate Optimization (CRO)", desc: "Data-driven growth. After launch, we apply A/B testing and behavioral analysis to continually optimize the user experience and maximize revenue per user session." }
     ];
 
     return (
@@ -27,7 +27,7 @@ export default function ServiceGrid() {
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Enterprise Capabilities</span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            Full-Spectrum Commerce Solutions
+                            Full-Spectrum Commerce Shopify Website Development Services
                         </h2>
                     </div>
 

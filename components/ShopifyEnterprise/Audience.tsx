@@ -32,7 +32,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                             </h3>
 
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                You need to launch fast and look world-class. We focus on <span className="font-semibold">Headless UX</span>, high-converting checkout flows, and marketing integrations (Klaviyo/Attentive) to drive immediate sales velocity.
+                                You need to launch fast and look world-class. Our <span className="font-bold text-gray-900">shopify development services</span> focus on Headless UX, high-converting checkout flows, and marketing integrations (Klaviyo/Attentive) to drive immediate sales velocity.
                             </p>
 
                             <button
@@ -56,7 +56,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                             </h3>
 
                             <p className="text-gray-400 mb-6 leading-relaxed">
-                                You need to de-risk complex operations. We focus on <span className="font-semibold text-white">ERP connectivity</span>, multi-currency/multi-language setups, SSO, and handling high-volume API thresholds for global logistics.
+                                You need to de-risk complex operations. We focus on <span className="font-bold text-white">ERP connectivity</span>, multi-currency/multi-language setups, SSO, and handling high-volume API thresholds for global logistics.
                             </p>
 
                             <button

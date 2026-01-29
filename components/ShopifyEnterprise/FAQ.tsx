@@ -6,11 +6,13 @@ export default function FAQ() {
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
     const faqs = [
-        { q: "How do you handle data migration from legacy platforms like Magento?", a: "We use a proprietary ETL (Extract, Transform, Load) process. We don't just \"import\" data; we clean, restructure, and validate it programmatically to match Shopify's document-oriented architecture, ensuring zero data loss." },
-        { q: "Will I lose my SEO rankings during replatforming?", a: "Not with our strategy. We conduct a full crawl of your existing site to map every URL. We implement a comprehensive 301 redirect map and transfer all meta-data and schema tags, protecting your organic traffic." },
-        { q: "Do I really need Headless Commerce?", a: "Headless is ideal for brands requiring unique, \"app-like\" experiences or sub-second performance. If your needs are simpler, we can build high-performance Liquid themes. We help you choose the right architecture based on your ROI goals." },
-        { q: "Can you integrate Shopify with my existing ERP?", a: "Yes. We specialize in building custom middleware layers using Node.js to sync inventory, orders, and customer data between Shopify Plus and ERPs like SAP, NetSuite, and Microsoft Dynamics in real-time." },
-        { q: "What happens after the site launches?", a: "We transition to our \"Run Phase.\" We offer support retainers that cover security patches, feature updates, and Conversion Rate Optimization (CRO) to ensure your store continues to grow." }
+        { q: "Why Should I Choose Shopify For My E-Commerce Website?", a: "Shopify offers enterprise-grade reliability with 99.99% uptime, built-in PCI compliance, and scalability to handle traffic spikes without performance issues. Our development approach leverages these advantages while adding custom functionality, advanced integrations, and conversion optimization that standard templates can't deliver." },
+        { q: "How Long Does It Take To Develop A Custom Shopify Website?", a: "Timeline depends on complexity and customization level. Basic stores launch in 6-8 weeks, while custom storefronts with advanced features require 12-16 weeks. Enterprise migrations with ERP integration typically take 16-24 weeks. We use agile sprints to deliver working features progressively." },
+        { q: "What's The Difference Between Shopify And Shopify Plus?", a: <>Shopify Plus is the enterprise solution offering unlimited staff accounts, advanced automation workflows, wholesale channels, API call rate increases, and dedicated support. It&apos;s designed for brands processing $1M+ annually. As a <span className="font-bold text-gray-900">shopify website development company</span>, we recommend the right platform for your growth stage and business requirements.</> },
+        { q: "Can You Migrate My Existing E-Commerce Store To Shopify?", a: "A: Yes. We execute zero-data-loss migrations from platforms like Magento, WooCommerce, BigCommerce, and custom solutions. Our migration process preserves SEO rankings through proper 301 redirects, maintains customer data integrity, and ensures order history continuity without business disruption." },
+        { q: "Can Shopify Handle High Traffic And Large Product Catalogs?", a: "Absolutely. We've built stores handling 50,000+ products and processing millions in daily transactions. Shopify's cloud infrastructure auto-scales during traffic spikes, and our optimization ensures sub-second load times even with complex catalogs and high concurrent user volumes." },
+        { q: "What Integrations Are Possible With Shopify?", a: <>Shopify integrates with virtually any business system. Our <span className="font-bold text-gray-900">shopify website development services</span> commonly connect ERP systems (SAP, NetSuite), accounting software (QuickBooks, Xero), marketing platforms (Klaviyo, HubSpot), and logistics providers through custom middleware and APIs.</> },
+        { q: "Do You Provide Ongoing Support After Launching My Shopify Store?", a: "Yes. Post-launch support is critical for e-commerce success. We offer continuous optimization including conversion rate analysis, A/B testing, performance monitoring, security updates, feature enhancements, and strategic consultation to ensure your store evolves with market demands and drives sustained revenue growth." }
     ];
 
     return (
@@ -18,9 +20,9 @@ export default function FAQ() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto">
                     <div className="text-center mb-12">
-                        <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">Common Questions</span>
+                        <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">FAQ</span>
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-heading">
-                            Frequently Asked Questions
+                            Frequently Asked Questions About Shopify Website Development
                         </h2>
                     </div>
 

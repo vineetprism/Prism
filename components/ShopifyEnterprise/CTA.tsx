@@ -20,10 +20,10 @@ export default function CTA({ onOpenModal }: CTAProps) {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading mb-6">
-                    Ready to Transform Your Commerce?
+                    Ready to Transform Your Commerce with Shopify Website Development?
                 </h2>
                 <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto font-body">
-                    Let&apos;s architect a Shopify Plus ecosystem that scales with your ambitions.
+                    Let&apos;s architect a Shopify Plus ecosystem that scales with your ambitions. Partner with a leading <span className="font-bold text-white">shopify website development agency</span> for enterprise commerce solutions.
                 </p>
                 <button
                     onClick={onOpenModal}

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Rocket, Building2, ChevronRight } from 'lucide-react';
+import { Rocket, Building2 } from 'lucide-react';
 
 export default function Audience() {
     return (

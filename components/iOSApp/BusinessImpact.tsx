@@ -12,16 +12,15 @@ export default function BusinessImpact() {
                     </span>
 
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-heading mb-8 leading-tight">
-                        Architectural <span className="text-[#E92228]">Integrity</span> Drives Market Leadership
+                        Architectural Integrity Drives Market Leadership in iOS App Development
                     </h2>
 
                     <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 lg:p-12 border border-gray-100 shadow-lg">
                         <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed font-body">
-                            In the modern digital economy, the difference between a functioning app and a market leader is{' '}
-                            <span className="font-semibold text-gray-900">architectural integrity</span>. We don&apos;t just write code; we engineer{' '}
-                            <span className="text-[#E92228] font-bold">digital assets</span>. By moving from legacy frameworks to a modern, reactive iOS stack, our clients typically realize a{' '}
-                            <span className="text-[#E92228] font-bold">100:1 ROI</span> on UX investment, reducing long-term technical debt while unlocking the high-velocity subscription models that drive{' '}
-                            <span className="font-semibold text-gray-900">85% of ecosystem revenue</span>.
+                            In the modern digital economy, the difference between a functioning app and a market leader is architectural integrity. As an <span className="font-bold">iOS app development company</span>, we don&apos;t just write code; we engineer digital assets.
+                        </p>
+                        <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed font-body mt-6">
+                            By moving from legacy frameworks to a modern, reactive iOS stack, our approach to <span className="font-bold">custom iOS app development</span> helps clients realize a 100:1 ROI on UX investment, reducing long-term technical debt while unlocking the high-velocity subscription models that drive 85% of ecosystem revenue.
                         </p>
                     </div>
 

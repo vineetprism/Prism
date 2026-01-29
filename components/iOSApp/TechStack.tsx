@@ -11,22 +11,22 @@ import {
 
 // Tech icon mapping for iOS stack
 const techIconMap: { [key: string]: React.ReactNode } = {
-    "Swift 6": <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Objective-C": <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "SwiftUI": <Palette className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "UIKit": <Palette className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Combine": <Palette className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Core Data": <Database className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "SwiftData": <Database className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Realm": <Database className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "SQLite": <Database className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Xcode Cloud": <Workflow className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Fastlane": <Workflow className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "GitHub Actions": <Workflow className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "SonarQube": <Workflow className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "AWS Amplify": <Cloud className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Firebase": <Cloud className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Azure": <Cloud className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
+    "Swift 6": <Code2 className="w-5 h-5 text-white" />,
+    "Objective-C": <Code2 className="w-5 h-5 text-white" />,
+    "SwiftUI": <Palette className="w-5 h-5 text-white" />,
+    "UIKit": <Palette className="w-5 h-5 text-white" />,
+    "Combine": <Palette className="w-5 h-5 text-white" />,
+    "Core Data": <Database className="w-5 h-5 text-white" />,
+    "SwiftData": <Database className="w-5 h-5 text-white" />,
+    "Realm": <Database className="w-5 h-5 text-white" />,
+    "SQLite": <Database className="w-5 h-5 text-white" />,
+    "Xcode Cloud": <Workflow className="w-5 h-5 text-white" />,
+    "Fastlane": <Workflow className="w-5 h-5 text-white" />,
+    "GitHub Actions": <Workflow className="w-5 h-5 text-white" />,
+    "SonarQube": <Workflow className="w-5 h-5 text-white" />,
+    "AWS Amplify": <Cloud className="w-5 h-5 text-white" />,
+    "Firebase": <Cloud className="w-5 h-5 text-white" />,
+    "Azure": <Cloud className="w-5 h-5 text-white" />,
 };
 
 const techStack = [
@@ -47,23 +47,23 @@ export default function TechStack() {
                             The Toolkit
                         </span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            iOS Technology Stack
+                            Prism iOS Application Development Agency Technology Stack
                         </h2>
                     </div>
 
                     <div className="grid grid-cols-2 lg:grid-cols-5 gap-6">
                         {techStack.map((group, idx) => (
-                            <div key={idx} className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-[#E92228]/30 hover:shadow-lg transition-all duration-300">
+                            <div key={idx} className="bg-white rounded-2xl p-6 border-t-4 border-t-[#E92228] shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
                                 <h4 className="text-[#E92228] font-bold text-sm uppercase tracking-wider mb-5 font-heading">
                                     {group.category}
                                 </h4>
                                 <div className="space-y-3">
                                     {group.items.map((item, i) => (
-                                        <div key={i} className="group flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
-                                            <div className="w-8 h-8 flex items-center justify-center">
-                                                {techIconMap[item] || <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />}
+                                        <div key={i} className="flex items-center gap-3 p-3 rounded-lg bg-white border border-[#E92228] shadow-sm">
+                                            <div className="w-8 h-8 flex items-center justify-center bg-[#E92228] rounded-md text-white">
+                                                {techIconMap[item] || <Code2 className="w-5 h-5 text-white" />}
                                             </div>
-                                            <span className="text-gray-700 font-medium text-sm group-hover:text-gray-900 transition-colors">
+                                            <span className="text-[#E92228] font-medium text-sm">
                                                 {item}
                                             </span>
                                         </div>

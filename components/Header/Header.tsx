@@ -62,19 +62,7 @@ const APP_DEV_SOLUTIONS = [
     { title: 'Website to App Development', href: '/service_details/app-development/website-to-app-development' },
 ];
 
-// Our Services (static data - general services)
-const OUR_SERVICES = [
-    { title: 'Mobile App Development', href: '/service_details/mobile-app-development' },
-    { title: 'Cloud Computing', href: '/service_details/cloud-computing-solutions' },
-    { title: 'AI & ML', href: '/service_details/artificial-intelligence-machine-learning-solutions' },
-    { title: 'Digital Marketing', href: '/service_details/digital-marketing' },
-    { title: 'E-commerce Solutions', href: '/service_details/ecommerce-solutions' },
-    { title: 'IT Consulting', href: '/service_details/it-consulting' },
-    { title: 'Cybersecurity', href: '/service_details/cybersecurity-solutions' },
-    { title: 'Blockchain Development', href: '/service_details/blockchain-development' },
-    { title: 'UI/UX Design', href: '/service_details/ui-ux-design' },
-    { title: 'Web Development', href: '/service_details/web-development' },
-];
+
 
 // Cybersecurity Solutions (static data)
 const CYBERSECURITY_SOLUTIONS = [

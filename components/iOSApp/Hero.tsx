@@ -40,20 +40,15 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] font-heading">
-                                Monetize the{' '}
+                                iOS App Development Company: Monetize the{' '}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] to-[#bd202e]">
                                     $406 Billion
                                 </span>{' '}
                                 iOS Economy
-                                <br />
-                                <span className="text-gray-300">with Native Enterprise Architecture.</span>
                             </h1>
 
                             <p className="text-gray-400 text-lg sm:text-xl leading-relaxed font-body max-w-2xl">
-                                Transform your mobile presence from a utility to a{' '}
-                                <span className="text-white font-medium">high-performance revenue engine</span>. Leverage{' '}
-                                <span className="text-[#E92228] font-semibold">Swift 6 safety</span> and{' '}
-                                <span className="text-[#E92228] font-semibold">2.5x higher user spending</span> potential with a zero-trust engineering partner.
+                                Transform your mobile presence from a utility to a high-performance revenue engine. Our <span className="text-white font-bold">ios app development services</span> leverage Swift 6 safety and 2.5x higher user spending potential with a zero-trust engineering partner.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-2">

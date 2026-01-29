@@ -43,7 +43,7 @@ export default function Lifecycle() {
                             Delivery Lifecycle
                         </span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading">
-                            The iOS Engineering Lifecycle
+                            The iOS App Development Solutions Lifecycle
                         </h2>
                     </div>
 

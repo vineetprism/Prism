@@ -14,7 +14,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">
-                            Tailored Solutions
+                            Tailored iOS App Development Solutions
                         </span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
                             Built for Your Reality
@@ -23,7 +23,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Card A - Startups & SMEs */}
-                        <div className="group bg-gradient-to-br from-gray-900 to-[#1F1F1F] rounded-2xl p-8 lg:p-10 border-2 border-gray-800 hover:border-[#E92228] transition-all duration-300 hover:shadow-xl text-white">
+                        <div className="group bg-gradient-to-br from-gray-900 to-[#1F1F1F] rounded-2xl p-8 lg:p-10 border-2 border-[#E92228] transition-all duration-300 text-white shadow-xl">
                             <div className="inline-flex items-center gap-2 bg-[#E92228] text-white px-4 py-2 rounded-full mb-6 text-sm font-bold">
                                 <Rocket className="w-4 h-4" />
                                 For Startups & SMEs
@@ -34,8 +34,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                             </h3>
 
                             <p className="text-gray-400 mb-6 font-body leading-relaxed">
-                                Rapid MVP development focused on the <span className="text-white font-semibold">&quot;Core Loop.&quot;</span> We build scalable foundations that investors trust, ensuring you don&apos;t need a total rewrite when you hit{' '}
-                                <span className="text-[#E92228] font-semibold">Series A</span>.
+                                Rapid MVP development focused on the <span className="text-white font-semibold">&quot;Core Loop.&quot;</span> As part of our <span className="font-bold">custom iOS app development services</span>, we build scalable foundations that investors trust, ensuring you don&apos;t need a total rewrite when you hit Series A.
                             </p>
 
                             <button
@@ -48,7 +47,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                         </div>
 
                         {/* Card B - Enterprise & Government */}
-                        <div className="group bg-gradient-to-br from-[#F9F1F0] to-white rounded-2xl p-8 lg:p-10 border-2 border-gray-100 hover:border-[#E92228] transition-all duration-300 hover:shadow-xl">
+                        <div className="group bg-gradient-to-br from-[#F9F1F0] to-white rounded-2xl p-8 lg:p-10 border-2 border-[#E92228] transition-all duration-300 shadow-xl">
                             <div className="inline-flex items-center gap-2 bg-gray-900 text-white px-4 py-2 rounded-full mb-6 text-sm font-bold">
                                 <Building2 className="w-4 h-4" />
                                 For Enterprise & Government
@@ -59,8 +58,7 @@ export default function Audience({ onOpenModal }: AudienceProps) {
                             </h3>
 
                             <p className="text-gray-600 mb-6 font-body leading-relaxed">
-                                Legacy integration, strict <span className="text-gray-900 font-semibold">MDM (Mobile Device Management)</span> support, and ISO/SOC2 compliant data handling. We solve the{' '}
-                                <span className="text-[#E92228] font-semibold">&quot;Massive View Controller&quot;</span> problem in aging codebases.
+                                Legacy integration, strict <span className="text-gray-900 font-semibold">MDM (Mobile Device Management)</span> support, and ISO/SOC2 compliant data handling. Our <span className="font-bold">iOS app development company</span> teams solve the <span className="text-[#E92228] font-semibold">&quot;Massive View Controller&quot;</span> problem in aging codebases.
                             </p>
 
                             <button

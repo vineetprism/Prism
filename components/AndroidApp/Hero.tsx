@@ -35,23 +35,19 @@ export default function Hero({ onOpenModal }: HeroProps) {
                             <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 px-4 py-2 rounded-full">
                                 <div className="w-2 h-2 rounded-full bg-[#E92228] animate-pulse"></div>
                                 <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest">
-                                    Enterprise Android Development
+                                    Enterprise Android, Reinvented.
                                 </span>
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] font-heading">
-                                From Legacy Systems to{' '}
+                                Android Application Development Company: From Legacy Systems to{' '}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E92228] to-[#bd202e]">
                                     Intelligent Ecosystems
                                 </span>
-                                <br />
-                                <span className="text-gray-300">Enterprise Android, Reinvented.</span>
                             </h1>
 
                             <p className="text-gray-400 text-lg sm:text-xl leading-relaxed font-body max-w-2xl">
-                                Secure, scalable, and AI-ready Android architectures that bridge the gap between{' '}
-                                <span className="text-white font-medium">digital strategy</span> and{' '}
-                                <span className="text-[#E92228] font-semibold">rigorous engineering execution</span>.
+                                Secure, scalable, and AI-ready <span className="text-white font-bold">android application development</span> architectures that bridge the gap between digital strategy and rigorous engineering execution.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-2">

@@ -5,7 +5,6 @@ import {
     Puzzle,
     RefreshCw,
     Link as LinkIcon,
-    Cloud,
     Brain,
     ShieldCheck
 } from 'lucide-react';

@@ -9,14 +9,14 @@ export default function Benefits() {
             title: "Workflow Velocity",
             stat: "85%",
             statLabel: "Handle Time Reduction",
-            desc: "Reduce average handle times by up to 85%. We replicate the efficiency gains seen in global logistics leaders by automating complex manual workflows."
+            desc: <>Reduce average handle times by up to 85%. Our <span className="font-bold">android application development services</span> replicate the efficiency gains seen in global logistics leaders by automating complex manual workflows.</>
         },
         {
             num: "02",
             title: "Operational Precision",
             stat: "Zero",
             statLabel: "Error Data Entry",
-            desc: "Target Zero-Error Data Entry. By moving validation to the device edge, we eliminate the risks associated with manual transcription and legacy inputs."
+            desc: <>Target Zero-Error Data Entry. By moving validation to the device edge, we eliminate the risks associated with manual transcription and legacy inputs through intelligent <span className="font-bold">android mobile application development</span>.</>
         },
         {
             num: "03",
@@ -40,10 +40,10 @@ export default function Benefits() {
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">
-                            ROI Metrics
+                            ROI Metrics:
                         </span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            The Business Case
+                            The Android Mobile Application Development Business Case
                         </h2>
                     </div>
 

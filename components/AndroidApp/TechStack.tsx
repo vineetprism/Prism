@@ -13,20 +13,20 @@ import {
 } from 'lucide-react';
 
 const techIconMap: { [key: string]: React.ReactNode } = {
-    "Kotlin": <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Swift": <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Dart": <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Jetpack Compose": <Palette className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Kotlin Multiplatform": <Layers className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Flutter": <Smartphone className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Node.js": <Server className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Spring Boot": <Server className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "AWS Lambda": <Cloud className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Google Cloud": <Cloud className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Jenkins": <GitBranch className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "GitHub Actions": <GitBranch className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Appium": <Smartphone className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
-    "Espresso": <CheckCircle className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />,
+    "Kotlin": <Code2 className="w-5 h-5 text-white" />,
+    "Swift": <Code2 className="w-5 h-5 text-white" />,
+    "Dart": <Code2 className="w-5 h-5 text-white" />,
+    "Jetpack Compose": <Palette className="w-5 h-5 text-white" />,
+    "Kotlin Multiplatform": <Layers className="w-5 h-5 text-white" />,
+    "Flutter": <Smartphone className="w-5 h-5 text-white" />,
+    "Node.js": <Server className="w-5 h-5 text-white" />,
+    "Spring Boot": <Server className="w-5 h-5 text-white" />,
+    "AWS Lambda": <Cloud className="w-5 h-5 text-white" />,
+    "Google Cloud": <Cloud className="w-5 h-5 text-white" />,
+    "Jenkins": <GitBranch className="w-5 h-5 text-white" />,
+    "GitHub Actions": <GitBranch className="w-5 h-5 text-white" />,
+    "Appium": <Smartphone className="w-5 h-5 text-white" />,
+    "Espresso": <CheckCircle className="w-5 h-5 text-white" />,
 };
 
 export default function TechStack() {
@@ -43,26 +43,30 @@ export default function TechStack() {
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
                         <span className="text-[#E92228] text-sm font-bold uppercase tracking-widest mb-2 block">
-                            Modern Enterprise Stack
+                            Modern Enterprise Stack:
                         </span>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading">
-                            Android Technology Ecosystem
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-heading mb-4">
+                            Android Application Development Technology Ecosystem
                         </h2>
+                        <p className="text-gray-600 text-lg font-body max-w-3xl mx-auto">
+                            Industry-leading frameworks and platforms powering our <span className="font-bold">android mobile application development services</span>.
+                        </p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {techStack.map((group, idx) => (
-                            <div key={idx} className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-[#E92228]/30 hover:shadow-lg transition-all duration-300">
-                                <h4 className="text-[#E92228] font-bold text-sm uppercase tracking-wider mb-5 font-heading">
+                            <div key={idx} className="bg-white rounded-2xl p-6 border border-gray-100 border-t-4 border-t-[#E92228] shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                <h4 className="text-[#E92228] font-bold text-sm uppercase tracking-wider mb-6 font-heading flex items-center gap-2">
+                                    <span className="w-8 h-[2px] bg-[#E92228]"></span>
                                     {group.category}
                                 </h4>
-                                <div className="space-y-3">
+                                <div className="space-y-4">
                                     {group.items.map((item, i) => (
-                                        <div key={i} className="group flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
-                                            <div className="w-8 h-8 flex items-center justify-center">
-                                                {techIconMap[item] || <Code2 className="w-5 h-5 text-gray-400 group-hover:text-[#E92228] transition-colors" />}
+                                        <div key={i} className="flex items-center gap-4 p-4 rounded-xl bg-white border border-[#E92228] shadow-sm">
+                                            <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#E92228] text-white">
+                                                {techIconMap[item] || <Code2 className="w-5 h-5" />}
                                             </div>
-                                            <span className="text-gray-700 font-medium text-sm group-hover:text-gray-900 transition-colors">
+                                            <span className="text-[#E92228] font-bold text-sm">
                                                 {item}
                                             </span>
                                         </div>
